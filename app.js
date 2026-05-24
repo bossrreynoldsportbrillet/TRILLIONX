@@ -454,6 +454,76 @@ function TRILLIONX_renderTerminalResult(j){
   window.TRILLIONX_renderTerminalResult = TRILLIONX_renderTerminalResult;
 })();
 
+
+/* TRILLIONX_ALL_BUTTONS_RENDER_FIX_SOURCE_V1 */
+function TRILLIONX_cleanRender(x){
+  try{
+    if(typeof x==="string"){
+      try{x=JSON.parse(x)}catch(e){return x}
+    }
+    if(!x) return "";
+    const out=[];
+    if(x.verdict) out.push("VERDICT: "+x.verdict);
+    if(x.status) out.push("STATUS: "+x.status);
+    if(typeof x.ok!=="undefined") out.push("OK: "+x.ok);
+    if(typeof x.code!=="undefined") out.push("CODE: "+x.code);
+    if(typeof x.activation_percent!=="undefined") out.push("ACTIVATION: "+x.activation_percent+"%");
+    if(typeof x.score!=="undefined") out.push("SCORE: "+x.score);
+    if(x.summary && typeof x.summary==="object"){
+      out.push("\n--- SUMMARY ---");
+      out.push(JSON.stringify(x.summary,null,2));
+    }
+    if(x.health && typeof x.health==="object"){
+      out.push("\n--- HEALTH ---");
+      out.push(JSON.stringify(x.health,null,2));
+    }
+    if(x.stdout) out.push("\n--- STDOUT ---\n"+x.stdout);
+    if(x.out) out.push("\n--- OUTPUT ---\n"+x.out);
+    if(x.data) out.push("\n--- DATA ---\n"+(typeof x.data==="string"?x.data:JSON.stringify(x.data,null,2)));
+    if(x.stderr) out.push("\n--- STDERR ---\n"+x.stderr);
+    if(x.err) out.push("\n--- ERR ---\n"+x.err);
+    if(x.error) out.push("\n--- ERROR ---\n"+x.error);
+    if(x.http_status===404 || x.statusCode===404) out.push("\nENDPOINT: 404 / non mappé");
+    if(out.length) return out.join("\n");
+    return JSON.stringify(x,null,2);
+  }catch(e){
+    return "RENDER_ERROR: "+e.message+"\n"+String(x);
+  }
+}
+function TRILLIONX_setOutputClean(target,x){
+  const txt=TRILLIONX_cleanRender(x);
+  try{
+    if(typeof target==="string") target=document.querySelector(target)||document.getElementById(target);
+    if(!target){
+      const q=document.querySelector("#output,#out,.output,pre");
+      if(q) q.textContent=txt;
+      return txt;
+    }
+    if("value" in target) target.value=txt;
+    else target.textContent=txt;
+  }catch(e){}
+  return txt;
+}
+async function TRILLIONX_fetchClean(url,opt,target){
+  const t0=Date.now();
+  try{
+    const r=await fetch(url,opt||{});
+    const text=await r.text();
+    let j;
+    try{j=JSON.parse(text)}catch(e){j={ok:r.ok,http_status:r.status,status:r.status,out:text}}
+    if(typeof j==="object" && j){
+      j.http_status=j.http_status||r.status;
+      j.ms=Date.now()-t0;
+    }
+    TRILLIONX_setOutputClean(target||"#output",j);
+    return j;
+  }catch(e){
+    const j={ok:false,error:e.message,ms:Date.now()-t0};
+    TRILLIONX_setOutputClean(target||"#output",j);
+    return j;
+  }
+}
+
 </script><script>
 const out=document.getElementById('out');
 async function load(u){out.textContent='LOADING '+u;try{let r=await fetch(u).catch(e=>({text:async()=>String(e)}));out.textContent=JSON.stringify(await r.text(),null,2)}catch(e){out.textContent='ERROR '+e.message}}
@@ -25791,7 +25861,7 @@ function trillionsOutput(msg){
  const el=document.getElementById("output");
  if(!el)return;
  if(typeof msg==="object"){
-  el.textContent=JSON.stringify(msg,null,2);
+  el.textContent = TRILLIONX_cleanRender(msg);
  }else{
   el.textContent=String(msg);
  }
