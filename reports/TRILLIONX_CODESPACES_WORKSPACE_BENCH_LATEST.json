@@ -1,9 +1,9 @@
 {
   "engine": "TRILLIONX_CODESPACES_WORKSPACE_BENCH",
-  "time": "2026-05-24T22:20:21.901Z",
+  "time": "2026-05-24T22:21:54.606Z",
   "scope": "CODESPACES_WORKSPACE_REAL_HOST",
   "host": {
-    "time": "2026-05-24T22:20:18.687Z",
+    "time": "2026-05-24T22:21:51.697Z",
     "hostname": "codespaces-408e60",
     "platform": "linux",
     "arch": "x64",
@@ -12,14 +12,14 @@
     "git": "git version 2.51.0",
     "cpu": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
     "logical_cpu": 2,
-    "ghz": 3.48,
+    "ghz": 3.392,
     "load": [
-      2.85,
-      3.11,
-      2.95
+      1.54,
+      2.6,
+      2.78
     ],
     "ram_total_gb": 7.757,
-    "ram_free_gb": 2.262
+    "ram_free_gb": 2.231
   },
   "disk": {
     "total_gb": 31.326,
@@ -31,7 +31,7 @@
   },
   "files": {
     ".": {
-      "files": 9000,
+      "files": 9011,
       "size": "566M"
     },
     "data": {
@@ -43,16 +43,16 @@
       "size": "12M"
     },
     "reports": {
-      "files": 14,
-      "size": "72K"
+      "files": 15,
+      "size": "76K"
     },
     "history": {
-      "files": 21,
-      "size": "3.2M"
+      "files": 22,
+      "size": "3.6M"
     },
     "logs": {
       "files": 141,
-      "size": "2.0M"
+      "size": "2.2M"
     },
     "benchmarks": {
       "files": 1,
@@ -63,7 +63,7 @@
       "size": "16M"
     },
     ".git": {
-      "files": 2389,
+      "files": 2398,
       "size": "76M"
     },
     "raid60_plus": {
@@ -73,92 +73,92 @@
   },
   "bench": {
     "sha256": {
-      "ops": 218661,
-      "ops_s": 273326.25,
-      "mb_s": 68331.563
+      "ops": 366611,
+      "ops_s": 458263.75,
+      "mb_s": 114565.938
     },
     "aes256": {
-      "ops": 527,
-      "ops_s": 658.75,
-      "mb_s": 329.375
+      "ops": 691,
+      "ops_s": 863.75,
+      "mb_s": 431.875
     },
     "json": {
-      "ops": 809,
-      "ops_s": 1011.25,
-      "mb_s": 81.651
+      "ops": 218,
+      "ops_s": 272.5,
+      "mb_s": 22.002
     },
     "file_io": {
       "size_mb": 8,
-      "write_ms": 3.772,
-      "read_ms": 3.79,
-      "write_mb_s": 2120.949,
-      "read_mb_s": 2110.811,
-      "checksum": "612501360bcaa6b8"
+      "write_ms": 10.886,
+      "read_ms": 6.462,
+      "write_mb_s": 734.884,
+      "read_mb_s": 1238.058,
+      "checksum": "01accfbc30615341"
     },
     "ports": [
       {
         "port": 3000,
-        "ms": 2.35,
+        "ms": 2.975,
         "open": true
       },
       {
         "port": 3997,
-        "ms": 0.883,
+        "ms": 0.927,
         "open": false,
         "error": "ECONNREFUSED"
       },
       {
         "port": 9229,
-        "ms": 0.448,
+        "ms": 0.527,
         "open": false,
         "error": "ECONNREFUSED"
       },
       {
         "port": 20000,
-        "ms": 0.344,
+        "ms": 0.604,
         "open": false,
         "error": "ECONNREFUSED"
       },
       {
         "port": 20001,
-        "ms": 0.21,
+        "ms": 0.328,
         "open": false,
         "error": "ECONNREFUSED"
       },
       {
         "port": 20002,
-        "ms": 0.255,
+        "ms": 0.288,
         "open": false,
         "error": "ECONNREFUSED"
       },
       {
         "port": 20003,
-        "ms": 0.403,
+        "ms": 0.392,
         "open": false,
         "error": "ECONNREFUSED"
       },
       {
         "port": 3099,
-        "ms": 0.246,
+        "ms": 0.726,
         "open": false,
         "error": "ECONNREFUSED"
       },
       {
         "port": 3100,
-        "ms": 0.385,
+        "ms": 2.935,
         "open": false,
         "error": "ECONNREFUSED"
       },
       {
         "port": 8080,
-        "ms": 0.228,
+        "ms": 0.378,
         "open": false,
         "error": "ECONNREFUSED"
       }
     ]
   },
   "summary": {
-    "score": 99987.29,
+    "score": 162665.933,
     "open_ports": [
       3000
     ],
@@ -177,5 +177,5 @@
     "not_fake_exascale": true,
     "no_destructive_actions": true
   },
-  "seal": "7f51eaf501e115bb2bea74b48b3c5ac179d192ee7fbcb5a4fca496453890a5a4"
+  "seal": "2facf623cc95ba764cd90f6905c7c0096b108df621358a107dff81519e5a17f8"
 }
