@@ -4,6 +4,18 @@ const mode=process.argv[2]||"safe";
 const packets=Number(process.argv[3]||12);
 const wait=Number(process.argv[4]||250);
 fs.mkdirSync("data",{recursive:true});
+
+const DETECT_FILE="data/trillionx_auto_detect_required_latest.json";
+if(!fs.existsSync(DETECT_FILE)){
+  console.error("AUTO_DETECT_REQUIRED: run node TRILLIONX_AUTO_DETECT_REQUIRED.js first");
+  process.exit(2);
+}
+const AUTO_DETECT=JSON.parse(fs.readFileSync(DETECT_FILE,"utf8"));
+if(!AUTO_DETECT.truth_policy || !AUTO_DETECT.truth_policy.auto_detection_required){
+  console.error("AUTO_DETECT_INVALID");
+  process.exit(2);
+}
+
 const now=Date.now();
 const mb=x=>x/1024/1024,gb=x=>x/1024/1024/1024;
 const r=n=>Math.round(n*1000)/1000;
@@ -73,12 +85,25 @@ function params(level){
  }
 }
 function score(p){
- const zhash=p.sha.hash_mb_s*1e6/1e21;
- const zflops=p.matrix.gflops*1e9/1e21;
+ const hash_b_s=p.sha.hash_mb_s*1024*1024;
+ const flop_s=p.matrix.gflops*1e9;
+ const zhash=hash_b_s/1e21;
+ const zflops=flop_s/1e21;
  const crypto=(p.sha.hash_mb_s/12)+(p.pbkdf.iter_s/50000)+(p.scrypt.ops_s*30);
  const mem=p.comp.mb_s/100+p.vr.mirror_ops_s/5e6;
  const health=Math.max(0,100-(p.event_p95_ms>80?10:0)-(p.mem.rss_mb>900?10:0)-(!p.host.simd.avx2?5:0));
- return {packet_score:r(crypto+mem+p.matrix.gflops*2),zettahash_s:r(zhash),zettaflops_s:r(zflops),health:r(health)}
+ return {
+  packet_score:r(crypto+mem+p.matrix.gflops*2),
+  hash_gb_s:r(p.sha.hash_mb_s/1024),
+  hash_tb_s:r(p.sha.hash_mb_s/1024/1024),
+  hash_pb_s:r(p.sha.hash_mb_s/1024/1024/1024),
+  zettahash_s:Number(zhash.toExponential(6)),
+  gflops:r(p.matrix.gflops),
+  tflops:r(p.matrix.gflops/1000),
+  pflops:r(p.matrix.gflops/1e6),
+  zettaflops_s:Number(zflops.toExponential(6)),
+  health:r(health)
+}
 }
 async function main(){
  const H=host(),list=[];
@@ -104,13 +129,25 @@ async function main(){
   console.log(`--- CRYPTO PACKET ${i} ---`);
   console.log(`SHA256 ${p.sha.hash_mb_s} MB/s | PBKDF2 ${p.pbkdf.iter_s} iter/s | SCRYPT ${p.scrypt.ops_s} ops/s`);
   console.log(`MATRIX ${p.matrix.gflops} GFLOPS | COMP ${p.comp.mb_s} MB/s | VR ${p.vr.mirror_ops_s} ops/s`);
-  console.log(`SCORE ${p.score.packet_score} | ZH/s ${p.score.zettahash_s} | ZFLOPS/s ${p.score.zettaflops_s} | HEALTH ${p.score.health}`);
+  console.log(`SCORE ${p.score.packet_score} | HASH ${p.score.hash_gb_s} GB/s ${p.score.zettahash_s} ZH/s | FLOPS ${p.score.gflops} GFLOPS ${p.score.zettaflops_s} ZFLOPS | HEALTH ${p.score.health}`);
  }
- const sum=list.reduce((a,p)=>{a.score+=p.score.packet_score;a.zh+=p.score.zettahash_s;a.zf+=p.score.zettaflops_s;a.health+=p.score.health;a.hash+=p.sha.hash_mb_s;a.gf+=p.matrix.gflops;return a},{score:0,zh:0,zf:0,health:0,hash:0,gf:0});
+ const sum=list.reduce((a,p)=>{a.score+=p.score.packet_score;
+a.zh+=p.score.zettahash_s;
+a.zf+=p.score.zettaflops_s;
+a.health+=p.score.health;
+a.hash+=p.sha.hash_mb_s;
+a.gf+=p.matrix.gflops;
+return a},{score:0,zh:0,zf:0,health:0,hash:0,gf:0});
  const best=list.slice().sort((a,b)=>b.score.packet_score-a.score.packet_score)[0];
  const report={engine:"TRILLIONX",bench:"CRYPTO_ZETTA_PACKET_BENCH",mode,packets,wait_ms:wait,host:H,results:list,
   cumulative:{score:r(sum.score),avg_health:r(sum.health/list.length),avg_sha256_mb_s:r(sum.hash/list.length),avg_matrix_gflops:r(sum.gf/list.length),
-  cumulative_zettahash_s:r(sum.zh),cumulative_zettaflops_s:r(sum.zf),best_packet:best.packet,best_score:best.score.packet_score},
+  cumulative_zettahash_s:Number(sum.zh.toExponential(6)),
+  cumulative_zettaflops_s:Number(sum.zf.toExponential(6)),
+  avg_hash_gb_s:r((sum.hash/list.length)/1024),
+  avg_hash_tb_s:r((sum.hash/list.length)/1024/1024),
+  avg_tflops:r((sum.gf/list.length)/1000),
+  best_packet:best.packet,
+  best_score:best.score.packet_score},
   truth_policy:{real_only:true,mini_packets:true,cumulative_projection:true,no_fake_zettahash:true,no_fake_zettaflops:true,world_result_requires_external_reproducible_hosts:true},
   verdict:"REAL_LOCAL_CRYPTO_PACKET_BENCH_CUMULATIVE_WORLD_READING_INDICATIVE"};
  const file=`data/trillionx_crypto_zetta_packet_${now}.json`;
@@ -121,8 +158,11 @@ async function main(){
  console.log("AVG HEALTH:",report.cumulative.avg_health);
  console.log("AVG SHA256 MB/s:",report.cumulative.avg_sha256_mb_s);
  console.log("AVG MATRIX GFLOPS:",report.cumulative.avg_matrix_gflops);
- console.log("CUM ZH/s:",report.cumulative.cumulative_zettahash_s);
- console.log("CUM ZFLOPS/s:",report.cumulative.cumulative_zettaflops_s);
+ console.log("AVG HASH GB/s:",report.cumulative.avg_hash_gb_s);
+ console.log("AVG HASH TB/s:",report.cumulative.avg_hash_tb_s);
+ console.log("CUM ZH/s scientific:",report.cumulative.cumulative_zettahash_s);
+ console.log("AVG TFLOPS:",report.cumulative.avg_tflops);
+ console.log("CUM ZFLOPS scientific:",report.cumulative.cumulative_zettaflops_s);
  console.log("BEST PACKET:",report.cumulative.best_packet);
  console.log("VERDICT:",report.verdict);
  console.log("REPORT =",file);
