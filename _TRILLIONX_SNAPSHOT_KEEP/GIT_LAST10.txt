@@ -1,0 +1,10 @@
+09e403f Add TRILLIONX output lite mobile endpoints
+d3e3a6e Stabilize TRILLIONX compact output and clean Codespaces memory pressure
+c488fc6 Save TRILLIONX clean Codespaces state before restart
+6219c39 Save TRILLIONX Codespaces state before memory cleanup 20260524_110639
+9afa583 Add TRILLIONX activation registry
+0834a76 Add TRILLIONX repo master index
+773c611 Upgrade total repo autodetect scanner V2
+6a41eb7 Add total repo autodetect conception scanner
+10d467f Add TRILLIONX crypto zetta packet benchmark
+82609de Add TRILLIONX GPU backend router truth registry

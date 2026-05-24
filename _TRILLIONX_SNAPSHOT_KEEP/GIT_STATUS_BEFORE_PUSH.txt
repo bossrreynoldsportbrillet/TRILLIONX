@@ -1,0 +1,9 @@
+?? .Q
+?? .vscode/settings.json
+?? Q
+?? _TRILLIONX_SNAPSHOT_KEEP/GIT_LAST10.txt
+?? _TRILLIONX_SNAPSHOT_KEEP/GIT_STATUS_BEFORE_PUSH.txt
+?? _TRILLIONX_SNAPSHOT_KEEP/SNAPSHOT_TIME_UTC.txt
+?? "leep 2"
+?? "on\" -o "
+?? "tatus --short"
