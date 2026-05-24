@@ -1,0 +1,1502 @@
+{
+  ".devcontainer/devcontainer.before_trillionx_augmented_20260524_165534.json": {
+    "hash": "b0ecd9fd5c66cb4063861aa0",
+    "size": 4995,
+    "tokens": 371
+  },
+  ".devcontainer/devcontainer.json": {
+    "hash": "a4d8ea017b1ddc006bc39435",
+    "size": 5429,
+    "tokens": 388
+  },
+  ".vscode/launch.json": {
+    "hash": "5a236645ffaf25e9e05a088d",
+    "size": 340,
+    "tokens": 36
+  },
+  ".vscode/settings.json": {
+    "hash": "ddce564c88013fbdc1f93c55",
+    "size": 1027,
+    "tokens": 58
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/TRILLIONS_RUNTIME_GAP_RESEARCH.md": {
+    "hash": "b50578ca5a66359e9f4d5e04",
+    "size": 374,
+    "tokens": 38
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/TRILLIONS_ULTIMATE_API_CATALOG_REGISTRY.json": {
+    "hash": "8ad96b6386aa36ad351d6e1a",
+    "size": 88,
+    "tokens": 8
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/app.js": {
+    "hash": "3d1285335e024c7b0d6b3065",
+    "size": 524418,
+    "tokens": 20000
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/app.js.9000VW.memory-ecc-222-L1L6-L56LE-api-registry.txt": {
+    "hash": "28e828828dd256eebc4be040",
+    "size": 524418,
+    "tokens": 20000
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/app.js.9000VW.memory-ecc-222-L1L6-L56LE-native-codex-codecs-vr-ai-meta-cpu-native-SIMD-NATIVE.txt": {
+    "hash": "28e828828dd256eebc4be040",
+    "size": 524418,
+    "tokens": 20000
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/app.js.9000VW.memory-ecc-222-L1L6-L56LE-native-codex-codecs-vr.txt": {
+    "hash": "28e828828dd256eebc4be040",
+    "size": 524418,
+    "tokens": 20000
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/app.js.9000VW.memory-ecc-222-L1L6-L56LE-registry-verified.txt": {
+    "hash": "8bf64161ac6a2f0c0a52d9fb",
+    "size": 524416,
+    "tokens": 20000
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/app.js.9000VW.memory-ecc-222-L1L6.original.txt": {
+    "hash": "54f93ccd4ec1d7c27b6109c3",
+    "size": 524416,
+    "tokens": 20000
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/app.js.TRILLIONS-FUSED-RUNTIME.txt": {
+    "hash": "3d1285335e024c7b0d6b3065",
+    "size": 524418,
+    "tokens": 20000
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/backend/hybrid-evo.js": {
+    "hash": "766f0cd6d2aa9fb930c30037",
+    "size": 4533,
+    "tokens": 413
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/backend/registry/worker.registry.js": {
+    "hash": "e03ee2db1121c78b89764620",
+    "size": 350,
+    "tokens": 22
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/backend/server.js": {
+    "hash": "2043522389bd314f1006c868",
+    "size": 159,
+    "tokens": 17
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/data/kernel_boot.jsonl": {
+    "hash": "dab8d05398a7f2491c913c6d",
+    "size": 2555,
+    "tokens": 116
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/package-lock.json": {
+    "hash": "b05f6587a1cc737e6005372e",
+    "size": 51990,
+    "tokens": 1843
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/package.json": {
+    "hash": "d5e417d466a3b2a2441e858f",
+    "size": 443,
+    "tokens": 36
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/plugins/plugin.guard.js": {
+    "hash": "75f49456fcdd364a4ecdfa4e",
+    "size": 1118,
+    "tokens": 86
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/plugins/plugin.loader.js": {
+    "hash": "0cffd7fcad19dc3e7dac6b72",
+    "size": 1629,
+    "tokens": 127
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/plugins/plugin.registry.js": {
+    "hash": "1bb177fbca910d94ca78a9ec",
+    "size": 2612,
+    "tokens": 166
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/plugins/simd-native.plugin.js": {
+    "hash": "311ed53757a1c26b6c079f97",
+    "size": 513,
+    "tokens": 47
+  },
+  "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/workers/trillions.worker.js": {
+    "hash": "97ea820fc4af1c8b987be33d",
+    "size": 1178,
+    "tokens": 122
+  },
+  "TRILLIONS_FIRE_EXTREME_SUPPORT_BENCH.js": {
+    "hash": "f560ec04970697a68878acdb",
+    "size": 7581,
+    "tokens": 562
+  },
+  "TRILLIONS_HEALTH_BENCH_TOTAL.js": {
+    "hash": "fe3a83363394fafe8306b89c",
+    "size": 5732,
+    "tokens": 402
+  },
+  "TRILLIONS_HEALTH_BENCH_TOTAL_V2.js": {
+    "hash": "9327d56d72b4bab0e63ab367",
+    "size": 6819,
+    "tokens": 490
+  },
+  "TRILLIONS_RUNTIME_GAP_RESEARCH.md": {
+    "hash": "b50578ca5a66359e9f4d5e04",
+    "size": 374,
+    "tokens": 38
+  },
+  "TRILLIONS_ULTIMATE_API_CATALOG_REGISTRY.json": {
+    "hash": "8ad96b6386aa36ad351d6e1a",
+    "size": 88,
+    "tokens": 8
+  },
+  "TRILLIONX_10_NODE_MESH.js": {
+    "hash": "76f8372090ddbaed45606a13",
+    "size": 5265,
+    "tokens": 430
+  },
+  "TRILLIONX_10_NODE_MESH_START.sh": {
+    "hash": "71bb44dc10ecc2a76fd60584",
+    "size": 494,
+    "tokens": 53
+  },
+  "TRILLIONX_1X10_NODE_MASTER.js": {
+    "hash": "e421f92664994b470ea141d0",
+    "size": 8170,
+    "tokens": 702
+  },
+  "TRILLIONX_1X10_START.sh": {
+    "hash": "e366b9144e238ff139bc9a89",
+    "size": 892,
+    "tokens": 88
+  },
+  "TRILLIONX_20_NODE_VR_MESH.js": {
+    "hash": "90d372f74c8d948aa0f356c1",
+    "size": 7060,
+    "tokens": 554
+  },
+  "TRILLIONX_20_NODE_VR_MESH_START.sh": {
+    "hash": "48bd38aa810c6e67c339f5a8",
+    "size": 635,
+    "tokens": 70
+  },
+  "TRILLIONX_ACTIVATION_REGISTRY.js": {
+    "hash": "ef580635bafdd414b831000d",
+    "size": 3619,
+    "tokens": 318
+  },
+  "TRILLIONX_AI_WORLD_HEALTH_BENCH.js": {
+    "hash": "22e08d5e427766756c52dca1",
+    "size": 6362,
+    "tokens": 646
+  },
+  "TRILLIONX_AUTO_DETECT_REQUIRED.js": {
+    "hash": "4ff3c80bd03a539c679dc288",
+    "size": 3030,
+    "tokens": 230
+  },
+  "TRILLIONX_BACKEND_CAPABILITY_REGISTRY.js": {
+    "hash": "94da89549d2c594afe85a059",
+    "size": 3421,
+    "tokens": 246
+  },
+  "TRILLIONX_BACKEND_EXPOSURE_CHECK.js": {
+    "hash": "c6a684d0d19c59a67887684a",
+    "size": 1761,
+    "tokens": 130
+  },
+  "TRILLIONX_BLOCKCHAIN_ALGO_STRESS_RANK.js": {
+    "hash": "b7a8e17f014a5bba10a2b0bd",
+    "size": 13637,
+    "tokens": 1291
+  },
+  "TRILLIONX_BTC_UTXO_ETH_VECTOR_SYSTEM_NET_BENCH.js": {
+    "hash": "385c977623855e1616523b03",
+    "size": 11557,
+    "tokens": 1055
+  },
+  "TRILLIONX_BTC_UTXO_ETH_VECTOR_SYSTEM_NET_SHOW.before_identity_patch_20260524_174732.js": {
+    "hash": "04fa03d7db749231af38dab1",
+    "size": 13185,
+    "tokens": 1259
+  },
+  "TRILLIONX_BTC_UTXO_ETH_VECTOR_SYSTEM_NET_SHOW.js": {
+    "hash": "3afc2063e52865b677426154",
+    "size": 14540,
+    "tokens": 1362
+  },
+  "TRILLIONX_CODEX_CODECS_NETWORK_SATELLITE_CATALOG.js": {
+    "hash": "7a086d89c7e333bd61a87f3a",
+    "size": 6874,
+    "tokens": 626
+  },
+  "TRILLIONX_COMPUTE_SPEED_BENCH.js": {
+    "hash": "92087f20e520dae392a13b40",
+    "size": 9590,
+    "tokens": 777
+  },
+  "TRILLIONX_CRYPTO_ZETTA_PACKET_BENCH.js": {
+    "hash": "fbb07009e0873c3bc434e900",
+    "size": 8537,
+    "tokens": 754
+  },
+  "TRILLIONX_EXASCALE_ADJACENT_FULL_RUNTIME.js": {
+    "hash": "97e67c150371893058f29ddd",
+    "size": 11361,
+    "tokens": 863
+  },
+  "TRILLIONX_EXASCALE_ADJACENT_FULL_START.sh": {
+    "hash": "2a1b53ae7d153f771ba67d0f",
+    "size": 914,
+    "tokens": 74
+  },
+  "TRILLIONX_EXASCALE_ADJACENT_RUNTIME.js": {
+    "hash": "57ef61de2d8df621377299a2",
+    "size": 9911,
+    "tokens": 837
+  },
+  "TRILLIONX_FINAL_EXASCALE_REPORT.js": {
+    "hash": "a9dd05be916b3b135210336c",
+    "size": 2260,
+    "tokens": 111
+  },
+  "TRILLIONX_FIRE_PACKET_EXTREME_BENCH.before_roundfix_20260524_091152.js": {
+    "hash": "f52632c5345f949eb8a50f4e",
+    "size": 10147,
+    "tokens": 985
+  },
+  "TRILLIONX_FIRE_PACKET_EXTREME_BENCH.broken_20260524_091354.js": {
+    "hash": "7154fa4c8b8bbafe7ad6cd4e",
+    "size": 10487,
+    "tokens": 990
+  },
+  "TRILLIONX_FIRE_PACKET_EXTREME_BENCH.js": {
+    "hash": "20fe7c5c587046665ae4183b",
+    "size": 6367,
+    "tokens": 631
+  },
+  "TRILLIONX_FIRMWARE_BOOT.sh": {
+    "hash": "1eb0abb7c1ab90a5190a95e3",
+    "size": 768,
+    "tokens": 61
+  },
+  "TRILLIONX_FIRMWARE_STAGE0.js": {
+    "hash": "5bbc395cc3f4f239ad9f3dc8",
+    "size": 5378,
+    "tokens": 406
+  },
+  "TRILLIONX_FULL_THREADRIPPER_PROFILE_BENCH.js": {
+    "hash": "38af811205be3220f7e96446",
+    "size": 11459,
+    "tokens": 893
+  },
+  "TRILLIONX_GPU_VR_BACKEND_PROBE.js": {
+    "hash": "b9ec22df013036a065f94942",
+    "size": 4031,
+    "tokens": 360
+  },
+  "TRILLIONX_HYPERBOLIC_MICROCONTROLLER_JOKER.js": {
+    "hash": "7bc831336df1e73e1c8e54ea",
+    "size": 7409,
+    "tokens": 492
+  },
+  "TRILLIONX_INTERNET_VECTOR_MEMORY_BLOCK.js": {
+    "hash": "5b05cf4d45351a26088a03fc",
+    "size": 14660,
+    "tokens": 1347
+  },
+  "TRILLIONX_LADDER_HEALTH_UNITS_BENCH.js": {
+    "hash": "4a07d23adee1fce4cc0c7e00",
+    "size": 10006,
+    "tokens": 974
+  },
+  "TRILLIONX_LADDER_SATURATION_BENCH.js": {
+    "hash": "9ac2ace33c9b470a2d64a92a",
+    "size": 8252,
+    "tokens": 721
+  },
+  "TRILLIONX_MEASURE_TRILLIONX_ONLY.sh": {
+    "hash": "af6aebd5e741d9605eb7f125",
+    "size": 1488,
+    "tokens": 178
+  },
+  "TRILLIONX_MEMORY_FABRIC_HBM3E_HAMRAM.js": {
+    "hash": "da4988bd0dc4cbbe19d37796",
+    "size": 10260,
+    "tokens": 793
+  },
+  "TRILLIONX_MEMORY_FABRIC_START.sh": {
+    "hash": "2ce8a9b0cdcaf5138a9efa46",
+    "size": 783,
+    "tokens": 69
+  },
+  "TRILLIONX_NATIVE_SIMD_AVX_RUNNER.js": {
+    "hash": "3e913973414bced06183d0f3",
+    "size": 2914,
+    "tokens": 252
+  },
+  "TRILLIONX_NATIVE_SIMD_DEPENDENCY_REGISTRY.js": {
+    "hash": "e116ea91fd10e719c2af3a07",
+    "size": 4126,
+    "tokens": 321
+  },
+  "TRILLIONX_NETWORK_CODEX_CONNECTIONS_ALL.js": {
+    "hash": "8d8addd4d036dd16683e0715",
+    "size": 10137,
+    "tokens": 914
+  },
+  "TRILLIONX_NETWORK_CONNECTIONS_TOTAL.js": {
+    "hash": "0efad0a3f3370f4abfccb59d",
+    "size": 9064,
+    "tokens": 817
+  },
+  "TRILLIONX_NETWORK_FULL_AUTO_BENCH.js": {
+    "hash": "cc700966cdd32ae17843e367",
+    "size": 10310,
+    "tokens": 961
+  },
+  "TRILLIONX_NETWORK_MICROSECOND_LATENCY_BENCH.js": {
+    "hash": "8d73c17e5dc861965e894f93",
+    "size": 9369,
+    "tokens": 848
+  },
+  "TRILLIONX_NETWORK_PORTS_TOTAL_AUTODETECT.js": {
+    "hash": "7d847e702566e00a5b8c1e87",
+    "size": 6672,
+    "tokens": 632
+  },
+  "TRILLIONX_OUTPUT_LITE_PATCH.js": {
+    "hash": "aeae95d6f7c5cbf69e151a4e",
+    "size": 3088,
+    "tokens": 259
+  },
+  "TRILLIONX_PERF_ORCH_SUPERCLASS_BENCH.js": {
+    "hash": "8ff918d2896a911bafecbe24",
+    "size": 10523,
+    "tokens": 854
+  },
+  "TRILLIONX_PORT_KEEPALIVE_ALL.js": {
+    "hash": "00d3befb20026285ff51c025",
+    "size": 3666,
+    "tokens": 312
+  },
+  "TRILLIONX_PORT_KEEPALIVE_START.sh": {
+    "hash": "ac95287d7391963ada76a68e",
+    "size": 751,
+    "tokens": 74
+  },
+  "TRILLIONX_RAID60_PLUS_LOGICAL_STORAGE.js": {
+    "hash": "acaa2f4ab3f4a62dfe086aee",
+    "size": 5033,
+    "tokens": 437
+  },
+  "TRILLIONX_REAL_BTC_CRYPTO_UTXO_VECTOR_SYSTEM_BENCH.js": {
+    "hash": "7de6cce412052c3248e1af48",
+    "size": 9253,
+    "tokens": 919
+  },
+  "TRILLIONX_REPO_MASTER_INDEX.js": {
+    "hash": "64572e68abc901302e95e5c0",
+    "size": 3097,
+    "tokens": 290
+  },
+  "TRILLIONX_REPO_TOTAL_AUTODETECT.js": {
+    "hash": "18f74f69e7b6ee3f0b7af13f",
+    "size": 8357,
+    "tokens": 665
+  },
+  "TRILLIONX_REPO_TOTAL_AUTODETECT_V2.js": {
+    "hash": "2ac98d033082eeb96987829a",
+    "size": 6576,
+    "tokens": 595
+  },
+  "TRILLIONX_RTX4090_ASTRAL_PROFILE_BENCH.js": {
+    "hash": "cdb2f1613dadf2ca1082a3fb",
+    "size": 6163,
+    "tokens": 540
+  },
+  "TRILLIONX_RUNTIME_CONSTANT_ACTIVATE.sh": {
+    "hash": "a5d2df9adb252c6ce2458869",
+    "size": 732,
+    "tokens": 68
+  },
+  "TRILLIONX_RUNTIME_CONSTANT_ACTIVATOR.js": {
+    "hash": "78f6d10dcd9741b2cee48846",
+    "size": 5596,
+    "tokens": 413
+  },
+  "TRILLIONX_SATURATION_COMPLEXITY_BENCH.js": {
+    "hash": "6e55a66b7909f32d6bc50e8a",
+    "size": 12696,
+    "tokens": 978
+  },
+  "TRILLIONX_SHARED_VR_CACHE_BUS.js": {
+    "hash": "963106c439078cae69c81321",
+    "size": 6707,
+    "tokens": 551
+  },
+  "TRILLIONX_SIMD_AVX_BENCH.js": {
+    "hash": "1d3daead81dc96a9b8d4f043",
+    "size": 8121,
+    "tokens": 689
+  },
+  "TRILLIONX_TARGET_POLICY.json": {
+    "hash": "6de7f0a8b4e368f3cbf05c5b",
+    "size": 925,
+    "tokens": 46
+  },
+  "TRILLIONX_TIER23_BENCHMARK.js": {
+    "hash": "d0bd24d58444059c9be8c154",
+    "size": 7384,
+    "tokens": 702
+  },
+  "TRILLIONX_TIER23_RUNTIME.js": {
+    "hash": "c22ad544c554e46904f51f05",
+    "size": 7827,
+    "tokens": 759
+  },
+  "TRILLIONX_TIER23_RUNTIME_START.sh": {
+    "hash": "13f011bc663afb50a3fc757c",
+    "size": 460,
+    "tokens": 45
+  },
+  "TRILLIONX_TURBO_AMPLIFIER_278_X2400.js": {
+    "hash": "c94e1f63176129da294cc052",
+    "size": 6395,
+    "tokens": 533
+  },
+  "TRILLIONX_USEFUL_WORK_EXASCALE_SUPERIOR_BENCH.js": {
+    "hash": "84757ad63192d8905620337a",
+    "size": 8104,
+    "tokens": 697
+  },
+  "TRILLIONX_USEFUL_WORK_RUNTIME.js": {
+    "hash": "32068defa636e8e0b3af6cdc",
+    "size": 7109,
+    "tokens": 582
+  },
+  "TRILLIONX_VR_MIRROR_BENCH.js": {
+    "hash": "96f12f911c20c24c58170bac",
+    "size": 4554,
+    "tokens": 374
+  },
+  "TRILLIONX_WORLD_EMU_VERDICT.json": {
+    "hash": "02cc7d2c6ae40090bc86eb10",
+    "size": 755,
+    "tokens": 56
+  },
+  "TRILLIONX_WORLD_NETWORK_AUTODETECT_BENCH.js": {
+    "hash": "f0d4b924722e76df7521f7b8",
+    "size": 9919,
+    "tokens": 804
+  },
+  "TRILLIONX_WORLD_SUPERIOR_REDISCOVERY_BENCH.js": {
+    "hash": "0d10844dbef70c6ce29398cf",
+    "size": 8739,
+    "tokens": 796
+  },
+  "_TRILLIONX_SNAPSHOT_KEEP/FILES_MAXDEPTH3.txt": {
+    "hash": "b2a6a2e56016e7a3e3a5fcfa",
+    "size": 30415,
+    "tokens": 770
+  },
+  "_TRILLIONX_SNAPSHOT_KEEP/GIT_LAST10.txt": {
+    "hash": "0eac799e36d441a9c909b116",
+    "size": 562,
+    "tokens": 75
+  },
+  "_TRILLIONX_SNAPSHOT_KEEP/GIT_STATUS_BEFORE_PUSH.txt": {
+    "hash": "c25dea1ac492aae0d1b62d89",
+    "size": 229,
+    "tokens": 11
+  },
+  "_TRILLIONX_SNAPSHOT_KEEP/REPO_SIZE_BEFORE_PUSH.txt": {
+    "hash": "7a29889cc74209b262ac901c",
+    "size": 7,
+    "tokens": 2
+  },
+  "_TRILLIONX_SNAPSHOT_KEEP/SNAPSHOT_TIME_UTC.txt": {
+    "hash": "2667570c726ef7d7213c34c8",
+    "size": 29,
+    "tokens": 7
+  },
+  "_TRILLIONX_SNAPSHOT_KEEP/all_data_json_before_cleanup.txt": {
+    "hash": "3947ba05bed62a107759334d",
+    "size": 3057,
+    "tokens": 62
+  },
+  "_TRILLIONX_SNAPSHOT_KEEP/disk_before_cleanup.txt": {
+    "hash": "483e925b789ed196fcaf07ec",
+    "size": 99,
+    "tokens": 14
+  },
+  "_TRILLIONX_SNAPSHOT_KEEP/du_before_cleanup.txt": {
+    "hash": "0abf11ffc86be783c895cd2f",
+    "size": 7,
+    "tokens": 2
+  },
+  "_TRILLIONX_SNAPSHOT_KEEP/git_status_before_cleanup.txt": {
+    "hash": "825371600734160680093bf1",
+    "size": 29,
+    "tokens": 2
+  },
+  "_TRILLIONX_SNAPSHOT_KEEP/memory_before_cleanup.txt": {
+    "hash": "2ecc6778c7e56f1c5c75dde2",
+    "size": 207,
+    "tokens": 18
+  },
+  "_backup_before_trillions/README.md": {
+    "hash": "c7c18cca355463216923279a",
+    "size": 11,
+    "tokens": 2
+  },
+  "app.js": {
+    "hash": "ba7000f23c6c6fdcec52196d",
+    "size": 524422,
+    "tokens": 20000
+  },
+  "app.js.9000VW.memory-ecc-222-L1L6-L56LE-api-registry.txt": {
+    "hash": "28e828828dd256eebc4be040",
+    "size": 524418,
+    "tokens": 20000
+  },
+  "app.js.9000VW.memory-ecc-222-L1L6-L56LE-native-codex-codecs-vr-ai-meta-cpu-native-SIMD-NATIVE.txt": {
+    "hash": "28e828828dd256eebc4be040",
+    "size": 524418,
+    "tokens": 20000
+  },
+  "app.js.9000VW.memory-ecc-222-L1L6-L56LE-native-codex-codecs-vr.txt": {
+    "hash": "28e828828dd256eebc4be040",
+    "size": 524418,
+    "tokens": 20000
+  },
+  "app.js.9000VW.memory-ecc-222-L1L6-L56LE-registry-verified.txt": {
+    "hash": "8bf64161ac6a2f0c0a52d9fb",
+    "size": 524416,
+    "tokens": 20000
+  },
+  "app.js.9000VW.memory-ecc-222-L1L6.original.txt": {
+    "hash": "54f93ccd4ec1d7c27b6109c3",
+    "size": 524416,
+    "tokens": 20000
+  },
+  "app.js.TRILLIONS-FUSED-RUNTIME.txt": {
+    "hash": "3d1285335e024c7b0d6b3065",
+    "size": 524418,
+    "tokens": 20000
+  },
+  "backend/hybrid-evo.js": {
+    "hash": "766f0cd6d2aa9fb930c30037",
+    "size": 4533,
+    "tokens": 413
+  },
+  "backend/registry/worker.registry.js": {
+    "hash": "e03ee2db1121c78b89764620",
+    "size": 350,
+    "tokens": 22
+  },
+  "backend/server.js": {
+    "hash": "2043522389bd314f1006c868",
+    "size": 159,
+    "tokens": 17
+  },
+  "backend/trillionx_gpu_backend_router.js": {
+    "hash": "5952ebe9b330ad28fa17b63b",
+    "size": 2394,
+    "tokens": 176
+  },
+  "backups/app.before_TRILLIONX_virtual_threadripper_20260524_072919.js": {
+    "hash": "3d1285335e024c7b0d6b3065",
+    "size": 524418,
+    "tokens": 20000
+  },
+  "backups/app.before_TRILLIONX_virtual_threadripper_20260524_073013.js": {
+    "hash": "3d1285335e024c7b0d6b3065",
+    "size": 524418,
+    "tokens": 20000
+  },
+  "backups/app.before_TRILLIONX_virtual_threadripper_20260524_073108.js": {
+    "hash": "3d1285335e024c7b0d6b3065",
+    "size": 524418,
+    "tokens": 20000
+  },
+  "backups/app.before_compact_output_20260524_114806.js": {
+    "hash": "3d1285335e024c7b0d6b3065",
+    "size": 524418,
+    "tokens": 20000
+  },
+  "backups/app.before_dedup_threadripper_20260524_074142.js": {
+    "hash": "3d1285335e024c7b0d6b3065",
+    "size": 524418,
+    "tokens": 20000
+  },
+  "backups/app.before_output_lite_20260524_115426.js": {
+    "hash": "ba7000f23c6c6fdcec52196d",
+    "size": 524422,
+    "tokens": 20000
+  },
+  "backups/app.before_virtual_threadripper_fix_20260524_073958.js": {
+    "hash": "3d1285335e024c7b0d6b3065",
+    "size": 524418,
+    "tokens": 20000
+  },
+  "controllers/hyperbolic_microcontroller_joker_latest.json": {
+    "hash": "ca9cb838d2289b0cb6489988",
+    "size": 2977,
+    "tokens": 171
+  },
+  "data/TRILLIONX_EXASCALE_FINAL.json": {
+    "hash": "9474f5aad85d4c674762f2c6",
+    "size": 12507,
+    "tokens": 829
+  },
+  "data/TRILLIONX_INTERNET_VECTOR_BLOCK_LATEST.json": {
+    "hash": "cb96ace19be1f66be888642a",
+    "size": 3393,
+    "tokens": 274
+  },
+  "data/_archive_light/trillionx_backend_capability_registry_1779617684345.json": {
+    "hash": "afd7d4dfd6c453fc14ff5b92",
+    "size": 1639,
+    "tokens": 119
+  },
+  "data/_archive_light/trillionx_native_simd_avx_1779610171434.json": {
+    "hash": "de735bb9ff38718c0be439b6",
+    "size": 1664,
+    "tokens": 132
+  },
+  "data/_archive_light/trillionx_native_simd_avx_1779610370312.json": {
+    "hash": "5113a7f8cfa3f6540c608610",
+    "size": 1661,
+    "tokens": 132
+  },
+  "data/_archive_light/trillionx_native_simd_dependency_registry_1779617891170.json": {
+    "hash": "72d6ccfce6286982206a8cd6",
+    "size": 1871,
+    "tokens": 156
+  },
+  "data/_archive_light/trillionx_repo_total_autodetect_1779619670119.json": {
+    "hash": "135dc907d9a0cbbf965233cb",
+    "size": 524288,
+    "tokens": 16390
+  },
+  "data/_archive_light/trillionx_repo_total_autodetect_v2_1779619910238.json": {
+    "hash": "2c8d543b8ff2be4cd06a1f77",
+    "size": 524288,
+    "tokens": 20000
+  },
+  "data/kernel_boot.jsonl": {
+    "hash": "3a9f6c43dbac93c2678b06aa",
+    "size": 10220,
+    "tokens": 461
+  },
+  "data/trillions_fire_extreme_support_latest.json": {
+    "hash": "56536df0735da417f6109350",
+    "size": 6629,
+    "tokens": 544
+  },
+  "data/trillions_health_bench_total_latest.json": {
+    "hash": "c6a865f065894ceaa08fdf1a",
+    "size": 209391,
+    "tokens": 9898
+  },
+  "data/trillionx_10_node_mesh_1779628827068.json": {
+    "hash": "b1f453461a22643f6f58d9e1",
+    "size": 22297,
+    "tokens": 1281
+  },
+  "data/trillionx_10_node_mesh_latest.json": {
+    "hash": "b1f453461a22643f6f58d9e1",
+    "size": 22297,
+    "tokens": 1281
+  },
+  "data/trillionx_1x10_node_master_1779637557728.json": {
+    "hash": "e333f611aeecf836e01738b8",
+    "size": 39307,
+    "tokens": 2268
+  },
+  "data/trillionx_1x10_node_master_1779637557992.json": {
+    "hash": "3f5ea9aa86cb1b9fb5531493",
+    "size": 39311,
+    "tokens": 2268
+  },
+  "data/trillionx_1x10_node_master_latest.json": {
+    "hash": "3f5ea9aa86cb1b9fb5531493",
+    "size": 39311,
+    "tokens": 2268
+  },
+  "data/trillionx_20_node_vr_mesh_1779626030130.json": {
+    "hash": "f4f78e0347f1d0b716233f27",
+    "size": 74177,
+    "tokens": 4152
+  },
+  "data/trillionx_20_node_vr_mesh_1779627539276.json": {
+    "hash": "de4363ef83a625ffb836816d",
+    "size": 74168,
+    "tokens": 4152
+  },
+  "data/trillionx_20_node_vr_mesh_1779628050781.json": {
+    "hash": "1b29e9644e87ccd4c5d879dc",
+    "size": 74174,
+    "tokens": 4152
+  },
+  "data/trillionx_20_node_vr_mesh_1779628771513.json": {
+    "hash": "2d0bcc515f8cb299037dc210",
+    "size": 74123,
+    "tokens": 4152
+  },
+  "data/trillionx_20_node_vr_mesh_1779632547024.json": {
+    "hash": "75773f50196e08aed21cf18d",
+    "size": 74101,
+    "tokens": 4152
+  },
+  "data/trillionx_20_node_vr_mesh_1779632695446.json": {
+    "hash": "a3afd86c0b9e51996587be83",
+    "size": 74198,
+    "tokens": 4152
+  },
+  "data/trillionx_20_node_vr_mesh_1779632833077.json": {
+    "hash": "66a15813936d66ee38fbfd8f",
+    "size": 74211,
+    "tokens": 4152
+  },
+  "data/trillionx_20_node_vr_mesh_latest.json": {
+    "hash": "66a15813936d66ee38fbfd8f",
+    "size": 74211,
+    "tokens": 4152
+  },
+  "data/trillionx_activation_registry_latest.json": {
+    "hash": "37378cf6cafb8ffe96d56875",
+    "size": 13443,
+    "tokens": 587
+  },
+  "data/trillionx_advanced_exascale_micro_packets_1779636437261.json": {
+    "hash": "11f7977d84f7e9f9cc2bd6d4",
+    "size": 45552,
+    "tokens": 2756
+  },
+  "data/trillionx_advanced_exascale_micro_packets_1779636472852.json": {
+    "hash": "84a92abeb0065c1bfd46a39f",
+    "size": 45523,
+    "tokens": 2756
+  },
+  "data/trillionx_advanced_exascale_micro_packets_latest.json": {
+    "hash": "84a92abeb0065c1bfd46a39f",
+    "size": 45523,
+    "tokens": 2756
+  },
+  "data/trillionx_ai_world_health_latest.json": {
+    "hash": "415226ad0ae66108f1d14bbc",
+    "size": 11765,
+    "tokens": 734
+  },
+  "data/trillionx_auto_detect_required_latest.json": {
+    "hash": "cf105e520583475ddc71c522",
+    "size": 1336,
+    "tokens": 111
+  },
+  "data/trillionx_backend_capability_registry_latest.json": {
+    "hash": "afd7d4dfd6c453fc14ff5b92",
+    "size": 1639,
+    "tokens": 119
+  },
+  "data/trillionx_backend_exposure_latest.json": {
+    "hash": "c4702ba7c3cfa21779d09482",
+    "size": 831,
+    "tokens": 61
+  },
+  "data/trillionx_blockchain_algo_stress_rank_1779645175685.json": {
+    "hash": "7ee001dcc0372e829ef1ead8",
+    "size": 12696,
+    "tokens": 812
+  },
+  "data/trillionx_blockchain_algo_stress_rank_latest.json": {
+    "hash": "7ee001dcc0372e829ef1ead8",
+    "size": 12696,
+    "tokens": 812
+  },
+  "data/trillionx_btc_utxo_eth_vector_system_net_1779643624270.json": {
+    "hash": "5f2b929852b2b156121cc5a1",
+    "size": 13988,
+    "tokens": 929
+  },
+  "data/trillionx_btc_utxo_eth_vector_system_net_1779643972607.json": {
+    "hash": "f6cc3102e5bc45ea4f0c15b9",
+    "size": 13989,
+    "tokens": 929
+  },
+  "data/trillionx_btc_utxo_eth_vector_system_net_latest.json": {
+    "hash": "f6cc3102e5bc45ea4f0c15b9",
+    "size": 13989,
+    "tokens": 929
+  },
+  "data/trillionx_btc_utxo_eth_vector_system_net_show_1779644219900.json": {
+    "hash": "74e71a9db1076f09535b19bf",
+    "size": 10879,
+    "tokens": 781
+  },
+  "data/trillionx_btc_utxo_eth_vector_system_net_show_1779644338210.json": {
+    "hash": "1853bcb9cc6e4c68b6a0e9a1",
+    "size": 10888,
+    "tokens": 781
+  },
+  "data/trillionx_btc_utxo_eth_vector_system_net_show_1779644858175.json": {
+    "hash": "6040cd4b02eae7a4167fcd01",
+    "size": 11595,
+    "tokens": 833
+  },
+  "data/trillionx_btc_utxo_eth_vector_system_net_show_latest.json": {
+    "hash": "6040cd4b02eae7a4167fcd01",
+    "size": 11595,
+    "tokens": 833
+  },
+  "data/trillionx_codex_codecs_network_satellite_1779625199281.json": {
+    "hash": "25539957d6d37beb9da22d9f",
+    "size": 12661,
+    "tokens": 743
+  },
+  "data/trillionx_codex_codecs_network_satellite_1779629068235.json": {
+    "hash": "3039b5a726d51ca2ea96eee5",
+    "size": 14969,
+    "tokens": 974
+  },
+  "data/trillionx_codex_codecs_network_satellite_latest.json": {
+    "hash": "3039b5a726d51ca2ea96eee5",
+    "size": 14969,
+    "tokens": 974
+  },
+  "data/trillionx_compute_speed_latest.json": {
+    "hash": "34a0a0c846ae3bbdc5c87f28",
+    "size": 3157,
+    "tokens": 203
+  },
+  "data/trillionx_crypto_zetta_packet_latest.json": {
+    "hash": "1886db5d558e8bb8b32f6bbe",
+    "size": 29525,
+    "tokens": 1957
+  },
+  "data/trillionx_daemon_safe_status_latest.json": {
+    "hash": "013173c3da39c0bf7b304122",
+    "size": 367,
+    "tokens": 24
+  },
+  "data/trillionx_exascale_1779635396501.json": {
+    "hash": "e88e755b0db74d792b114132",
+    "size": 13359,
+    "tokens": 831
+  },
+  "data/trillionx_exascale_1779635644127.json": {
+    "hash": "104b5d79d4914b1beaef7699",
+    "size": 13370,
+    "tokens": 831
+  },
+  "data/trillionx_exascale_adjacent_full_runtime_latest.json": {
+    "hash": "926e315892107a38dfde446e",
+    "size": 245475,
+    "tokens": 16353
+  },
+  "data/trillionx_exascale_adjacent_runtime_1779637269452.json": {
+    "hash": "d044d299213582cbdfe88f1c",
+    "size": 32179,
+    "tokens": 2346
+  },
+  "data/trillionx_exascale_adjacent_runtime_latest.json": {
+    "hash": "d044d299213582cbdfe88f1c",
+    "size": 32179,
+    "tokens": 2346
+  },
+  "data/trillionx_exascale_latest.json": {
+    "hash": "104b5d79d4914b1beaef7699",
+    "size": 13370,
+    "tokens": 831
+  },
+  "data/trillionx_fire_packet_extreme_latest.json": {
+    "hash": "dddcffde9ba061ec1b53a6e6",
+    "size": 5640,
+    "tokens": 411
+  },
+  "data/trillionx_firmware_stage0_latest.json": {
+    "hash": "ea1ae098e426228b1db451dc",
+    "size": 406154,
+    "tokens": 16993
+  },
+  "data/trillionx_full_threadripper_profile_latest.json": {
+    "hash": "011ee2022efde48596bbba4f",
+    "size": 8288,
+    "tokens": 626
+  },
+  "data/trillionx_gpu_backend_router_latest.json": {
+    "hash": "54f3214cb3922c5e9058395d",
+    "size": 946,
+    "tokens": 62
+  },
+  "data/trillionx_gpu_vr_backend_probe_latest.json": {
+    "hash": "09c5300105dee9b4a35f79dc",
+    "size": 2182,
+    "tokens": 148
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779626847929.json": {
+    "hash": "95f8dfc3a624b99f24e64bad",
+    "size": 2974,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779626850563.json": {
+    "hash": "293d98f24e117bdf8a7b5b32",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779626903325.json": {
+    "hash": "e66f3c0419ec5fba7d48ca22",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779627540808.json": {
+    "hash": "1c4342e6be0b84bb317f8f8f",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779628052001.json": {
+    "hash": "62ef0e701a7279d80ea1690d",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779628452975.json": {
+    "hash": "3bf01fa58dae0e9df131202f",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779628497641.json": {
+    "hash": "fb57bb616fb516f1fa41e592",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779628500062.json": {
+    "hash": "6357cc29169d4220019da7cb",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779628965999.json": {
+    "hash": "da2253f2eb1f6ee87871e9cb",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631787222.json": {
+    "hash": "781c5634f815b022f7a2bfaa",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631787235.json": {
+    "hash": "4065e501af54c88fb56a0ea8",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631789555.json": {
+    "hash": "2a61f81740e5ae94b1d72c1c",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631789567.json": {
+    "hash": "fe0d005d49114e1a7e33eb8b",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631807297.json": {
+    "hash": "21d6b8803d4814ce73f28ae2",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631807309.json": {
+    "hash": "4474338c06a914f3d6af22a1",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631824683.json": {
+    "hash": "8eee3033671e51c833ee207a",
+    "size": 2973,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631824713.json": {
+    "hash": "c756b7d2401c939df4788039",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631842177.json": {
+    "hash": "8d10c2f24cf9bf69670a8d88",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631842189.json": {
+    "hash": "5cea97b53befb939d700be21",
+    "size": 2973,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631859441.json": {
+    "hash": "d62485c6714e0149428f296a",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631859453.json": {
+    "hash": "041b399b74b3830355bd5ce9",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631876699.json": {
+    "hash": "ffa91efb63859179401ce51f",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631876711.json": {
+    "hash": "78c79d0cb81e2af779d03749",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631893945.json": {
+    "hash": "e8aee8657683cd5098bd66e8",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631893957.json": {
+    "hash": "d19778516ce0bbec1e169c06",
+    "size": 2973,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631911246.json": {
+    "hash": "e67c3b842c525c69b83cfc80",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631911265.json": {
+    "hash": "231701498648b9db1bc28aca",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631928537.json": {
+    "hash": "bda95cd665750dd5775ebae7",
+    "size": 2973,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631928548.json": {
+    "hash": "30fb68424457a046190399dc",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631946376.json": {
+    "hash": "0b35869f9b705a694eb80218",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631946388.json": {
+    "hash": "11d169e77dfa7ef566df3e84",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631948684.json": {
+    "hash": "747402459ed078644666d12b",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631948698.json": {
+    "hash": "90bfc361fedb2dad294d8d23",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631966010.json": {
+    "hash": "68513dfde65a268d479e6419",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631966034.json": {
+    "hash": "09873a7ad43555dd6ce0b0dc",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631983448.json": {
+    "hash": "b5674863836fbf14315af892",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779631983473.json": {
+    "hash": "887c785d44bb023c2f59b19f",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632001723.json": {
+    "hash": "8eafaeef7d7f5b26f1dc98cd",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632001819.json": {
+    "hash": "e59f8e85285b71a7c0b3d600",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632019466.json": {
+    "hash": "8a75dcf8a1ce35ad05257fb2",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632019478.json": {
+    "hash": "b252f76668f3a22e0e4cdb39",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632036743.json": {
+    "hash": "bea86e582ab9fa2aff1a707a",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632036758.json": {
+    "hash": "cb48df5dbdbb40803f594799",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632054659.json": {
+    "hash": "4636b94fc59d296ed2e884ca",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632054711.json": {
+    "hash": "b4658bd10b7bfedbdabe9e49",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632070460.json": {
+    "hash": "b5d59b384e6eb0e995bc86c1",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632070472.json": {
+    "hash": "400f55480b675711d3c11d33",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632072782.json": {
+    "hash": "c9f4f4a8ff8e1586f4c2bc0b",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632072795.json": {
+    "hash": "72fbb608bacfea6933f4507e",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632090178.json": {
+    "hash": "91ebb49d4d0d44b0d9e02c59",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632090217.json": {
+    "hash": "38c855d6a4c3e2c46c678060",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632107676.json": {
+    "hash": "491829540a2ccd1b9d999a58",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632107688.json": {
+    "hash": "9280996b99611b688f64bc36",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632124990.json": {
+    "hash": "7e062c29437ca17571fbbec3",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632125002.json": {
+    "hash": "7464365c0b8128d3ffa9cb96",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632142272.json": {
+    "hash": "d2138f195d9e2704c589765f",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632142288.json": {
+    "hash": "e112188136c7f064cc312258",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632159558.json": {
+    "hash": "63186d323756f6ade27890e7",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632159570.json": {
+    "hash": "eb02f4dabb16fb315782434d",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632176814.json": {
+    "hash": "b6a28a7940e20e6780117ebe",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632176826.json": {
+    "hash": "0eaa69ea44d0c55e8fe7750f",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632194069.json": {
+    "hash": "e6e09c8bf1946ec5ef43d3cf",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632194080.json": {
+    "hash": "a877d0a3e46d1aebda293cee",
+    "size": 2974,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632211374.json": {
+    "hash": "4b40df544630e5d8481c4aff",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632211401.json": {
+    "hash": "69086733cf76c60179e176d3",
+    "size": 2974,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632228676.json": {
+    "hash": "9d926fb6bb9d5a73ab948438",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632228687.json": {
+    "hash": "c2a972869adc63f5e4599cff",
+    "size": 2974,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632245920.json": {
+    "hash": "54fadebde7efcf9560dd28e1",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632245932.json": {
+    "hash": "a1c3bf2957844ca2ba1dbdeb",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632263192.json": {
+    "hash": "8f2854e2de316f7cedb0b797",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632263207.json": {
+    "hash": "71b222c78e8b568973f25771",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632280453.json": {
+    "hash": "5e89ac69ffc3bb260efff438",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632280465.json": {
+    "hash": "59e8068bfc21f4d354ad924c",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632297724.json": {
+    "hash": "276b196226060b115b091c90",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632297742.json": {
+    "hash": "009eb4d568e476fa3d73e92e",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632315043.json": {
+    "hash": "91c94de8ff686c0f87fd60af",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632315055.json": {
+    "hash": "968537db29a46a2d9cdd6eb2",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632332306.json": {
+    "hash": "9dab42bc247c9e4f0153b235",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632332318.json": {
+    "hash": "1ba2de653b259bac1c337678",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632349563.json": {
+    "hash": "b0956087761df5cdb95f678a",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632349575.json": {
+    "hash": "d119c2f704ed0b03adadf700",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632367066.json": {
+    "hash": "1a7a9a8389880f5cbb957986",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632367089.json": {
+    "hash": "2da75151809a61ff12113a63",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632658343.json": {
+    "hash": "2977fe6b8957213a0e5b07ca",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632695810.json": {
+    "hash": "9a4011ed870b3d75c5fde8b4",
+    "size": 2973,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632695821.json": {
+    "hash": "802d205bc03e49b589f2c0e4",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632701452.json": {
+    "hash": "db3044f462e5518c7bf73322",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632795885.json": {
+    "hash": "2fbe2bc00da4703d4a773507",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632833515.json": {
+    "hash": "26c3993b88666c159af152e6",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632833532.json": {
+    "hash": "449150890fe76a0c95d03537",
+    "size": 2974,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632838868.json": {
+    "hash": "40cb497f7d7a93b79543f10d",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632865774.json": {
+    "hash": "be55499c6349d5edea5c2c0d",
+    "size": 2974,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632865784.json": {
+    "hash": "3fcc20218e8a5330cc37b614",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632898014.json": {
+    "hash": "0b63ec8fc174f8e52f855745",
+    "size": 2974,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632898024.json": {
+    "hash": "8fe9e541a2122514b7e292cf",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632930266.json": {
+    "hash": "729be6120976adc18c0b6bc6",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632930277.json": {
+    "hash": "4f3c46e70f152858b4d80602",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632962605.json": {
+    "hash": "4ce7d12600f25cd58f117b2f",
+    "size": 2973,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632962615.json": {
+    "hash": "809a1eaed00fa056c14a45be",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632994845.json": {
+    "hash": "35e64b3bf30abc8b466105c1",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779632994855.json": {
+    "hash": "83094df300160ba03bfc277d",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779633027216.json": {
+    "hash": "f2be0f088b160ab9aea77dfc",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779633027236.json": {
+    "hash": "b06a55a919d31e09234e42b6",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779633059516.json": {
+    "hash": "16b6f5d2dd9245a50bc4004e",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779633059526.json": {
+    "hash": "84a19e634cad21cba85c23e0",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779633091780.json": {
+    "hash": "ade0bd33bd5c73653de42b5d",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779633091790.json": {
+    "hash": "788995add53357bfdb28fb2c",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779633124021.json": {
+    "hash": "a6a7dbb59548d86e5bd30d25",
+    "size": 2975,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779633124031.json": {
+    "hash": "dbcdb84eb761cd16e537e285",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779633156263.json": {
+    "hash": "090609d15c949ebbc83da09f",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779633156273.json": {
+    "hash": "73eb19c986572ccb0bf15934",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779633188523.json": {
+    "hash": "87925962e2bb0bc965cb0bef",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779633188533.json": {
+    "hash": "cc8110ac06a54ef13ac9b2a7",
+    "size": 2976,
+    "tokens": 171
+  },
+  "data/trillionx_hyperbolic_microcontroller_joker_1779633220770.json": {
+    "hash": "b479d3a22774d972ef3b28f9",
+    "size": 2976,
+    "tokens": 171
+  }
+}

@@ -1,6 +1,6 @@
 {
   "engine": "TRILLIONX_MEMORY_FABRIC_HBM3E_HAMRAM",
-  "ts": "2026-05-24T15:49:27.062Z",
+  "ts": "2026-05-24T16:32:15.381Z",
   "created": "2026-05-24T15:49:24.055Z",
   "profile": {
     "hbm3e_profile": "MAX_PROFILE_LOGICAL_HIGH_BANDWIDTH",
@@ -30,13 +30,13 @@
     "vr_cache_link": true
   },
   "host_memory": {
-    "rss_mb": 53.68,
-    "heap_mb": 6.324,
+    "rss_mb": 27.191,
+    "heap_mb": 6.522,
     "external_mb": 1.974,
     "arraybuf_mb": 0.018,
-    "free_gb": 1.197,
+    "free_gb": 1.26,
     "total_gb": 7.757,
-    "load1": 2.47
+    "load1": 0.47
   },
   "stats": {
     "puts": 6,
