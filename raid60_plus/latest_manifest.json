@@ -1,0 +1,1061 @@
+{
+  "engine": "TRILLIONX_RAID60_PLUS_LOGICAL_STORAGE",
+  "ts": "2026-05-24T12:36:52.381Z",
+  "mode": "RAID60_PLUS_LOGICAL",
+  "truth_policy": {
+    "real_only": true,
+    "logical_redundancy": true,
+    "not_hardware_raid": true,
+    "protects_reports_mesh_registry_snapshots": true
+  },
+  "config": {
+    "stripes": 6,
+    "mirrors": 2,
+    "parity": 2
+  },
+  "host": {
+    "platform": "linux",
+    "arch": "x64",
+    "cpus": 2,
+    "ram_gb": 7.757
+  },
+  "files": [
+    {
+      "rel": ".vscode/launch.json",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 340,
+      "sha256": "5a236645ffaf25e9e05a088d05a0848807184112b21b10f7e9ee55662897858e"
+    },
+    {
+      "rel": "TRILLIONX_20_NODE_VR_MESH_START.sh",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 635,
+      "sha256": "48bd38aa810c6e67c339f5a892f1face18ca1e66151633cc8823d7482a58ba6b"
+    },
+    {
+      "rel": "TRILLIONX_CODEX_CODECS_NETWORK_SATELLITE_CATALOG.js",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 6874,
+      "sha256": "7a086d89c7e333bd61a87f3a74c976fe3ad4993540855cae2328e622e5ebef27"
+    },
+    {
+      "rel": "TRILLIONX_FULL_THREADRIPPER_PROFILE_BENCH.js",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 11459,
+      "sha256": "38af811205be3220f7e96446ebe70d3fe43849e4e14375d32cdd590c340e99f5"
+    },
+    {
+      "rel": "TRILLIONX_NATIVE_SIMD_DEPENDENCY_REGISTRY.js",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 4126,
+      "sha256": "e116ea91fd10e719c2af3a07e1b43dae202fc39649284ca0b1ff6f36f51d8681"
+    },
+    {
+      "rel": "TRILLIONX_REAL_BTC_CRYPTO_UTXO_VECTOR_SYSTEM_BENCH.js",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 9253,
+      "sha256": "7de6cce412052c3248e1af48024dca92ec11b8ea2d00d94b5c4f14e1e8b8af88"
+    },
+    {
+      "rel": "TRILLIONX_SIMD_AVX_BENCH.js",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 8121,
+      "sha256": "1d3daead81dc96a9b8d4f043d8f7533ffdb8a13d9d4ba3096d8ac1d113521c87"
+    },
+    {
+      "rel": "TRILLIONX_WORLD_SUPERIOR_REDISCOVERY_BENCH.js",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 8739,
+      "sha256": "0d10844dbef70c6ce29398cfa133c815a8af0d8c0c78dad9694c35b20a0de6bb"
+    },
+    {
+      "rel": "data/trillions_health_bench_total_latest.json",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 209391,
+      "sha256": "c6a865f065894ceaa08fdf1a5f5085e9fd14695fb5699069fdff4cf714720099"
+    },
+    {
+      "rel": "data/trillionx_backend_capability_registry_latest.json",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 1639,
+      "sha256": "afd7d4dfd6c453fc14ff5b920d0331c99db6cb3a6c6c4e60ff8e436fd0521b37"
+    },
+    {
+      "rel": "data/trillionx_fire_packet_extreme_latest.json",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 5640,
+      "sha256": "dddcffde9ba061ec1b53a6e6135f83b164f27396441b818e8082a202d8740b94"
+    },
+    {
+      "rel": "data/trillionx_native_simd_dependency_registry_latest.json",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 1871,
+      "sha256": "72d6ccfce6286982206a8cd6064bec4738f98c30e730e00c238a29cd87ce9ad3"
+    },
+    {
+      "rel": "data/trillionx_real_btc_crypto_utxo_vector_system_1779624456281.json",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 52348,
+      "sha256": "1bf66c344f1954c8bc3b9801da7203866e02927bf10162a22cf23a24c3f14c56"
+    },
+    {
+      "rel": "data/trillionx_turbo_amplifier_latest.json",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 10112,
+      "sha256": "4f1ab3b0d85d24a1dda9547bc27c383884b274d6aa9850ee123d3095a442ebc4"
+    },
+    {
+      "rel": "data/trillionx_world_network_autodetect_latest.json",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 35919,
+      "sha256": "83d055d9574cd7f8e8b26f714a92e5f98f0bd53990b9b5766799c01634886f1a"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_1.log",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "b2fe1a20791cbd018adb3322e79de55f853019ea61710498b8ae569103d22489"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_11.log",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "17165abe1f34484bcde7537d8eb491a7befc0db22e3dd9fc3b7b797bd4ec7abc"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_13.log",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "121625520af9767cdcbe29c5468fc313a26aa50e08f91885bc92c340ef58a025"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_15.log",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "8fec6657b63794c5d8d8e0aa8bacba632550ee85a1a2367002493f47a4f1cca2"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_17.log",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "7e4a73cd2ea89a5dad173460c11bcdb250a1bd6dfc95939b86f9abf80fe0ef0f"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_19.log",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "3b0564e0c3609331ba7aa61dc4c217f339a32f398bcec4260d37b937fce7345d"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_3.log",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "beffdddb797d55207f5625b96f395c31c811f6f5f8fb3aae7cc94e80be040458"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_5.log",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "1a065c15130483b42d20182ce6fed6fcba556fb38e594d6413aaecc8bd93434d"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_7.log",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "8d13cbd4e907806ca037b4bca703b848dd3ae321e53444dbf8b86a6ea8067f53"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_9.log",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "97e4027ad102a2ffd839664e84a3cebe37880ac9fe18a7a7a18a63ddc9614ca9"
+    },
+    {
+      "rel": "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/app.js",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 1152489,
+      "sha256": "09acd4b9e4b21bb42f5dce88a8f0cf635155e67f4a7bf37957fad02337c25eca"
+    },
+    {
+      "rel": "TRILLIONX_ACTIVATION_REGISTRY.js",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 3619,
+      "sha256": "ef580635bafdd414b831000dbb089fd001ea85f482f0d8a35c33116c7ca237a6"
+    },
+    {
+      "rel": "TRILLIONX_COMPUTE_SPEED_BENCH.js",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 9590,
+      "sha256": "92087f20e520dae392a13b4061411eacd91d34780ddd59ba134c0f70ac1d032b"
+    },
+    {
+      "rel": "TRILLIONX_GPU_VR_BACKEND_PROBE.js",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 4031,
+      "sha256": "b9ec22df013036a065f94942823dbdc67f7fa79439cf5a8f455b436d38da651c"
+    },
+    {
+      "rel": "TRILLIONX_NETWORK_CONNECTIONS_TOTAL.js",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 9064,
+      "sha256": "0efad0a3f3370f4abfccb59ddc201f25687cc9378445a02be58a39c83810b384"
+    },
+    {
+      "rel": "TRILLIONX_REPO_MASTER_INDEX.js",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 3097,
+      "sha256": "64572e68abc901302e95e5c08537706a5d7cd3da0debeb4199bef9a3a34408a8"
+    },
+    {
+      "rel": "TRILLIONX_TARGET_POLICY.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 925,
+      "sha256": "6de7f0a8b4e368f3cbf05c5b6baa951e7c6012003c2d522ed2c33d310da9ec0a"
+    },
+    {
+      "rel": "app.js",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 1164674,
+      "sha256": "bb58648be943b7cfa44fa2e283f704e14df691d1ad722fb7f79cd7f337a9722f"
+    },
+    {
+      "rel": "data/trillionx_20_node_vr_mesh_1779626030130.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 74177,
+      "sha256": "f4f78e0347f1d0b716233f273e042b58df4857a108cc7a2009f4061993c6d502"
+    },
+    {
+      "rel": "data/trillionx_backend_exposure_latest.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 831,
+      "sha256": "c4702ba7c3cfa21779d09482d3a256c4044c1a566854e0ebe5de462317a0fda1"
+    },
+    {
+      "rel": "data/trillionx_full_threadripper_profile_latest.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 8288,
+      "sha256": "011ee2022efde48596bbba4fea1eb101d4abcc772956386b2b830b0c9967b037"
+    },
+    {
+      "rel": "data/trillionx_network_connections_total_1779625379085.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 153930,
+      "sha256": "9d8c734346d98343e6e12b28a8f5232afe12b7e11bc6013f1f0604def56652c3"
+    },
+    {
+      "rel": "data/trillionx_real_btc_crypto_utxo_vector_system_latest.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 52348,
+      "sha256": "1bf66c344f1954c8bc3b9801da7203866e02927bf10162a22cf23a24c3f14c56"
+    },
+    {
+      "rel": "data/trillionx_turbo_amplifier_x1200_1779625641464.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 10091,
+      "sha256": "9c851a543ee20bc9bd40320cb3fdfb4b7d51a42a6eeed8fd0dbc08ed3c012d66"
+    },
+    {
+      "rel": "data/trillionx_world_superior_rediscovery_latest.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 15749,
+      "sha256": "1c15f1bcb502c0b408df327586beea8c5d1e6b98c1c22afe431fa7b603aac7cc"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_1.pid",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "6d099c5079c484e594d7d4d9df0f358b4eacea11650707f7ea9c4ac396710b5e"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_11.pid",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "cddb4529fa85905b33b60cf05739a848bb1cd96d7a485e195376e52812e4d97f"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_13.pid",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "b0d1072a8d6daba226470a69c7a0411c9b4236d58e57d6cfbe172f3b54eec7d5"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_15.pid",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "3f40857e3d8216036390b1524a5226be81d173bb07e118fada2844bc815f2d07"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_17.pid",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "986d5da56b1cb4ae66cd3ad8263942e237585e2d95adb9cc543a32cbac328ba8"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_19.pid",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "6c72fac4a62d54b127bfd0c4bf61ad3adc05f4c4af40c65dcd442ae85dac465f"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_3.pid",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "4da14c05bf4a18a4b6e43eab591130835d6be12d080c1771faf2aa38c39e023e"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_5.pid",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "efc00fc7448c359f34433bbe375260b13d5112e8d0abcd0dbf7a540fb83777b3"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_7.pid",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "968df46dd926b779a3cf14ffacc1b468217aa1a850855d6e509257a2d14e48b8"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_9.pid",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "6143883355c6c4f34fe083cd86f61b7f80163994cf55bfd44c049f47d8b8234d"
+    },
+    {
+      "rel": "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/package.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 443,
+      "sha256": "d5e417d466a3b2a2441e858fc1bb667607ee14ec9b179ecf1235cb701503cb58"
+    },
+    {
+      "rel": "TRILLIONX_AI_WORLD_HEALTH_BENCH.js",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 6362,
+      "sha256": "22e08d5e427766756c52dca1087fc4e075454a3898c82d0636ac4b1af39b2354"
+    },
+    {
+      "rel": "TRILLIONX_CRYPTO_ZETTA_PACKET_BENCH.js",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 8537,
+      "sha256": "fbb07009e0873c3bc434e90046634049f7440b4e442aca5fc636d2f9bc430fec"
+    },
+    {
+      "rel": "TRILLIONX_LADDER_HEALTH_UNITS_BENCH.js",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 10006,
+      "sha256": "4a07d23adee1fce4cc0c7e00ef15c1dcc981a1a24bcfed9aeed7b015e32b3630"
+    },
+    {
+      "rel": "TRILLIONX_NETWORK_PORTS_TOTAL_AUTODETECT.js",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 6672,
+      "sha256": "7d847e702566e00a5b8c1e87be3fd1331ee9964496366fc2ec09572ffa4514a2"
+    },
+    {
+      "rel": "TRILLIONX_REPO_TOTAL_AUTODETECT.js",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 8357,
+      "sha256": "18f74f69e7b6ee3f0b7af13fa66d5fb29860e76c2d32c69f5c713fdd3119bba7"
+    },
+    {
+      "rel": "TRILLIONX_TURBO_AMPLIFIER_278_X2400.js",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 6395,
+      "sha256": "c94e1f63176129da294cc052bd3fbf3ddf48421366e4c1db6bfafd6187a85164"
+    },
+    {
+      "rel": "backups/app.before_TRILLIONX_virtual_threadripper_20260524_072919.js",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 1152489,
+      "sha256": "09acd4b9e4b21bb42f5dce88a8f0cf635155e67f4a7bf37957fad02337c25eca"
+    },
+    {
+      "rel": "data/trillionx_20_node_vr_mesh_latest.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 74177,
+      "sha256": "f4f78e0347f1d0b716233f273e042b58df4857a108cc7a2009f4061993c6d502"
+    },
+    {
+      "rel": "data/trillionx_codex_codecs_network_satellite_1779625199281.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 12661,
+      "sha256": "25539957d6d37beb9da22d9fc56dec33c2daa9886e75904116113952b47944bc"
+    },
+    {
+      "rel": "data/trillionx_gpu_backend_router_latest.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 946,
+      "sha256": "54f3214cb3922c5e9058395d7f4b967244275b48ef1400b497aa3a3753643a17"
+    },
+    {
+      "rel": "data/trillionx_network_connections_total_latest.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 153930,
+      "sha256": "9d8c734346d98343e6e12b28a8f5232afe12b7e11bc6013f1f0604def56652c3"
+    },
+    {
+      "rel": "data/trillionx_repo_master_index_latest.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 19322,
+      "sha256": "fd0eb4e30d0297caac9bf439b239980516473d70f83209a3f2cf2ac161c6fd2c"
+    },
+    {
+      "rel": "data/trillionx_turbo_amplifier_x2400_1779625651834.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 10112,
+      "sha256": "4f1ab3b0d85d24a1dda9547bc27c383884b274d6aa9850ee123d3095a442ebc4"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_0.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 186,
+      "sha256": "245e99ab9f6493bf1d1d57a14b6e40d71ea8b470c5599af30d70bcdf9377d9ba"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_10.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 187,
+      "sha256": "644998b14bf16ffd47d24491c8a6f96e24e991a4824def62dc1dcfe2fca914e7"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_12.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 187,
+      "sha256": "88686d49a67a13baf6b8839ca2d9265961d89af5ad84c15a394f2207f7634046"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_14.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 187,
+      "sha256": "303bb999ae77304dbeb54e468e5ed00335403e99f54cc8dc8c685f4b49bba4ff"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_16.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 187,
+      "sha256": "d5be27828089a36b0219d3e1d4ccc3918b9a09c696f21e3625ffd0ccc54b82f0"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_18.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 187,
+      "sha256": "92684436591ef311ddf7bdc764ff522dc50a99d19d87a000d8b3569315c30011"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_2.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 186,
+      "sha256": "eb230388d05fc921eb3a232e0946966744105403f3aa89b7d1793e7889aed64b"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_4.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 186,
+      "sha256": "53ceb53d8492731bcd28e7d847c4426f41fd9c1ba0b01cd593b25790920cb592"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_6.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 186,
+      "sha256": "daa84d5a8c269f9968243f2897d089975020297a2503699156635b0785449b61"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_8.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 186,
+      "sha256": "5fe3de54b063431bb6b884a3998570c45dfa06a20f94a266edb4564641066dc1"
+    },
+    {
+      "rel": "package.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 443,
+      "sha256": "d5e417d466a3b2a2441e858fc1bb667607ee14ec9b179ecf1235cb701503cb58"
+    },
+    {
+      "rel": "TRILLIONX_10_NODE_MESH.js",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 5265,
+      "sha256": "76f8372090ddbaed45606a131fac3b75f6a0cb2b813d5fd67fb11a8884d02287"
+    },
+    {
+      "rel": "TRILLIONX_AUTO_DETECT_REQUIRED.js",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 3030,
+      "sha256": "4ff3c80bd03a539c679dc2884e2ee538c34f0a82eb23cf2b338942844458e7d6"
+    },
+    {
+      "rel": "TRILLIONX_FIRE_PACKET_EXTREME_BENCH.before_roundfix_20260524_091152.js",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 10147,
+      "sha256": "f52632c5345f949eb8a50f4e92959349fea794d0fcd243b279ea17abe4f910f9"
+    },
+    {
+      "rel": "TRILLIONX_LADDER_SATURATION_BENCH.js",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 8252,
+      "sha256": "9ac2ace33c9b470a2d64a92a8b07796ee45ba143cb3f7b5fadc320b267fe19aa"
+    },
+    {
+      "rel": "TRILLIONX_OUTPUT_LITE_PATCH.js",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 3088,
+      "sha256": "aeae95d6f7c5cbf69e151a4e44dc57b6eb825af0b4c08a908f5eec4169f0cffd"
+    },
+    {
+      "rel": "TRILLIONX_REPO_TOTAL_AUTODETECT_V2.js",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 6576,
+      "sha256": "2ac98d033082eeb96987829a3fe75b28f207241d31a3dd4d67514b15e0f51d0a"
+    },
+    {
+      "rel": "TRILLIONX_VR_MIRROR_BENCH.js",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 4554,
+      "sha256": "96f12f911c20c24c58170bac5a14d519d6c59af6d9a58ebb5ea54cb440156645"
+    },
+    {
+      "rel": "backups/app.before_TRILLIONX_virtual_threadripper_20260524_073013.js",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 1157679,
+      "sha256": "8617aa3c4461f17681278eade927f630b718bc3209931d4c14089b531797510a"
+    },
+    {
+      "rel": "data/trillionx_activation_registry_latest.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 13443,
+      "sha256": "37378cf6cafb8ffe96d56875a230e72cb950f602b9580986e6f624d44351cb42"
+    },
+    {
+      "rel": "data/trillionx_codex_codecs_network_satellite_latest.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 12661,
+      "sha256": "25539957d6d37beb9da22d9fc56dec33c2daa9886e75904116113952b47944bc"
+    },
+    {
+      "rel": "data/trillionx_gpu_vr_backend_probe_latest.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 2182,
+      "sha256": "09c5300105dee9b4a35f79dca28206ec9a1aaffeba6bccd8cee75582fd36ec85"
+    },
+    {
+      "rel": "data/trillionx_network_ports_total_autodetect_1779625037704.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 39477,
+      "sha256": "41dbc5d893b7277e44cb7e25a896788722ea863a769dbbfb3a3fc94227fff47a"
+    },
+    {
+      "rel": "data/trillionx_rtx4090_astral_profile_latest.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 9101,
+      "sha256": "b5bd20cda5e06100d30cc6ec47448663a7d7c8cd2b16f80d8d420ef40b60643b"
+    },
+    {
+      "rel": "data/trillionx_turbo_amplifier_x600_1779625630876.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 10089,
+      "sha256": "3f0f9640167ac02ff6536b069e6a79f68a45f964641047aaa50c12f5e68c9377"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_0.log",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "194304ed941795571806c8a9181b06957601642f318b484b4b9e7d06ba302127"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_10.log",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "94becd7a04a01b56d284b9abafa5cac342651cde9b85feb237d8da03d2ed2f1d"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_12.log",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "1d7313584239ce1b0f7482889194bc33786ab236c8579f1c851de56db08ca010"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_14.log",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "297d4b4228492a1ab6001609422e2093541ab9c4904161b9fe370a7dd2f23828"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_16.log",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "2152a0f56ba63d3af2d700542e0e2d74a8cbdf69d2e41b7ac93ce847dd5ec46b"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_18.log",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "a99addc01397092a381f0e89291b3bdf34013b5138ac9d73f5e240a436550c97"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_2.log",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "301410185c7e58443f67cf53d9a15617b203bc0d4addb768c303cd0aa6042d9e"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_4.log",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "a5383d5773bbc58ba49a546f29a1d6c7a696fab215285a14e02d004d1dbda755"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_6.log",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "f2475d8714398f7cb8b5dd514a2197bf800c1a52a1fa98a336c8b6ba409e506b"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_8.log",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 50,
+      "sha256": "1ac8bf6d80e97aeb1ac5d82ad6c7703046a4b750127e75a18b29716597aa865b"
+    },
+    {
+      "rel": "TRILLIONX_10_NODE_MESH_START.sh",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 494,
+      "sha256": "71bb44dc10ecc2a76fd605840e4104f8eb51b9e41236ce6f6f5982abd8bc074f"
+    },
+    {
+      "rel": "TRILLIONX_BACKEND_CAPABILITY_REGISTRY.js",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 3421,
+      "sha256": "94da89549d2c594afe85a059d535d246e6d4989501316b3d0a8c680235ffe038"
+    },
+    {
+      "rel": "TRILLIONX_FIRE_PACKET_EXTREME_BENCH.broken_20260524_091354.js",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 10487,
+      "sha256": "7154fa4c8b8bbafe7ad6cd4ec85323cd752b65a069c303b5be486d645d4094d5"
+    },
+    {
+      "rel": "TRILLIONX_MEASURE_TRILLIONX_ONLY.sh",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 1488,
+      "sha256": "af6aebd5e741d9605eb7f12562414155a7b86b0d1fd0ca4366ae4d7dbb533ad2"
+    },
+    {
+      "rel": "TRILLIONX_PERF_ORCH_SUPERCLASS_BENCH.js",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 10523,
+      "sha256": "8ff918d2896a911bafecbe24f75fdc626c7659ff8d422fc315af9a2c12d77ecf"
+    },
+    {
+      "rel": "TRILLIONX_RTX4090_ASTRAL_PROFILE_BENCH.js",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 6163,
+      "sha256": "cdb2f1613dadf2ca1082a3fbf2d49ddb4d66e29ce6ac71aac1e372f93f385232"
+    },
+    {
+      "rel": "TRILLIONX_WORLD_EMU_VERDICT.json",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 755,
+      "sha256": "02cc7d2c6ae40090bc86eb1028f1e34db4b3cf07117247546887e415619bd2a2"
+    },
+    {
+      "rel": "backups/app.before_TRILLIONX_virtual_threadripper_20260524_073108.js",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 1162869,
+      "sha256": "2db4e9a52c40f68e6d370cd7aecd218fe69a0d8c78b8b32b9154fb8fc445c7c7"
+    },
+    {
+      "rel": "data/trillionx_ai_world_health_latest.json",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 11765,
+      "sha256": "415226ad0ae66108f1d14bbccaede36f4bb4a4c80ee34e17ab3b6ec8e32b322e"
+    },
+    {
+      "rel": "data/trillionx_compute_speed_latest.json",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 3157,
+      "sha256": "34a0a0c846ae3bbdc5c87f28f955d3bc56a687bd7fd3f84f05b4b05105e01f80"
+    },
+    {
+      "rel": "data/trillionx_ladder_saturation_latest.json",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 23843,
+      "sha256": "ed0f0bc8b9c572028f98d09d3ec969d2874c336394f97a0da0db1de1e825aee4"
+    },
+    {
+      "rel": "data/trillionx_network_ports_total_autodetect_latest.json",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 39477,
+      "sha256": "41dbc5d893b7277e44cb7e25a896788722ea863a769dbbfb3a3fc94227fff47a"
+    },
+    {
+      "rel": "data/trillionx_simd_avx_bench_latest.json",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 3970,
+      "sha256": "7f6467e0434f7428a915dab934d11ebbcfd7fe76aaffd737608f466ffd9e4f61"
+    },
+    {
+      "rel": "data/trillionx_vr_mirror_latest.json",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 5347,
+      "sha256": "fea7ae4c8a727d5719f24274f0d181081af82da0de2d0e2afa3aa4d958e7cc66"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_0.pid",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "7cfdf5a85a54705f1ead4e6e2dd18877cc73b6d90f01a952a1e18867c932a2c3"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_10.pid",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "a4eceb7fe21a0d8e7764b1cd31e71979dc3c28af0646994650e23e760014fdb2"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_12.pid",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "46a175fd43596c3c2680c30f54d0799279c390de72487939f1c9c332a5ffa30a"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_14.pid",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "1d396ba2c64d093b7c3d2948764771974a000114308caa7dd3394299c3e0b6de"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_16.pid",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "5a070aa992d11f475807a9da509cff4b48bf0a29cc30a77af33ac1d5357d1907"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_18.pid",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "6d2a186b5cf7699c52d89d2d0bfa408a91753f65a9406ca66447ba91192d985f"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_2.pid",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "ada1ec23c54e3aa83e3e3e1d15fbb1e292b8006a9fe19d8019b089be153267d1"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_4.pid",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "505c49d09b2200e9e70acfd9cd0540a96cd3b356a7f73d8b67df2e17fe62013e"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_6.pid",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "4e3d420303ba8c8ba079df920b0e01f5f5c24fdf72726a56fd5bb5eb1eaaa2ec"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_8.pid",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 6,
+      "sha256": "7366114007c2822bd3b0a1452e92b0f321bea0babbe06783a6b28f6429036b69"
+    },
+    {
+      "rel": "TRILLIONX_20_NODE_VR_MESH.js",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 7060,
+      "sha256": "90d372f74c8d948aa0f356c1947afe0ebfa3823658b9b107c4be7ae946b85a19"
+    },
+    {
+      "rel": "TRILLIONX_BACKEND_EXPOSURE_CHECK.js",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 1761,
+      "sha256": "c6a684d0d19c59a67887684a2543b4c01e0c5c09a135a2a101dbf76426afc7fb"
+    },
+    {
+      "rel": "TRILLIONX_FIRE_PACKET_EXTREME_BENCH.js",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 6367,
+      "sha256": "20fe7c5c587046665ae4183bfe884441c6058ca5e2fd2abd13b5b7d237aa5c26"
+    },
+    {
+      "rel": "TRILLIONX_NATIVE_SIMD_AVX_RUNNER.js",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 2914,
+      "sha256": "3e913973414bced06183d0f375d3c69cb8926b0191d8ca379f53a658a97a9e47"
+    },
+    {
+      "rel": "TRILLIONX_RAID60_PLUS_LOGICAL_STORAGE.js",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 5033,
+      "sha256": "acaa2f4ab3f4a62dfe086aee3e66135c6c3a49f228ca294dd7cfd5e95c1a97ae"
+    },
+    {
+      "rel": "TRILLIONX_SATURATION_COMPLEXITY_BENCH.js",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 12696,
+      "sha256": "6e55a66b7909f32d6bc50e8ac42138a4441cbb6f1c65f642d790214184c8181a"
+    },
+    {
+      "rel": "TRILLIONX_WORLD_NETWORK_AUTODETECT_BENCH.js",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 6244,
+      "sha256": "b65c99b5ae20bd7fe25941f1a1408755f570cb941ab8d6a7bbcdfed512123a2c"
+    },
+    {
+      "rel": "data/trillions_fire_extreme_support_latest.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 6629,
+      "sha256": "56536df0735da417f61093504af9bfd5230f44cedd531de6d34967d75f462b1a"
+    },
+    {
+      "rel": "data/trillionx_auto_detect_required_latest.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 1336,
+      "sha256": "cf105e520583475ddc71c5225d7696af738f5f671c16a1c86560f81b031796c9"
+    },
+    {
+      "rel": "data/trillionx_crypto_zetta_packet_latest.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 29525,
+      "sha256": "1886db5d558e8bb8b32f6bbeeba150d0ed1c0ec420c47fa921fd0fdef075a53b"
+    },
+    {
+      "rel": "data/trillionx_native_simd_avx_latest.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 1661,
+      "sha256": "5113a7f8cfa3f6540c60861094d1a4420ee91d1c718d680244e7daa69de84e4c"
+    },
+    {
+      "rel": "data/trillionx_perf_orch_superclass_latest.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 9563,
+      "sha256": "6292474e70727c504d144470e3aa682e7b03665f0749affdb7b9085f170609af"
+    },
+    {
+      "rel": "data/trillionx_turbo_amplifier_278_1779625620557.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 10100,
+      "sha256": "e112c153b8a4836d925c68711d74e16ea0e4eeef0a80dbf27e8586205228e251"
+    },
+    {
+      "rel": "data/trillionx_world_network_autodetect_1779624831722.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 35919,
+      "sha256": "83d055d9574cd7f8e8b26f714a92e5f98f0bd53990b9b5766799c01634886f1a"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_1.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 186,
+      "sha256": "e2d0637f515941b7cbc3a98a164dd91b77140992fbccd6fef046bff6c77984ba"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_11.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 187,
+      "sha256": "31b08f7e5d4e5bfb30d29f577c9f7c67337c3d3a79c837bb228a57e1d1c585dd"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_13.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 187,
+      "sha256": "1eb31520d85f9694ebc07bf6d5c7844f661252108ec1db2660c2ff953e0d1457"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_15.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 187,
+      "sha256": "e45111e724de3665188d67c2e3f290f4a318b912eb354bdc2642f05639eaef5a"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_17.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 187,
+      "sha256": "d18b20ebf2ea5a0d81501635de7884061ecf848b1bb946a4660dbd8284459458"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_19.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 187,
+      "sha256": "d06ff9a87de59f8d0b4bf9ab65799e68674b10426fc0127c75b75c10ee22fb14"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_3.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 186,
+      "sha256": "38d94f4282504b255e87b1905b1a6c7a67129556f9b919df213e8774b9a86ea5"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_5.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 186,
+      "sha256": "4e3d03180e377a2c6bd328f3d934d637bf2c25355f4aa219fd215ccca9c8fec3"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_7.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 186,
+      "sha256": "c7021c10c67b894b7953fb67af3c12879e514f4c38a5b7174511157b519c945e"
+    },
+    {
+      "rel": "mesh_nodes/vr_node_9.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 186,
+      "sha256": "80601d4e3b8847671d51a565e820f21cc2347980ea48b26e64a8db779adbfaf9"
+    }
+  ],
+  "summary": {
+    "protected_files": 147,
+    "total_payload_bytes": 7211183,
+    "logical_copies": 294,
+    "stripes": 6,
+    "parity_blocks": 12,
+    "session": "raid60_1779626212372"
+  }
+}
