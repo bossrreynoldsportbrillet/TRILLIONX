@@ -36,3 +36,8 @@ runtime_state/*.running
 .vscode/settings.before_*.json
 async_results/
 micro_sync/
+# TRILLIONX anti-growth runtime/generated
+data/*.json.gz
+data/_archive_light/
+logs/*.gz
+runtime_state/TRILLIONX_AUTO_GROWTH_POLICY.json
