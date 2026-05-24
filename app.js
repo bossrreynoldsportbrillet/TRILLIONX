@@ -1590,6 +1590,21 @@ try{
   KERNEL.hybrid_evo={status:'ERROR',error:e.message};
 }
 
+
+/* === TRILLIONX CHAT THREADRIPPER PORTS MODULE - ADDITIVE === */
+try {
+  const trillionxChatThreadripperPorts = require("./TRILLIONX_CHAT_THREADRIPPER_PORTS_MODULE.js");
+  if (typeof app !== "undefined") {
+    const modInfo = trillionxChatThreadripperPorts.install(app, server);
+    console.log("[TRILLIONX] chat/threadripper/ports module active", modInfo.routes.join(", "));
+  } else {
+    console.log("[TRILLIONX] chat module not installed: app variable unavailable");
+  }
+} catch (e) {
+  console.log("[TRILLIONX] chat/threadripper/ports module unavailable:", e.message);
+}
+/* === END TRILLIONX CHAT THREADRIPPER PORTS MODULE === */
+
 server.listen(PORT,"0.0.0.0",()=>{
   console.log("================================================");
   console.log("TRILLIONS OMEGA ORCHESTRATOR V8 278% PLANETARY EXPERIMENTAL SAFE REPAIR ACTIVE");
