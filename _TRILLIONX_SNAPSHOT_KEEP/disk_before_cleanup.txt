@@ -1,0 +1,2 @@
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/loop5       32G  9.8G   20G  33% /workspaces
