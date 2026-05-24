@@ -1,7 +1,7 @@
 {
   "engine": "TRILLIONX_HYPERBOLIC_MICROCONTROLLER_JOKER",
   "version": "V1",
-  "ts": "2026-05-24T13:15:00.062Z",
+  "ts": "2026-05-24T15:18:39.618Z",
   "sources": {
     "joker_external_public_status": "NO_CLEAR_PUBLIC_TECH_STANDARD_FOUND_FOR_TRILLIONX_JOKER_1_1_2_0",
     "joker_math_note": "Public search mostly finds Joker modules in algebraic topology; TRILLIONX Joker is treated as internal controller profile.",
@@ -47,7 +47,7 @@
     }
   },
   "state": {
-    "ts": "2026-05-24T13:15:00.062Z",
+    "ts": "2026-05-24T15:18:39.618Z",
     "engine": "TRILLIONX_HYPERBOLIC_MICROCONTROLLER",
     "repo": {
       "routes": 17362,
@@ -67,12 +67,12 @@
       "health": 0
     },
     "raid": {
-      "protected_files": 170,
+      "protected_files": 353,
       "stripes": 6,
       "parity_blocks": 12
     },
     "network": {
-      "ports": 25,
+      "ports": 28,
       "health": 0
     },
     "backend": {
@@ -80,9 +80,9 @@
       "vr": "UNAVAILABLE"
     },
     "memory": {
-      "rss_mb": 26.96875,
-      "heap_mb": 6.483658,
-      "free_gb": 0.934998
+      "rss_mb": 29.632813,
+      "heap_mb": 11.960495,
+      "free_gb": 1.231888
     },
     "hyperbolic": {
       "curvature": -0.041559,
@@ -107,5 +107,5 @@
     "no_fake_vr": true,
     "hyperbolic_controller_is_software_runtime": true
   },
-  "signature": "512224d89ddc7461d7fecb93ed4d6a7210b79652fca3354711f171c74880c17b"
+  "signature": "af3d90af35512f712fb1051548cab285e494095b8c584ad17e164da2cc2eb643"
 }

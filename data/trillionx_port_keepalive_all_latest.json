@@ -1,6 +1,6 @@
 {
   "engine": "TRILLIONX_PORT_KEEPALIVE_ALL",
-  "ts": "2026-05-24T14:53:51.254Z",
+  "ts": "2026-05-24T15:18:39.833Z",
   "target": "TRILLIONX",
   "host_role": "CODESPACES_SUPPORT_ONLY",
   "mode": "keep required TRILLIONX ports active",
@@ -172,9 +172,9 @@
   ],
   "listening_raw": "LISTEN 0      511        127.0.0.1:3044       0.0.0.0:*    users:((\"MainThread\",pid=290867,fd=22))\nLISTEN 0      511        127.0.0.1:3025       0.0.0.0:*    users:((\"MainThread\",pid=291829,fd=22))\nLISTEN 0      511        127.0.0.1:3024       0.0.0.0:*    users:((\"MainThread\",pid=291827,fd=22))\nLISTEN 0      511        127.0.0.1:3027       0.0.0.0:*    users:((\"MainThread\",pid=291831,fd=22))\nLISTEN 0      511        127.0.0.1:3026       0.0.0.0:*    users:((\"MainThread\",pid=291830,fd=22))\nLISTEN 0      511        127.0.0.1:3029       0.0.0.0:*    users:((\"MainThread\",pid=291833,fd=22))\nLISTEN 0      511        127.0.0.1:3028       0.0.0.0:*    users:((\"MainThread\",pid=291832,fd=22))\nLISTEN 0      511        127.0.0.1:3033       0.0.0.0:*    users:((\"MainThread\",pid=290901,fd=22))\nLISTEN 0      511        127.0.0.1:3011       0.0.0.0:*    users:((\"MainThread\",pid=291814,fd=22))\nLISTEN 0      511        127.0.0.1:3010       0.0.0.0:*    users:((\"MainThread\",pid=291813,fd=22))\nLISTEN 0      511        127.0.0.1:3013       0.0.0.0:*    users:((\"MainThread\",pid=291816,fd=22))\nLISTEN 0      511        127.0.0.1:3012       0.0.0.0:*    users:((\"MainThread\",pid=291815,fd=22))\nLISTEN 0      511        127.0.0.1:3015       0.0.0.0:*    users:((\"MainThread\",pid=291818,fd=22))\nLISTEN 0      511        127.0.0.1:3014       0.0.0.0:*    users:((\"MainThread\",pid=291817,fd=22))\nLISTEN 0      511        127.0.0.1:3017       0.0.0.0:*    users:((\"MainThread\",pid=291820,fd=22))\nLISTEN 0      511        127.0.0.1:3016       0.0.0.0:*    users:((\"MainThread\",pid=291819,fd=22))\nLISTEN 0      511        127.0.0.1:3019       0.0.0.0:*    users:((\"MainThread\",pid=291822,fd=22))\nLISTEN 0      511        127.0.0.1:3018       0.0.0.0:*    users:((\"MainThread\",pid=291821,fd=22))\nLISTEN 0      511        127.0.0.1:3021       0.0.0.0:*    users:((\"MainThread\",pid=291824,fd=22))\nLISTEN 0      511        127.0.0.1:3020       0.0.0.0:*    users:((\"MainThread\",pid=291823,fd=22))\nLISTEN 0      511        127.0.0.1:3023       0.0.0.0:*    users:((\"MainThread\",pid=291826,fd=22))\nLISTEN 0      511        127.0.0.1:3022       0.0.0.0:*    users:((\"MainThread\",pid=291825,fd=22))\nLISTEN 0      511        127.0.0.1:37885      0.0.0.0:*    users:((\"node\",pid=283013,fd=21))      \nLISTEN 0      511                *:3000             *:*    users:((\"MainThread\",pid=290679,fd=22))",
   "memory": {
-    "free_gb": 0.882,
+    "free_gb": 1.229,
     "total_gb": 7.757,
-    "load1": 4.21
+    "load1": 5.61
   },
   "truth_policy": {
     "real_only": true,
