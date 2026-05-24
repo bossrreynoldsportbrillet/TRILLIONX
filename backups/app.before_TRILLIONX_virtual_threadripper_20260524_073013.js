@@ -25937,28 +25937,16 @@ app.get("/api/runtime-gap/detect",async(req,res)=>res.json(await trillionsRuntim
 app.get("/api/runtime-gap/plugins",async(req,res)=>res.json(trillionsPluginMissingPlan()));
 app.get("/api/fused-runtime/audit",async(req,res)=>res.json({time:now(),status:"FUSED_RUNTIME_ACTIVE",kernel:KERNEL.version,hybrid_evo:typeof TRILLIONS_HYBRID_EVO!=="undefined",plugins_catalog:typeof TRILLIONS_PLUGIN_CATALOG!=="undefined",runtime_gap_audit:true,route_count:(app._router&&app._router.stack||[]).filter(x=>x.route).length,honesty:"monolith preserved; additive fusion only"}));
 
-
-/* TRILLIONX_VIRTUAL_THREADRIPPER_OLD_DUPLICATE_BLOCK_REMOVED */
-
-
-
-/* TRILLIONX_VIRTUAL_THREADRIPPER_OLD_DUPLICATE_BLOCK_REMOVED */
-
-
-
-/* TRILLIONX_VIRTUAL_THREADRIPPER_OLD_DUPLICATE_BLOCK_REMOVED */
-
-
-
-/* TRILLIONX_VIRTUAL_THREADRIPPER_OLD_DUPLICATE_BLOCK_REMOVED */
-
-
 /* ============================================================
-   TRILLIONX VIRTUALIZED THREADRIPPER 9000VW PROFILE — SINGLE CLEAN BLOCK
+   TRILLIONX VIRTUALIZED THREADRIPPER 9000VW PROFILE
+   Additive honest profile layer.
+   It profiles TRILLIONX as a virtual target runtime while benchmarks
+   continue to report the real detected host.
 ============================================================ */
-var TRILLIONX_VIRTUAL_THREADRIPPER_9000VW_PROFILE = {
+
+const TRILLIONX_VIRTUAL_THREADRIPPER_9000VW_PROFILE = {
   name: "TRILLIONX_VIRTUAL_THREADRIPPER_9000VW_PROFILE",
-  version: "V1_SINGLE_CLEAN_BLOCK",
+  version: "V1_ACTIVE_PROFILE",
   current_runtime: "VIRTUALIZED_DUAL_THREADRIPPER_9000VW_3NM_266MB_3D_VCACHE_ECC_OR_TRILLIONX_OR_CODESPACES",
   target_runtime: "REAL_DUAL_THREADRIPPER_WORKSTATION",
   migration_mode: "DEVIRTUALIZE_DEVELOPMENT",
@@ -25972,14 +25960,34 @@ var TRILLIONX_VIRTUAL_THREADRIPPER_9000VW_PROFILE = {
     ecc: true,
     status: "VIRTUAL_TARGET_PROFILE"
   },
+  trillions_profile: {
+    project: "TRILLIONX",
+    role: "PROCESSOR_COPROCESSOR_MIRROR_ORCHESTRATION_LAYER",
+    mirror_processor: true,
+    worker_runtime: "NODEJS_WORKER_POOL_IF_AVAILABLE",
+    support_runtime: "CODESPACES_OR_LOCAL_OR_REAL_WORKSTATION"
+  },
   truth_policy: {
     no_fake_cpu: true,
     no_fake_gpu: true,
     no_fake_ram: true,
     no_fake_cache: true,
     benchmarks_use_real_host_only: true,
-    target_profile_is_not_physical_claim: true
-  }
+    target_profile_is_not_physical_claim: true,
+    physical_confirmation_requires_real_sensors: true
+  },
+  confirmation_sources: [
+    "os.cpus()",
+    "systeminformation.cpu()",
+    "systeminformation.mem()",
+    "systeminformation.graphics()",
+    "lscpu",
+    "/proc/cpuinfo",
+    "nvidia-smi",
+    "CUDA_if_available",
+    "TRILLIONX_benchmark_truth",
+    "TRILLIONS_FIRE_EXTREME_SUPPORT_BENCH"
+  ]
 };
 
 function trillionxVirtualThreadripperDetection(){
@@ -25997,8 +26005,8 @@ function trillionxVirtualThreadripperDetection(){
 
   return {
     time: new Date().toISOString(),
-    profile_status: "ACTIVE",
     profile: TRILLIONX_VIRTUAL_THREADRIPPER_9000VW_PROFILE,
+    profile_status: "ACTIVE",
     real_host_detected: {
       cpu_model: cpu0.model || "UNKNOWN",
       logical_cpus: cpus.length,
@@ -26079,41 +26087,4 @@ app.get("/api/trillionx/support-base", (req, res) => {
   });
 });
 
-console.log("[TRILLIONX] virtual Threadripper 9000VW profile active — single clean block");
-
-/* ============================================================
-   TRILLIONX BACKUP / ROLLBACK REGISTRY — ACTIVE AUDIT LAYER
-============================================================ */
-function trillionxBackupRegistry(){
-  const registryFile = path.join(process.cwd(), "data", "trillionx_backup_registry.json");
-  if (fs.existsSync(registryFile)) {
-    try { return JSON.parse(fs.readFileSync(registryFile, "utf8")); }
-    catch(e) { return { ok:false, error:e.message, file:registryFile }; }
-  }
-  return {
-    name: "TRILLIONX_BACKUP_ROLLBACK_REGISTRY",
-    version: "V1",
-    policy: "Backups are active as rollback/audit snapshots, not runtime code.",
-    count: 0,
-    items: []
-  };
-}
-
-app.get("/api/trillionx/backups", (req, res) => {
-  res.json(trillionxBackupRegistry());
-});
-
-app.get("/api/trillionx/backups/verdict", (req, res) => {
-  const r = trillionxBackupRegistry();
-  res.json({
-    time: new Date().toISOString(),
-    backup_registry: r.name || "TRILLIONX_BACKUP_ROLLBACK_REGISTRY",
-    count: r.count || 0,
-    active: true,
-    role: "ROLLBACK_AUDIT_LAYER",
-    verdict: (r.count || 0) > 0 ? "BACKUPS_ACTIVE_FOR_ROLLBACK" : "NO_BACKUPS_REGISTERED",
-    policy: "Not executed as runtime code. Used for audit, rollback, comparison."
-  });
-});
-
-console.log("[TRILLIONX] backup rollback registry active");
+console.log("[TRILLIONX] virtual Threadripper 9000VW profile active");
