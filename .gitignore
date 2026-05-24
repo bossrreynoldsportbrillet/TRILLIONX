@@ -1,0 +1,8 @@
+node_modules/
+.env
+*.log
+logs/
+data/*.jsonl
+data/*.sqlite
+.DS_Store
+_backup_before_trillions/
