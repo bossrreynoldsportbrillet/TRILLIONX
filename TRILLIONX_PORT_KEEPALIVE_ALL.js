@@ -10,6 +10,7 @@ const PORTS=[
   {port:3000,name:"APP_JS_CORE",cmd:"PORT=3000 TRILLIONX_COMPACT_OUTPUT=1 TRILLIONX_OUTPUT_MAX=2500 nohup node app.js > logs/app.core.log 2>&1 &"},
   {port:3033,name:"HYPERBOLIC_JOKER",cmd:"nohup node TRILLIONX_HYPERBOLIC_MICROCONTROLLER_JOKER.js server 3033 > controllers/hyperbolic_microcontroller.log 2>&1 &"},
   {port:3044,name:"USEFUL_WORK_RUNTIME",cmd:"nohup node TRILLIONX_USEFUL_WORK_RUNTIME.js server 3044 > runtime_state/useful_work_runtime.log 2>&1 &"},
+  {port:3160,name:"MEMORY_FABRIC_HBM3E_HAMRAM",cmd:"nohup node TRILLIONX_MEMORY_FABRIC_HBM3E_HAMRAM.js server 3160 > logs/memory_fabric_hbm3e_hamram.log 2>&1 &"},
   ...Array.from({length:20},(_,i)=>({
     port:3010+i,
     name:`VR_MESH_NODE_${i}`,
