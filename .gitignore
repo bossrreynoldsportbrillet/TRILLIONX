@@ -27,3 +27,7 @@ runtime_state/*.tmp
 .vscode-server/
 .node_repl_history
 npm-debug.log*
+# TRILLIONX runtime PID / volatile state
+runtime_state/*PID
+runtime_state/*_PID
+runtime_state/*.running
