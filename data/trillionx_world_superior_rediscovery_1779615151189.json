@@ -1,0 +1,882 @@
+{
+  "time": "2026-05-24T09:32:31.189Z",
+  "title": "TRILLIONX_WORLD_SUPERIOR_REDISCOVERY_BENCH",
+  "mode": "fire",
+  "wait_ms": 2500,
+  "detection": {
+    "time": "2026-05-24T09:32:19.239Z",
+    "runtime": "TRILLIONX_REDISCOVERY_ENGINE",
+    "label": "SUPPORT_AUTO_DETECTED_SILENT_HOST",
+    "cpu_visible": false,
+    "logical_cpus": 2,
+    "cpu_ghz": "3.489",
+    "ram_gb": 7.757,
+    "ram_free_gb": 0.878,
+    "simd": {
+      "sse": true,
+      "sse2": true,
+      "sse4_1": true,
+      "sse4_2": true,
+      "avx": true,
+      "avx2": true,
+      "avx512": true,
+      "fma": true,
+      "aes": true,
+      "sha_ni": true
+    },
+    "gpu": {
+      "available": false,
+      "detail": "GPU_UNAVAILABLE_OR_NOT_EXPOSED"
+    },
+    "coprocessors": {
+      "gpu_declared": false,
+      "simd_declared": true,
+      "crypto_declared": true,
+      "vr_mirror_declared": false
+    },
+    "registries_found": [
+      "./TRILLIONX_WORLD_SUPERIOR_REDISCOVERY_BENCH.js",
+      "./TRILLIONX_WORLD_EMU_VERDICT.json",
+      "./data/trillionx_fire_packet_extreme_latest.json",
+      "./data/trillionx_fire_packet_extreme_1779614309452.json",
+      "./TRILLIONX_FIRE_PACKET_EXTREME_BENCH.js",
+      "./TRILLIONX_FIRE_PACKET_EXTREME_BENCH.broken_20260524_091354.js",
+      "./TRILLIONX_FIRE_PACKET_EXTREME_BENCH.before_roundfix_20260524_091152.js",
+      "./TRILLIONX_LADDER_HEALTH_UNITS_BENCH.js",
+      "./data/trillionx_ladder_saturation_latest.json",
+      "./data/trillionx_ladder_saturation_1779612272158.json",
+      "./TRILLIONX_LADDER_SATURATION_BENCH.js",
+      "./TRILLIONX_SATURATION_COMPLEXITY_BENCH.js",
+      "./data/trillionx_compute_speed_latest.json",
+      "./data/trillionx_compute_speed_1779611447121.json",
+      "./TRILLIONX_COMPUTE_SPEED_BENCH.js",
+      "./data/trillionx_full_threadripper_profile_latest.json",
+      "./data/trillionx_full_threadripper_profile_1779610900941.json",
+      "./TRILLIONX_FULL_THREADRIPPER_PROFILE_BENCH.js",
+      "./data/trillionx_perf_orch_superclass_latest.json",
+      "./data/trillionx_perf_orch_superclass_1779610584532.json",
+      "./TRILLIONX_PERF_ORCH_SUPERCLASS_BENCH.js",
+      "./data/trillionx_native_simd_avx_1779610370312.json",
+      "./data/trillionx_native_simd_avx_latest.json",
+      "./TRILLIONX_NATIVE_SIMD_AVX_RUNNER.js",
+      "./native/simd/trillionx_simd_native_bench.c",
+      "./data/trillionx_native_simd_avx_1779610171434.json",
+      "./data/trillionx_simd_avx_bench_latest.json",
+      "./data/trillionx_simd_avx_bench_1779610032643.json",
+      "./TRILLIONX_SIMD_AVX_BENCH.js",
+      "./data/trillionx_backup_registry.json"
+    ],
+    "doctrine": "REDETECT_FROM_ZERO_NO_ORCHESTRATION_LABEL_NO_FAKE_HOST_CLAIM"
+  },
+  "best_packet": {
+    "level": 9,
+    "units": {
+      "cpu_ghz": 3.489,
+      "aggregate_logical_ghz": 6.978,
+      "aggregate_logical_thz": 0.006978,
+      "ram_gb": 7.757,
+      "ram_tb": 0.007575
+    },
+    "matrix": {
+      "n": 160,
+      "ms": 6.362,
+      "gops": 1.287643,
+      "checksum": -2.149483
+    },
+    "memory": {
+      "mb": 80,
+      "ms": 80.032,
+      "gb_s": 0.976,
+      "checksum": 205682.40442
+    },
+    "hash": {
+      "mb": 40,
+      "rounds": 11,
+      "ms": 359.703,
+      "mb_s": 1223.231,
+      "hash": "76afcfd43a22bf39"
+    },
+    "compression": {
+      "input_mb": 32,
+      "out_mb": 0.007,
+      "ratio": 0.000206,
+      "ok": true,
+      "ms": 102.177,
+      "mb_s": 313.181
+    },
+    "vr_mirror": {
+      "mirrors": 1152,
+      "ms": 5.892,
+      "mirror_ops_s": 195517.19,
+      "checksum": 62684
+    },
+    "memory_now": {
+      "rss_mb": 129.875,
+      "heap_mb": 4.517,
+      "external_mb": 97.858
+    },
+    "score": 146.06,
+    "health": 97.34,
+    "flags": [
+      "GPU_NOT_EXPOSED"
+    ]
+  },
+  "average_health": 97.37,
+  "classification": {
+    "class": "WORLD_CLASS_LOCAL_RUNTIME",
+    "reading": "calcul supérieur par paquets, support redécouvert, coprocessors/cache/GPU activés seulement si accessibles",
+    "humanity_value": "prototype de poste de calcul lisible, mesurable, réparable, extensible",
+    "no_host_label": true
+  },
+  "truth_policy": {
+    "no_fake_supercomputer": true,
+    "benchmark_measures_current_execution_context": true,
+    "threadripper_profile_is_target_until_physical_detection": true,
+    "gpu_is_used_only_if_exposed": true,
+    "xeon_codespaces_hidden_from_display": true
+  },
+  "results": [
+    {
+      "level": 1,
+      "units": {
+        "cpu_ghz": 3.489,
+        "aggregate_logical_ghz": 6.978,
+        "aggregate_logical_thz": 0.006978,
+        "ram_gb": 7.757,
+        "ram_tb": 0.007575
+      },
+      "matrix": {
+        "n": 48,
+        "ms": 12.258,
+        "gops": 0.018044,
+        "checksum": -1.792803
+      },
+      "memory": {
+        "mb": 16,
+        "ms": 61.77,
+        "gb_s": 0.253,
+        "checksum": 41131.77085
+      },
+      "hash": {
+        "mb": 8,
+        "rounds": 3,
+        "ms": 38.962,
+        "mb_s": 615.983,
+        "hash": "ed896076b4676d2e"
+      },
+      "compression": {
+        "input_mb": 8,
+        "out_mb": 0.007,
+        "ratio": 0.00082,
+        "ok": true,
+        "ms": 37.494,
+        "mb_s": 213.365
+      },
+      "vr_mirror": {
+        "mirrors": 128,
+        "ms": 0.707,
+        "mirror_ops_s": 180989.08,
+        "checksum": 35932
+      },
+      "memory_now": {
+        "rss_mb": 110.676,
+        "heap_mb": 5.569,
+        "external_mb": 49.829
+      },
+      "score": 51.58,
+      "health": 97.71,
+      "flags": [
+        "GPU_NOT_EXPOSED"
+      ]
+    },
+    {
+      "level": 2,
+      "units": {
+        "cpu_ghz": 3.489,
+        "aggregate_logical_ghz": 6.978,
+        "aggregate_logical_thz": 0.006978,
+        "ram_gb": 7.757,
+        "ram_tb": 0.007575
+      },
+      "matrix": {
+        "n": 64,
+        "ms": 0.867,
+        "gops": 0.604569,
+        "checksum": 2.666282
+      },
+      "memory": {
+        "mb": 24,
+        "ms": 32.245,
+        "gb_s": 0.727,
+        "checksum": 61698.35089
+      },
+      "hash": {
+        "mb": 12,
+        "rounds": 4,
+        "ms": 38.627,
+        "mb_s": 1242.666,
+        "hash": "8cff8b50cdb5912a"
+      },
+      "compression": {
+        "input_mb": 12,
+        "out_mb": 0.007,
+        "ratio": 0.000548,
+        "ok": true,
+        "ms": 32.921,
+        "mb_s": 364.506
+      },
+      "vr_mirror": {
+        "mirrors": 256,
+        "ms": 0.918,
+        "mirror_ops_s": 278859.81,
+        "checksum": 60245
+      },
+      "memory_now": {
+        "rss_mb": 135.516,
+        "heap_mb": 5.09,
+        "external_mb": 73.833
+      },
+      "score": 122.91,
+      "health": 97.22,
+      "flags": [
+        "GPU_NOT_EXPOSED"
+      ]
+    },
+    {
+      "level": 3,
+      "units": {
+        "cpu_ghz": 3.489,
+        "aggregate_logical_ghz": 6.978,
+        "aggregate_logical_thz": 0.006978,
+        "ram_gb": 7.757,
+        "ram_tb": 0.007575
+      },
+      "matrix": {
+        "n": 80,
+        "ms": 11.041,
+        "gops": 0.092748,
+        "checksum": -1.802707
+      },
+      "memory": {
+        "mb": 32,
+        "ms": 28.824,
+        "gb_s": 1.084,
+        "checksum": 82265.39401
+      },
+      "hash": {
+        "mb": 16,
+        "rounds": 5,
+        "ms": 70.175,
+        "mb_s": 1140.01,
+        "hash": "a1c18e847fc04682"
+      },
+      "compression": {
+        "input_mb": 16,
+        "out_mb": 0.007,
+        "ratio": 0.000411,
+        "ok": true,
+        "ms": 45.664,
+        "mb_s": 350.385
+      },
+      "vr_mirror": {
+        "mirrors": 384,
+        "ms": 1.416,
+        "mirror_ops_s": 271133.59,
+        "checksum": 48963
+      },
+      "memory_now": {
+        "rss_mb": 120.539,
+        "heap_mb": 5.302,
+        "external_mb": 49.837
+      },
+      "score": 96.78,
+      "health": 97.52,
+      "flags": [
+        "GPU_NOT_EXPOSED"
+      ]
+    },
+    {
+      "level": 4,
+      "units": {
+        "cpu_ghz": 3.489,
+        "aggregate_logical_ghz": 6.978,
+        "aggregate_logical_thz": 0.006978,
+        "ram_gb": 7.757,
+        "ram_tb": 0.007575
+      },
+      "matrix": {
+        "n": 96,
+        "ms": 2.2,
+        "gops": 0.804254,
+        "checksum": -1.39786
+      },
+      "memory": {
+        "mb": 40,
+        "ms": 45.823,
+        "gb_s": 0.852,
+        "checksum": 102833.52859
+      },
+      "hash": {
+        "mb": 20,
+        "rounds": 6,
+        "ms": 107.433,
+        "mb_s": 1116.973,
+        "hash": "fd162448a0f45f02"
+      },
+      "compression": {
+        "input_mb": 20,
+        "out_mb": 0.007,
+        "ratio": 0.000329,
+        "ok": true,
+        "ms": 61.722,
+        "mb_s": 324.033
+      },
+      "vr_mirror": {
+        "mirrors": 512,
+        "ms": 1.423,
+        "mirror_ops_s": 359718.55,
+        "checksum": 42087
+      },
+      "memory_now": {
+        "rss_mb": 142.547,
+        "heap_mb": 5.466,
+        "external_mb": 61.841
+      },
+      "score": 134.58,
+      "health": 97.07,
+      "flags": [
+        "GPU_NOT_EXPOSED"
+      ]
+    },
+    {
+      "level": 5,
+      "units": {
+        "cpu_ghz": 3.489,
+        "aggregate_logical_ghz": 6.978,
+        "aggregate_logical_thz": 0.006978,
+        "ram_gb": 7.757,
+        "ram_tb": 0.007575
+      },
+      "matrix": {
+        "n": 112,
+        "ms": 10.611,
+        "gops": 0.264812,
+        "checksum": 3.927999
+      },
+      "memory": {
+        "mb": 48,
+        "ms": 71.188,
+        "gb_s": 0.658,
+        "checksum": 123402.12625
+      },
+      "hash": {
+        "mb": 24,
+        "rounds": 7,
+        "ms": 138.006,
+        "mb_s": 1217.338,
+        "hash": "635f6623b812a14d"
+      },
+      "compression": {
+        "input_mb": 24,
+        "out_mb": 0.007,
+        "ratio": 0.000274,
+        "ok": true,
+        "ms": 73.079,
+        "mb_s": 328.41
+      },
+      "vr_mirror": {
+        "mirrors": 640,
+        "ms": 2.385,
+        "mirror_ops_s": 268370.71,
+        "checksum": 34415
+      },
+      "memory_now": {
+        "rss_mb": 153.809,
+        "heap_mb": 4.881,
+        "external_mb": 73.845
+      },
+      "score": 104.59,
+      "health": 96.85,
+      "flags": [
+        "GPU_NOT_EXPOSED"
+      ]
+    },
+    {
+      "level": 6,
+      "units": {
+        "cpu_ghz": 3.489,
+        "aggregate_logical_ghz": 6.978,
+        "aggregate_logical_thz": 0.006978,
+        "ram_gb": 7.757,
+        "ram_tb": 0.007575
+      },
+      "matrix": {
+        "n": 128,
+        "ms": 14.373,
+        "gops": 0.291814,
+        "checksum": 1.775311
+      },
+      "memory": {
+        "mb": 56,
+        "ms": 54.901,
+        "gb_s": 0.996,
+        "checksum": 143971.18698
+      },
+      "hash": {
+        "mb": 28,
+        "rounds": 8,
+        "ms": 180.526,
+        "mb_s": 1240.82,
+        "hash": "cc96e642447d1b8d"
+      },
+      "compression": {
+        "input_mb": 28,
+        "out_mb": 0.007,
+        "ratio": 0.000236,
+        "ok": true,
+        "ms": 92.602,
+        "mb_s": 302.368
+      },
+      "vr_mirror": {
+        "mirrors": 768,
+        "ms": 1.822,
+        "mirror_ops_s": 421613.16,
+        "checksum": 36551
+      },
+      "memory_now": {
+        "rss_mb": 153.621,
+        "heap_mb": 4.961,
+        "external_mb": 85.846
+      },
+      "score": 124.93,
+      "health": 96.86,
+      "flags": [
+        "GPU_NOT_EXPOSED"
+      ]
+    },
+    {
+      "level": 7,
+      "units": {
+        "cpu_ghz": 3.489,
+        "aggregate_logical_ghz": 6.978,
+        "aggregate_logical_thz": 0.006978,
+        "ram_gb": 7.757,
+        "ram_tb": 0.007575
+      },
+      "matrix": {
+        "n": 144,
+        "ms": 9.248,
+        "gops": 0.645784,
+        "checksum": -0.317696
+      },
+      "memory": {
+        "mb": 64,
+        "ms": 63.436,
+        "gb_s": 0.985,
+        "checksum": 164540.7108
+      },
+      "hash": {
+        "mb": 32,
+        "rounds": 9,
+        "ms": 237.744,
+        "mb_s": 1211.39,
+        "hash": "cc4b620be3fa13e9"
+      },
+      "compression": {
+        "input_mb": 32,
+        "out_mb": 0.007,
+        "ratio": 0.000206,
+        "ok": true,
+        "ms": 106.659,
+        "mb_s": 300.023
+      },
+      "vr_mirror": {
+        "mirrors": 896,
+        "ms": 2.171,
+        "mirror_ops_s": 412716.84,
+        "checksum": 33661
+      },
+      "memory_now": {
+        "rss_mb": 165.719,
+        "heap_mb": 5.166,
+        "external_mb": 97.85
+      },
+      "score": 138.35,
+      "health": 96.61,
+      "flags": [
+        "GPU_NOT_EXPOSED"
+      ]
+    },
+    {
+      "level": 8,
+      "units": {
+        "cpu_ghz": 3.489,
+        "aggregate_logical_ghz": 6.978,
+        "aggregate_logical_thz": 0.006978,
+        "ram_gb": 7.757,
+        "ram_tb": 0.007575
+      },
+      "matrix": {
+        "n": 160,
+        "ms": 22.424,
+        "gops": 0.36532,
+        "checksum": -2.149483
+      },
+      "memory": {
+        "mb": 72,
+        "ms": 123.543,
+        "gb_s": 0.569,
+        "checksum": 185111.32607
+      },
+      "hash": {
+        "mb": 36,
+        "rounds": 10,
+        "ms": 298.403,
+        "mb_s": 1206.421,
+        "hash": "344cccbd4360ef3e"
+      },
+      "compression": {
+        "input_mb": 32,
+        "out_mb": 0.007,
+        "ratio": 0.000206,
+        "ok": true,
+        "ms": 97.306,
+        "mb_s": 328.86
+      },
+      "vr_mirror": {
+        "mirrors": 1024,
+        "ms": 5.693,
+        "mirror_ops_s": 179870.68,
+        "checksum": 4725
+      },
+      "memory_now": {
+        "rss_mb": 133.77,
+        "heap_mb": 4.492,
+        "external_mb": 97.854
+      },
+      "score": 98.91,
+      "health": 97.26,
+      "flags": [
+        "GPU_NOT_EXPOSED"
+      ]
+    },
+    {
+      "level": 9,
+      "units": {
+        "cpu_ghz": 3.489,
+        "aggregate_logical_ghz": 6.978,
+        "aggregate_logical_thz": 0.006978,
+        "ram_gb": 7.757,
+        "ram_tb": 0.007575
+      },
+      "matrix": {
+        "n": 160,
+        "ms": 6.362,
+        "gops": 1.287643,
+        "checksum": -2.149483
+      },
+      "memory": {
+        "mb": 80,
+        "ms": 80.032,
+        "gb_s": 0.976,
+        "checksum": 205682.40442
+      },
+      "hash": {
+        "mb": 40,
+        "rounds": 11,
+        "ms": 359.703,
+        "mb_s": 1223.231,
+        "hash": "76afcfd43a22bf39"
+      },
+      "compression": {
+        "input_mb": 32,
+        "out_mb": 0.007,
+        "ratio": 0.000206,
+        "ok": true,
+        "ms": 102.177,
+        "mb_s": 313.181
+      },
+      "vr_mirror": {
+        "mirrors": 1152,
+        "ms": 5.892,
+        "mirror_ops_s": 195517.19,
+        "checksum": 62684
+      },
+      "memory_now": {
+        "rss_mb": 129.875,
+        "heap_mb": 4.517,
+        "external_mb": 97.858
+      },
+      "score": 146.06,
+      "health": 97.34,
+      "flags": [
+        "GPU_NOT_EXPOSED"
+      ]
+    },
+    {
+      "level": 10,
+      "units": {
+        "cpu_ghz": 3.489,
+        "aggregate_logical_ghz": 6.978,
+        "aggregate_logical_thz": 0.006978,
+        "ram_gb": 7.757,
+        "ram_tb": 0.007575
+      },
+      "matrix": {
+        "n": 160,
+        "ms": 6.83,
+        "gops": 1.199463,
+        "checksum": -2.149483
+      },
+      "memory": {
+        "mb": 88,
+        "ms": 82.291,
+        "gb_s": 1.044,
+        "checksum": 226253.94585
+      },
+      "hash": {
+        "mb": 44,
+        "rounds": 12,
+        "ms": 469.301,
+        "mb_s": 1125.076,
+        "hash": "862519da6561c474"
+      },
+      "compression": {
+        "input_mb": 32,
+        "out_mb": 0.007,
+        "ratio": 0.000206,
+        "ok": true,
+        "ms": 150.924,
+        "mb_s": 212.027
+      },
+      "vr_mirror": {
+        "mirrors": 1280,
+        "ms": 13.795,
+        "mirror_ops_s": 92788.32,
+        "checksum": 34494
+      },
+      "memory_now": {
+        "rss_mb": 101.961,
+        "heap_mb": 4.6,
+        "external_mb": 1.831
+      },
+      "score": 127.26,
+      "health": 97.9,
+      "flags": [
+        "GPU_NOT_EXPOSED"
+      ]
+    },
+    {
+      "level": 11,
+      "units": {
+        "cpu_ghz": 3.489,
+        "aggregate_logical_ghz": 6.978,
+        "aggregate_logical_thz": 0.006978,
+        "ram_gb": 7.757,
+        "ram_tb": 0.007575
+      },
+      "matrix": {
+        "n": 160,
+        "ms": 8.202,
+        "gops": 0.998806,
+        "checksum": -2.149483
+      },
+      "memory": {
+        "mb": 96,
+        "ms": 85.764,
+        "gb_s": 1.093,
+        "checksum": 246825.95036
+      },
+      "hash": {
+        "mb": 48,
+        "rounds": 13,
+        "ms": 509.604,
+        "mb_s": 1224.481,
+        "hash": "c78c1a4468719920"
+      },
+      "compression": {
+        "input_mb": 32,
+        "out_mb": 0.007,
+        "ratio": 0.000206,
+        "ok": true,
+        "ms": 93.055,
+        "mb_s": 343.883
+      },
+      "vr_mirror": {
+        "mirrors": 1408,
+        "ms": 6.576,
+        "mirror_ops_s": 214105.12,
+        "checksum": 52709
+      },
+      "memory_now": {
+        "rss_mb": 102.391,
+        "heap_mb": 4.683,
+        "external_mb": 97.866
+      },
+      "score": 135.95,
+      "health": 97.89,
+      "flags": [
+        "GPU_NOT_EXPOSED"
+      ]
+    },
+    {
+      "level": 12,
+      "units": {
+        "cpu_ghz": 3.489,
+        "aggregate_logical_ghz": 6.978,
+        "aggregate_logical_thz": 0.006978,
+        "ram_gb": 7.757,
+        "ram_tb": 0.007575
+      },
+      "matrix": {
+        "n": 160,
+        "ms": 6.346,
+        "gops": 1.290854,
+        "checksum": -2.149483
+      },
+      "memory": {
+        "mb": 104,
+        "ms": 96.687,
+        "gb_s": 1.05,
+        "checksum": 267399.04633
+      },
+      "hash": {
+        "mb": 52,
+        "rounds": 14,
+        "ms": 678.076,
+        "mb_s": 1073.626,
+        "hash": "b71782ee02780691"
+      },
+      "compression": {
+        "input_mb": 32,
+        "out_mb": 0.007,
+        "ratio": 0.000206,
+        "ok": true,
+        "ms": 96.609,
+        "mb_s": 331.231
+      },
+      "vr_mirror": {
+        "mirrors": 1536,
+        "ms": 7.034,
+        "mirror_ops_s": 218355.01,
+        "checksum": 51669
+      },
+      "memory_now": {
+        "rss_mb": 102.715,
+        "heap_mb": 4.751,
+        "external_mb": 97.87
+      },
+      "score": 141.62,
+      "health": 97.88,
+      "flags": [
+        "GPU_NOT_EXPOSED"
+      ]
+    },
+    {
+      "level": 13,
+      "units": {
+        "cpu_ghz": 3.489,
+        "aggregate_logical_ghz": 6.978,
+        "aggregate_logical_thz": 0.006978,
+        "ram_gb": 7.757,
+        "ram_tb": 0.007575
+      },
+      "matrix": {
+        "n": 160,
+        "ms": 6.534,
+        "gops": 1.253795,
+        "checksum": -2.149483
+      },
+      "memory": {
+        "mb": 112,
+        "ms": 107.2,
+        "gb_s": 1.02,
+        "checksum": 287972.60537
+      },
+      "hash": {
+        "mb": 56,
+        "rounds": 15,
+        "ms": 776.67,
+        "mb_s": 1081.541,
+        "hash": "73ba1547943eea20"
+      },
+      "compression": {
+        "input_mb": 32,
+        "out_mb": 0.007,
+        "ratio": 0.000206,
+        "ok": true,
+        "ms": 103.032,
+        "mb_s": 310.584
+      },
+      "vr_mirror": {
+        "mirrors": 1664,
+        "ms": 8.303,
+        "mirror_ops_s": 200411.93,
+        "checksum": 2907
+      },
+      "memory_now": {
+        "rss_mb": 135.035,
+        "heap_mb": 4.827,
+        "external_mb": 97.874
+      },
+      "score": 138.29,
+      "health": 97.23,
+      "flags": [
+        "GPU_NOT_EXPOSED"
+      ]
+    },
+    {
+      "level": 14,
+      "units": {
+        "cpu_ghz": 3.489,
+        "aggregate_logical_ghz": 6.978,
+        "aggregate_logical_thz": 0.006978,
+        "ram_gb": 7.757,
+        "ram_tb": 0.007575
+      },
+      "matrix": {
+        "n": 160,
+        "ms": 6.571,
+        "gops": 1.246727,
+        "checksum": -2.149483
+      },
+      "memory": {
+        "mb": 120,
+        "ms": 110.46,
+        "gb_s": 1.061,
+        "checksum": 308546.6275
+      },
+      "hash": {
+        "mb": 60,
+        "rounds": 16,
+        "ms": 783.337,
+        "mb_s": 1225.526,
+        "hash": "51416fa9395156a3"
+      },
+      "compression": {
+        "input_mb": 32,
+        "out_mb": 0.007,
+        "ratio": 0.000206,
+        "ok": true,
+        "ms": 119.647,
+        "mb_s": 267.452
+      },
+      "vr_mirror": {
+        "mirrors": 1792,
+        "ms": 9.764,
+        "mirror_ops_s": 183536.25,
+        "checksum": 57649
+      },
+      "memory_now": {
+        "rss_mb": 103.027,
+        "heap_mb": 4.839,
+        "external_mb": 97.877
+      },
+      "score": 143.74,
+      "health": 97.88,
+      "flags": [
+        "GPU_NOT_EXPOSED"
+      ]
+    }
+  ]
+}
