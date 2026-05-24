@@ -4,84 +4,6 @@
 */
 
 require("dotenv").config();
-
-/* ============================================================
-   TRILLIONX_COMPACT_OUTPUT_GUARD_V1
-   But: éviter crash Codespaces/VSCode mobile par JSON géant.
-   - Résumé compact pour UI/OUTPUT
-   - JSON complet reste dans data/*.json
-   - Doctrine: REAL_ONLY_OR_UNAVAILABLE, no fake GPU/VR
-============================================================ */
-const TRILLIONX_COMPACT_OUTPUT_GUARD_V1 = {
-  active: true,
-  maxChars: Number(process.env.TRILLIONX_OUTPUT_MAX || 4500),
-  enabled: process.env.TRILLIONX_COMPACT_OUTPUT !== "0"
-};
-
-function trillionsCompactObject(obj){
-  try{
-    if(!obj || typeof obj !== "object") return obj;
-    const out = {};
-    const host = obj.host || obj.system || obj.raw_system || {};
-    const summary = obj.summary || obj.core || {};
-    const backend = obj.backend || obj.gpu || {};
-    const health = obj.health || summary.health || obj.avg_health || obj.score || null;
-    out.engine = obj.engine || obj.name || summary.name || "TRILLIONX_REAL_CORE";
-    out.ts = obj.ts || obj.time || new Date().toISOString();
-    out.status = obj.status || summary.status || "ACTIVE_OR_AVAILABLE";
-    out.port = process.env.PORT || 3000;
-    out.cpu = host.cpu || obj.cpu || host.brand || "REAL_HOST_CPU";
-    out.cores = host.cpus || host.cores || obj.cores || require("os").cpus().length;
-    out.ram_gb = host.ram_gb || obj.ram_gb || Number((require("os").totalmem()/1024/1024/1024).toFixed(3));
-    out.free_gb = host.free_gb || obj.free_gb || Number((require("os").freemem()/1024/1024/1024).toFixed(3));
-    out.gpu = backend.gpu_exposed || backend.cuda_visible || obj.gpu_exposed || false;
-    out.openxr = backend.openxr_exposed || obj.openxr_exposed || false;
-    out.routes = summary.routes || obj.routes || obj.route_count || null;
-    out.api_strings = summary.api_strings || obj.api_strings || null;
-    out.modules = summary.modules || obj.modules || null;
-    out.health = health;
-    out.verdict = obj.verdict || summary.verdict || (
-      out.gpu ? "REAL_BACKEND_AVAILABLE" : "REAL_CODESPACES_CPU_RUNTIME_GPU_NOT_EXPOSED"
-    );
-    out.truth_policy = obj.truth_policy || {
-      real_only:true,
-      no_fake_gpu:true,
-      no_fake_vr:true,
-      full_json_saved_in_data:true
-    };
-    return out;
-  }catch(e){
-    return {engine:"TRILLIONX_COMPACT_OUTPUT_GUARD_V1",error:String(e)};
-  }
-}
-
-function trillionsCompactString(x){
-  try{
-    let y = TRILLIONX_COMPACT_OUTPUT_GUARD_V1.enabled ? trillionsCompactObject(x) : x;
-    let txt = typeof y === "string" ? y : JSON.stringify(y,null,2);
-    const max = TRILLIONX_COMPACT_OUTPUT_GUARD_V1.maxChars;
-    if(txt.length > max){
-      txt = txt.slice(0,max) + "\n...TRUNCATED_FOR_UI_FULL_JSON_IN_DATA...";
-    }
-    return txt;
-  }catch(e){
-    return "TRILLIONX_COMPACT_OUTPUT_ERROR: "+String(e);
-  }
-}
-
-function trillionsSendCompact(res,obj){
-  try{
-    if(res && typeof res.json === "function"){
-      return res.type("application/json").send(trillionsCompactString(obj));
-    }
-  }catch(e){}
-}
-global.TRILLIONX_COMPACT_OUTPUT_GUARD_V1 = TRILLIONX_COMPACT_OUTPUT_GUARD_V1;
-global.trillionsCompactObject = trillionsCompactObject;
-global.trillionsCompactString = trillionsCompactString;
-global.trillionsSendCompact = trillionsSendCompact;
-/* === END TRILLIONX_COMPACT_OUTPUT_GUARD_V1 === */
-
 const express=require("express");
 const http=require("http");
 const os=require("os");
@@ -15758,7 +15680,7 @@ function pingHost(host){
 function makeSnapshot(){
  const data={time:now(),pid:process.pid,cwd:root,mem:process.memoryUsage(),versions:process.versions};
  const id=crypto.createHash("sha256").update(JSON.stringify(data)).digest("hex").slice(0,16);
- try{fs.mkdirSync(root+"/data",{recursive:true});fs.writeFileSync(root+`/data/trillions_snapshot_${id}.json`,(window.TRILLIONX_UI_COMPACT?window.TRILLIONX_UI_COMPACT(data):JSON.stringify(data,null,2)))}
+ try{fs.mkdirSync(root+"/data",{recursive:true});fs.writeFileSync(root+`/data/trillions_snapshot_${id}.json`,JSON.stringify(data,null,2))}
  catch(e){}
  return {id,data};
 }
@@ -16168,7 +16090,7 @@ function microBatch(items){
 function snapshot(){
  const data={time:now(),state:STATE,pressure:pressure(),topology:topology(),mem:process.memoryUsage()};
  const id=crypto.createHash("sha256").update(JSON.stringify(data)).digest("hex").slice(0,16);
- try{fs.mkdirSync("data",{recursive:true});fs.writeFileSync(`data/fabric_snapshot_${id}.json`,(window.TRILLIONX_UI_COMPACT?window.TRILLIONX_UI_COMPACT(data):JSON.stringify(data,null,2)));STATE.snapshots.push(id)}catch(e){}
+ try{fs.mkdirSync("data",{recursive:true});fs.writeFileSync(`data/fabric_snapshot_${id}.json`,JSON.stringify(data,null,2));STATE.snapshots.push(id)}catch(e){}
  return{id,data};
 }
 
