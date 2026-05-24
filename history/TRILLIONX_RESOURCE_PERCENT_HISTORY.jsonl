@@ -1,0 +1,10 @@
+{"time":"2026-05-24T21:22:32.048Z","cpu_pct":100,"ram_pct":88.71,"disk_pct":43,"health":{"cpu":"CRITICAL","memory":"HIGH","disk":"OK"},"seal":"f6a45ef8f9e8afd7fa9225d130e549319f72bbcc68aef45657114ea3adc06209"}
+{"time":"2026-05-24T21:24:49.014Z","cpu_pct":100,"ram_pct":87.24,"disk_pct":43,"health":{"cpu":"CRITICAL","memory":"HIGH","disk":"OK"},"seal":"a76c3e4c5b6cf0ae3b3082c8cf9c3f6560a2bbcb317c5e70ee007e6a9f356b93"}
+{"time":"2026-05-24T21:37:39.507Z","cpu_pct":100,"ram_pct":85.84,"disk_pct":43,"health":{"cpu":"CRITICAL","memory":"HIGH","disk":"OK"},"seal":"f1111613ada45ba396460e2a3e3131f9ce869d05257b5930caaa592c94760ae1"}
+{"time":"2026-05-24T21:38:09.023Z","cpu_pct":100,"ram_pct":84.72,"disk_pct":43,"health":{"cpu":"CRITICAL","memory":"HIGH","disk":"OK"},"seal":"2e27096215f4ab230ab5cfab23d4209e60e8b4fcbda0d0d1b1b8672b88fd3bfa"}
+{"time":"2026-05-24T21:41:09.995Z","cpu_pct":42.5,"ram_pct":86.79,"disk_pct":43,"health":{"cpu":"OK","memory":"HIGH","disk":"OK"},"seal":"5c4b12217acad9520668e4593f1493f1c51970670f71da1dcc1b42df38446a63"}
+{"time":"2026-05-24T22:02:06.144Z","cpu_pct":100,"ram_pct":87.04,"disk_pct":43,"health":{"cpu":"CRITICAL","memory":"HIGH","disk":"OK"},"seal":"239b60ae9a2c8cc04bc4a5b2697449714d294ba91c52a39fbf19afbaa221951a"}
+{"time":"2026-05-24T22:03:47.313Z","cpu_pct":100,"ram_pct":85.74,"disk_pct":43,"health":{"cpu":"CRITICAL","memory":"HIGH","disk":"OK"},"seal":"63d473bee25ad7f1739ade1c5d40bd95bfba4ea5f3a291fe9fe19d8e4b258136"}
+{"time":"2026-05-24T22:32:24.001Z","cpu_pct":58,"ram_pct":72.91,"disk_pct":43,"health":{"cpu":"OK","memory":"HIGH","disk":"OK"},"seal":"3838d5da3fbe7ca5bf6f4c6bb0b04a8bb8f3be9c4ed83fedfd681c28db6d0ffe"}
+{"time":"2026-05-24T22:36:29.071Z","cpu_pct":100,"ram_pct":86.64,"disk_pct":43,"health":{"cpu":"CRITICAL","memory":"HIGH","disk":"OK"},"seal":"d440b59ecd5dc28c4185a92d87914bbb4f106db11067d7a2713e522fb87778dc"}
+{"time":"2026-05-24T22:40:03.770Z","cpu_pct":100,"ram_pct":87.19,"disk_pct":43,"health":{"cpu":"CRITICAL","memory":"HIGH","disk":"OK"},"seal":"65d4ee8e90f756ec80ef3fe1e14fbd9ca78f7991cfc53051fed074390c4b15eb"}

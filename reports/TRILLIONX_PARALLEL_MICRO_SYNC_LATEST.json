@@ -1,0 +1,121 @@
+{
+  "engine": "TRILLIONX_PARALLEL_MICRO_PACKET_SYNC_PRIORITY",
+  "seq": 37904,
+  "ts": "2026-05-24T22:54:26.521Z",
+  "prev": "1b50e3e4f3a4967e00ba403428f49087de7dff6b9cf582e375a3c08de4476602",
+  "workers": 4,
+  "interval_ms": 250,
+  "uptime_s": 2375.747,
+  "cpu": {
+    "model": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
+    "logical": 2,
+    "ghz": 3.456,
+    "load1": 6.24,
+    "load_pct": 100
+  },
+  "memory": {
+    "rss_mb": 84.172,
+    "heap_mb": 7.782,
+    "free_gb": 2.187,
+    "total_gb": 7.757
+  },
+  "disk": {
+    "used_pct": 43,
+    "free_pct": 57,
+    "mount": "/workspaces"
+  },
+  "packets": [
+    {
+      "worker": 0,
+      "seq": 9475,
+      "ts": "2026-05-24T22:54:26.516Z",
+      "ports": [
+        {
+          "port": 3000,
+          "ms": 0.223,
+          "open": true
+        },
+        {
+          "port": 20001,
+          "ms": 0.155,
+          "open": false,
+          "error": "ECONNREFUSED"
+        }
+      ],
+      "app3000": {
+        "ok": true,
+        "status": 200,
+        "bytes": 7654,
+        "ms": 4.24
+      },
+      "latency_ms": 4.709,
+      "seal": "4bc30436950cccdbe79b23cad6b3ba63d24e9f54fdeb6b72404a75eada1b6294"
+    },
+    {
+      "worker": 1,
+      "seq": 9476,
+      "ts": "2026-05-24T22:54:26.375Z",
+      "ports": [
+        {
+          "port": 3997,
+          "ms": 0.27,
+          "open": false,
+          "error": "ECONNREFUSED"
+        },
+        {
+          "port": 20002,
+          "ms": 0.092,
+          "open": false,
+          "error": "ECONNREFUSED"
+        }
+      ],
+      "app3000": null,
+      "latency_ms": 0.4,
+      "seal": "9453c47e5e95d4fe71f2ebce4aa2a9daad33ee8181ca5f9ebc3825545b8829be"
+    },
+    {
+      "worker": 2,
+      "seq": 9476,
+      "ts": "2026-05-24T22:54:26.497Z",
+      "ports": [
+        {
+          "port": 9229,
+          "ms": 0.263,
+          "open": false,
+          "error": "ECONNREFUSED"
+        },
+        {
+          "port": 20003,
+          "ms": 0.079,
+          "open": false,
+          "error": "ECONNREFUSED"
+        }
+      ],
+      "app3000": null,
+      "latency_ms": 0.371,
+      "seal": "582dbaeccfecc30f77236ade0bc37bff94d11f95d8a0d625149d47aa1d082645"
+    },
+    {
+      "worker": 3,
+      "seq": 9477,
+      "ts": "2026-05-24T22:54:26.382Z",
+      "ports": [
+        {
+          "port": 20000,
+          "ms": 0.263,
+          "open": false,
+          "error": "ECONNREFUSED"
+        }
+      ],
+      "app3000": null,
+      "latency_ms": 0.287,
+      "seal": "c0cc326d744e74f78dd9b182d2598ecd106b1d57f86bc556a736586f92774ca6"
+    }
+  ],
+  "policy": "PARALLEL_ASYNC_MICRO_PACKET_PRIORITY_SAFE",
+  "open_ports": [
+    3000
+  ],
+  "latency_avg_ms": 1.442,
+  "seal": "c78b1736176e0d7cbfcbefdf8d3366dc650142070d2ca99c04794b1afadbf0c9"
+}
