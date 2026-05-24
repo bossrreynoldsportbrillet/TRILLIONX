@@ -1,35 +1,33 @@
 {
   "files.watcherExclude": {
-    "**/.git/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
     "**/node_modules/**": true,
     "**/logs/**": true,
-    "**/data/**": true,
+    "**/runtime_state/**": true,
+    "**/history/**": true,
+    "**/reports/**": true,
     "**/backups/**": true,
-    "**/_TRILLIONX_SNAPSHOT_KEEP/**": true,
-    "**/*.zip": true
+    "**/data/**": true,
+    "**/raid60_plus/**": true
   },
   "search.exclude": {
     "**/node_modules": true,
+    "**/.git": true,
     "**/logs": true,
-    "**/data": true,
+    "**/runtime_state": true,
+    "**/history": true,
+    "**/reports": true,
     "**/backups": true,
-    "**/_TRILLIONX_SNAPSHOT_KEEP": true,
-    "**/*.zip": true
+    "**/data": true,
+    "**/raid60_plus": true
+  },
+  "files.exclude": {
+    "**/node_modules": false,
+    "**/.git": true
   },
   "typescript.tsserver.maxTsServerMemory": 512,
-  "typescript.tsserver.watchOptions": {
-    "watchFile": "useFsEvents",
-    "watchDirectory": "useFsEvents",
-    "fallbackPolling": "dynamicPriority"
-  },
-  "git.autorefresh": false,
-  "git.autofetch": false,
-  "git.decorations.enabled": false,
-  "extensions.autoUpdate": false,
-  "extensions.autoCheckUpdates": false,
   "terminal.integrated.scrollback": 2000,
-  "terminal.integrated.persistentSessionReviveProcess": "never",
-  "terminal.integrated.enablePersistentSessions": false,
-  "debug.console.historySuggestions": false,
-  "editor.minimap.enabled": false
+  "git.autorefresh": false,
+  "git.autofetch": false
 }
