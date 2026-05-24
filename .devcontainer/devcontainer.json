@@ -42,6 +42,16 @@
       "onAutoForward": "openPreview",
       "visibility": "private"
     },
+    "3010": {
+      "label": "TRILLIONX Mesh Node 0",
+      "onAutoForward": "notify",
+      "visibility": "private"
+    },
+    "3029": {
+      "label": "TRILLIONX Mesh Node 19",
+      "onAutoForward": "notify",
+      "visibility": "private"
+    },
     "3033": {
       "label": "Hyperbolic Joker Controller",
       "onAutoForward": "notify",
@@ -189,5 +199,5 @@
 
   "postCreateCommand": "sudo apt-get update && sudo apt-get install -y cmake valgrind nmap htop net-tools iproute2 iputils-ping dnsutils curl wget jq python3 python3-pip build-essential wabt && npm install || true",
 
-  "postStartCommand": "echo '✅ TRILLIONX prêt — ports TRILLIONX augmentés' && ss -tulpn | grep LISTEN || true"
+  "postStartCommand": "echo '✅ TRILLIONX prêt — ports augmentés et runtime support OK' && node --version && ss -tulpn | grep LISTEN || true"
 }
