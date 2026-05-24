@@ -179,9 +179,9 @@ async function blockchain(){
   const rpc=process.env.ETH_RPC_URL||"https://ethereum.publicnode.com";
   try{
     const [block,gas,chain]=await Promise.all([
-      axios.post(rpc,{jsonrpc:"2.0",method:"eth_blockNumber",params:[],id:1},{timeout:10000}),
-      axios.post(rpc,{jsonrpc:"2.0",method:"eth_gasPrice",params:[],id:2},{timeout:10000}),
-      axios.post(rpc,{jsonrpc:"2.0",method:"eth_chainId",params:[],id:3},{timeout:10000})
+      axios.post(rpc,{jsonrpc:"2.0",method:"eth_blockNumber",params:[],id:1},{timeout:120000}),
+      axios.post(rpc,{jsonrpc:"2.0",method:"eth_gasPrice",params:[],id:2},{timeout:120000}),
+      axios.post(rpc,{jsonrpc:"2.0",method:"eth_chainId",params:[],id:3},{timeout:120000})
     ]);
     return {provider:rpc,connected:true,chain_id:parseInt(chain.data.result,16),latest_block:parseInt(block.data.result,16),gas_price_gwei:+(parseInt(gas.data.result,16)/1e9).toFixed(3)};
   }catch(e){return {provider:rpc,connected:false,error:e.message};}
@@ -524,6 +524,74 @@ async function TRILLIONX_fetchClean(url,opt,target){
   }
 }
 
+
+/* TRILLIONX_UI_TIMEOUT_RENDER_DEEP_V1 */
+function TRILLIONX_deepParse(x){
+  for(let i=0;i<4;i++){
+    if(typeof x==="string"){
+      const t=x.trim();
+      if((t.startsWith("{")&&t.endsWith("}"))||(t.startsWith("[")&&t.endsWith("]"))){
+        try{x=JSON.parse(t); continue;}catch(e){}
+      }
+    }
+    break;
+  }
+  return x;
+}
+function TRILLIONX_deepCleanText(x){
+  try{
+    x=TRILLIONX_deepParse(x);
+    if(typeof x==="string") return x;
+    if(!x) return "";
+    const o=[];
+    if(x.time) o.push("TIME: "+x.time);
+    if(x.name) o.push("NAME: "+x.name);
+    if(x.cmd) o.push("CMD: "+x.cmd);
+    if(typeof x.ok!=="undefined") o.push("OK: "+x.ok);
+    if(typeof x.code!=="undefined") o.push("CODE: "+x.code);
+    if(x.verdict) o.push("VERDICT: "+x.verdict);
+    if(x.status) o.push("STATUS: "+x.status);
+    if(x.terminal) o.push("\n--- TERMINAL ---\n"+TRILLIONX_deepCleanText(x.terminal));
+    if(x.stdout) o.push("\n--- STDOUT ---\n"+String(x.stdout));
+    if(x.out) o.push("\n--- OUTPUT ---\n"+String(x.out));
+    if(x.data) o.push("\n--- DATA ---\n"+TRILLIONX_deepCleanText(x.data));
+    if(x.summary) o.push("\n--- SUMMARY ---\n"+JSON.stringify(x.summary,null,2));
+    if(x.tools) o.push("\n--- TOOLS ---\n"+JSON.stringify(x.tools,null,2));
+    if(x.stderr) o.push("\n--- STDERR ---\n"+String(x.stderr));
+    if(x.err) o.push("\n--- ERR ---\n"+String(x.err));
+    if(x.error) o.push("\n--- ERROR ---\n"+String(x.error));
+    if(o.length) return o.join("\n");
+    return JSON.stringify(x,null,2);
+  }catch(e){ return "RENDER_ERROR: "+e.message+"\n"+String(x); }
+}
+function TRILLIONX_findOutputBox(){
+  return document.querySelector("#output,#out,#terminalOut,#terminal-output,#result,.output,.terminal-output,pre");
+}
+function TRILLIONX_writeOutput(x){
+  const el=TRILLIONX_findOutputBox();
+  const txt=TRILLIONX_deepCleanText(x);
+  if(el) el.textContent=txt;
+  return txt;
+}
+async function TRILLIONX_fetchTimeoutClean(url,opt,timeoutMs){
+  const ctrl=new AbortController();
+  const tm=setTimeout(()=>ctrl.abort(), timeoutMs||15000);
+  try{
+    opt=opt||{};
+    opt.signal=ctrl.signal;
+    const r=await fetch(url,opt);
+    const t=await r.text();
+    let x=TRILLIONX_deepParse(t);
+    if(typeof x==="object" && x){ x.http_status=r.status; x.http_ok=r.ok; }
+    TRILLIONX_writeOutput(x);
+    return x;
+  }catch(e){
+    const x={ok:false,error:e.name==="AbortError"?"TIMEOUT_UI_ABORT":e.message,timeout_ms:timeoutMs||15000,url};
+    TRILLIONX_writeOutput(x);
+    return x;
+  }finally{ clearTimeout(tm); }
+}
+
 </script><script>
 const out=document.getElementById('out');
 async function load(u){out.textContent='LOADING '+u;try{let r=await fetch(u).catch(e=>({text:async()=>String(e)}));out.textContent=JSON.stringify(await r.text(),null,2)}catch(e){out.textContent='ERROR '+e.message}}
@@ -663,7 +731,7 @@ async function processorEnvironment(){const [cpu,mem,osinfo,gfx,temp]=await Prom
 async function networkSituation(){const c=await cockpit(); return {time:now(),marker:NETWORK_SITUATION_MARKER,network:c.measures.network_KBs,socket_clients:io.engine.clientsCount};}
 async function supportAccelerationProfile(){const env=await processorEnvironment(); const cap=await capacity(); return {time:now(),accelerator:EXECUTION_SUPPORT_ACCELERATOR,environment:env,capacity:cap,interpretation:"the detected support is used as launch base to activate and measure every real available module"};}
 async function howFarCanItGo(){const [cap,term,env,net]=await Promise.all([capacity(),terminalV11Catalog(),processorEnvironment(),networkSituation()]); return {time:now(),imperial:IMPERIAL_CONSTRUCTION,capacity:cap,terminal_catalog:term,processor:env,network:net,rule:"REAL modules count only; unavailable tools are not faked"};}
-async function issPosition(){try{const r=await axios.get("http://api.open-notify.org/iss-now.json",{timeout:8000});return {time:now(),catalog:REAL_SPACE_TECH_CATALOG.nodes.ISS,source:"Open Notify",data:r.data};}catch(e){try{const w=await axios.get("https://api.wheretheiss.at/v1/satellites/25544",{timeout:8000});return {time:now(),catalog:REAL_SPACE_TECH_CATALOG.nodes.ISS,source:"WhereTheISS",data:w.data};}catch(e2){return {time:now(),catalog:REAL_SPACE_TECH_CATALOG.nodes.ISS,ok:false,error:e2.message};}}}
+async function issPosition(){try{const r=await axios.get("http://api.open-notify.org/iss-now.json",{timeout:120000});return {time:now(),catalog:REAL_SPACE_TECH_CATALOG.nodes.ISS,source:"Open Notify",data:r.data};}catch(e){try{const w=await axios.get("https://api.wheretheiss.at/v1/satellites/25544",{timeout:120000});return {time:now(),catalog:REAL_SPACE_TECH_CATALOG.nodes.ISS,source:"WhereTheISS",data:w.data};}catch(e2){return {time:now(),catalog:REAL_SPACE_TECH_CATALOG.nodes.ISS,ok:false,error:e2.message};}}}
 
 app.get("/api/imperial",async(req,res)=>res.json({time:now(),kernel:KERNEL,imperial:IMPERIAL_CONSTRUCTION}));
 app.get("/api/orchestrator",async(req,res)=>res.json({time:now(),orchestrator:UNIVERSAL_MACHINE_ORCHESTRATOR}));
@@ -15783,7 +15851,7 @@ app.post("/api/native-auto-forced/reload",(req,res)=>{
 "use strict";
 const fs=require("fs"),os=require("os"),cp=require("child_process"),crypto=require("crypto");
 const now=()=>Date.now();
-const sh=c=>{try{return cp.execSync(c,{encoding:"utf8",stdio:["ignore","pipe","ignore"],timeout:1500}).trim()}catch(e){return""}};
+const sh=c=>{try{return cp.execSync(c,{encoding:"utf8",stdio:["ignore","pipe","ignore"],timeout:12000}).trim()}catch(e){return""}};
 const has=c=>!!sh("command -v "+c);
 const fileExists=p=>{try{return fs.existsSync(p)}catch(e){return false}};
 const root=process.cwd();
@@ -17508,7 +17576,7 @@ console.log("[TRILLIONS_V12] runtime core additive loaded");
 /* === TRILLIONS V12.1 REAL ACCELERATORS ADDITIVE === */
 (() => {
   const fs=require("fs"), os=require("os"), cp=require("child_process"), crypto=require("crypto"), {performance}=require("perf_hooks");
-  const sh=(c)=>{try{return cp.execSync(c,{stdio:["ignore","pipe","pipe"],timeout:8000}).toString().trim()}catch(e){return "UNAVAILABLE:"+String(e.message).slice(0,180)}};
+  const sh=(c)=>{try{return cp.execSync(c,{stdio:["ignore","pipe","pipe"],timeout:120000}).toString().trim()}catch(e){return "UNAVAILABLE:"+String(e.message).slice(0,180)}};
   const has=(c)=>!String(sh(`command -v ${c} >/dev/null 2>&1 && echo OK`)).startsWith("UNAVAILABLE") && sh(`command -v ${c} >/dev/null 2>&1 && echo OK`)==="OK";
   const appRef=global.app||app;
 
@@ -17970,7 +18038,7 @@ function benchCircular(size=1<<20,rounds=64){
  return{shared_array_buffer:!!sab,size,rounds,ms:+ms.toFixed(2),MB_s:+(bytes/(ms/1000)/1048576).toFixed(2),checksum:chk>>>0};
 }
 function probeCmd(cmd){
- try{return require("child_process").execSync(cmd,{stdio:["ignore","pipe","ignore"],timeout:1500}).toString().trim().slice(0,500)||"OK"}catch(e){return"UNAVAILABLE"}
+ try{return require("child_process").execSync(cmd,{stdio:["ignore","pipe","ignore"],timeout:12000}).toString().trim().slice(0,500)||"OK"}catch(e){return"UNAVAILABLE"}
 }
 function runV13(){
  const vector=benchVector(Number(process.env.TRILLIONS_VECTOR_N||1000000));
@@ -18211,7 +18279,7 @@ console.log("TRILLIONS MEMORY MIRROR READY => /api/trillions/v13/memory-mirror")
 (function(){
 const os=require("os"),cp=require("child_process"),crypto=require("crypto"),{performance}=require("perf_hooks");
 const {Worker,isMainThread,parentPort,workerData}=require("worker_threads");
-function sh(c){try{return cp.execSync(c,{stdio:["ignore","pipe","ignore"],timeout:1500}).toString().trim()||"OK"}catch(e){return"UNAVAILABLE"}}
+function sh(c){try{return cp.execSync(c,{stdio:["ignore","pipe","ignore"],timeout:12000}).toString().trim()||"OK"}catch(e){return"UNAVAILABLE"}}
 
 const DICT={
   WORKER_THREADS:"REAL_NODE_WORKERS",
@@ -18600,7 +18668,7 @@ console.log("TRILLIONS V16 VECTOR MEMORY X10000 READY => /api/trillions/v16/vect
 const os=require("os"),cp=require("child_process"),{performance}=require("perf_hooks");
 
 function sh(c){
-  try{return cp.execSync(c,{stdio:["ignore","pipe","ignore"],timeout:1500}).toString().trim()||"OK"}
+  try{return cp.execSync(c,{stdio:["ignore","pipe","ignore"],timeout:12000}).toString().trim()||"OK"}
   catch(e){return"UNAVAILABLE"}
 }
 
@@ -25326,7 +25394,7 @@ async function kyotoV14WasmSimdProbe(){let source=new Uint8Array([0,97,115,109,1
 async function kyotoV14Avx512Probe(){const r=await sh("(grep -m1 '^flags' /proc/cpuinfo || lscpu 2>/dev/null | grep -i flags || true) 2>/dev/null",5000);const flags=String(r.out||"").toLowerCase();const has=x=>flags.includes(x.toLowerCase());return {time:now(),module:"NATIVE_AVX512_PROBE",cpu_flags_scan:r.ok?"REAL":"UNAVAILABLE",avx:has(" avx ")||has("avx,"),avx2:has("avx2"),avx512f:has("avx512f"),avx512dq:has("avx512dq"),avx512bw:has("avx512bw"),avx512vl:has("avx512vl"),status:has("avx512f")?"AVAILABLE_TO_NATIVE_CODE":"UNAVAILABLE",execution:"REAL_ONLY_IF_NATIVE_ADDON_OR_VERIFIED_WASM_PATH_EXECUTES",truth:"Node/V8 JS path does not guarantee AVX512 saturation."};}
 async function kyotoV14GpuBridge(){const [nvidia,rocminfo,clinfo]=await Promise.all([sh("nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv,noheader 2>/dev/null || true",6000),sh("rocminfo 2>/dev/null | head -40 || true",6000),sh("clinfo 2>/dev/null | head -60 || true",6000)]);return {time:now(),module:"GPU_RUNTIME_BRIDGE",nvidia_smi:nvidia.out?"PRESENT":"UNAVAILABLE",nvidia:nvidia.out||"unavailable",rocm:rocminfo.out?"PRESENT":"UNAVAILABLE",opencl:clinfo.out?"PRESENT":"UNAVAILABLE",status:(nvidia.out||rocminfo.out||clinfo.out)?"GPU_BRIDGE_DETECTED":"UNAVAILABLE",truth:"GPU compute is not claimed unless runtime/tool reports real device."};}
 function kyotoV14MeshStatus(){return {time:now(),module:"DISTRIBUTED_MESH_REGISTRY",peers:[...KYOTO_V14_MESH_PEERS.values()],count:KYOTO_V14_MESH_PEERS.size,env_peers:(process.env.KYOTO_MESH_PEERS||"").split(",").map(x=>x.trim()).filter(Boolean),truth:"Mesh peers are registry/config only until health-checked."};}
-async function kyotoV14MeshPing(){const peers=(process.env.KYOTO_MESH_PEERS||"").split(",").map(x=>x.trim()).filter(Boolean).slice(0,20);const out=[];for(const url of peers){let t=Date.now();try{const r=await axios.get(url.replace(/\/$/,"")+"/api/ping",{timeout:4000});const e={url,ok:true,ms:Date.now()-t,status:r.status,kernel:r.data&&r.data.kernel||null};KYOTO_V14_MESH_PEERS.set(url,e);out.push(e);}catch(e){const x={url,ok:false,ms:Date.now()-t,error:e.message};KYOTO_V14_MESH_PEERS.set(url,x);out.push(x);}}return {time:now(),module:"DISTRIBUTED_MESH_PING",peers:out,count:out.length};}
+async function kyotoV14MeshPing(){const peers=(process.env.KYOTO_MESH_PEERS||"").split(",").map(x=>x.trim()).filter(Boolean).slice(0,20);const out=[];for(const url of peers){let t=Date.now();try{const r=await axios.get(url.replace(/\/$/,"")+"/api/ping",{timeout:15000});const e={url,ok:true,ms:Date.now()-t,status:r.status,kernel:r.data&&r.data.kernel||null};KYOTO_V14_MESH_PEERS.set(url,e);out.push(e);}catch(e){const x={url,ok:false,ms:Date.now()-t,error:e.message};KYOTO_V14_MESH_PEERS.set(url,x);out.push(x);}}return {time:now(),module:"DISTRIBUTED_MESH_PING",peers:out,count:out.length};}
 function kyotoV14DeltaSummary(){return {time:now(),module:"STREAMING_DELTA_RUNTIME",sse_clients:KYOTO_V14_DELTA_CLIENTS.size,websocket_clients:io.engine.clientsCount,routes:["/api/kyoto/v14/stream","/api/kyoto/v14/delta"],policy:"send compact deltas instead of heavy full JSON when possible"};}
 async function kyotoV14DeltaPayload(){const mem=process.memoryUsage();return {time:now(),uptime_sec:Math.floor(process.uptime()),memory:{rss_mb:+(mem.rss/1048576).toFixed(2),heap_used_mb:+(mem.heapUsed/1048576).toFixed(2)},jobs:JOBS?JOBS.size:0,cache:CACHE?CACHE.size:0,socket_clients:io.engine.clientsCount,mesh_peers:KYOTO_V14_MESH_PEERS.size};}
 async function kyotoV14Full(){const [workers,storage,broker,wasm,avx,gpu,mesh,delta]=await Promise.all([Promise.resolve(kyotoV14WorkerStatus()),Promise.resolve(kyotoV14StorageStatus()),Promise.resolve(kyotoV14RedisNatsStatus()),kyotoV14WasmSimdProbe(),kyotoV14Avx512Probe(),kyotoV14GpuBridge(),Promise.resolve(kyotoV14MeshStatus()),Promise.resolve(kyotoV14DeltaSummary())]);return {time:now(),fabric:KYOTO_V14_FUTURE_FABRIC,workers,storage,broker,wasm,avx,gpu,mesh,delta,ledger:KYOTO_V14_LEDGER.slice(-30)};}
@@ -25450,13 +25518,13 @@ async function v17ProbeHttpNode(n){
   if(!n.url)return {...n,ok:false,status:"CONFIG_REQUIRED",reason:"missing_url"};
   const endpoints=["/api/v1/status","/api/v1/summary","/api/summary","/2/summary","/"];
   for(const ep of endpoints){
-    try{const r=await axios.get(n.url.replace(/\/$/,"")+ep,{timeout:3000});return {...n,ok:true,status:"REAL",endpoint:ep,http_status:r.status,data:typeof r.data==='object'?r.data:safeText(r.data,2500)};}catch(e){}
+    try{const r=await axios.get(n.url.replace(/\/$/,"")+ep,{timeout:15000});return {...n,ok:true,status:"REAL",endpoint:ep,http_status:r.status,data:typeof r.data==='object'?r.data:safeText(r.data,2500)};}catch(e){}
   }
   return {...n,ok:false,status:"UNAVAILABLE",reason:"no_known_endpoint_responded"};
 }
 async function v17XmrigNode(n){
   if(!n.url)return {...n,ok:false,status:"CONFIG_REQUIRED",reason:"missing_xmrig_url"};
-  try{const r=await axios.get(n.url.replace(/\/$/,"")+'/2/summary',{timeout:3000});return {...n,ok:true,status:"REAL",endpoint:"/2/summary",data:r.data};}
+  try{const r=await axios.get(n.url.replace(/\/$/,"")+'/2/summary',{timeout:15000});return {...n,ok:true,status:"REAL",endpoint:"/2/summary",data:r.data};}
   catch(e){return {...n,ok:false,status:"UNAVAILABLE",error:e.message};}
 }
 async function v17PoolQuality(){
@@ -26331,8 +26399,8 @@ function txLiteSystem(){
   let git="unavailable";
   try{ git=cp.execSync("git log --oneline -3",{timeout:1200}).toString().trim(); }catch(e){}
   let files=0, size="unavailable";
-  try{ files=cp.execSync("find . -type f | wc -l",{timeout:1500}).toString().trim(); }catch(e){}
-  try{ size=cp.execSync("du -sh . | cut -f1",{timeout:1500}).toString().trim(); }catch(e){}
+  try{ files=cp.execSync("find . -type f | wc -l",{timeout:12000}).toString().trim(); }catch(e){}
+  try{ size=cp.execSync("du -sh . | cut -f1",{timeout:12000}).toString().trim(); }catch(e){}
   return {
     engine:"TRILLIONX_OUTPUT_LITE_ROUTES_V1",
     time:new Date().toISOString(),
@@ -26386,7 +26454,7 @@ if (typeof app !== "undefined" && app && app.get && !global.TRILLIONX_OUTPUT_LIT
       "git status --short | head -30",
       "git log --oneline -5"
     ].join(" && ");
-    cp.exec(cmds,{timeout:8000,maxBuffer:1024*128},(e,out,err)=>{
+    cp.exec(cmds,{timeout:120000,maxBuffer:1024*128},(e,out,err)=>{
       res.type("text/plain").send((out||"")+(err?("\nERR:\n"+err):""));
     });
   });
@@ -26419,7 +26487,7 @@ if (typeof app !== "undefined" && app && app.get && !global.TRILLIONX_OUTPUT_LIT
     };
     if(!map[cmd]) return Promise.resolve({ok:false,cmd,error:"COMMAND_NOT_ALLOWED"});
     return new Promise(resolve=>{
-      cp.exec(map[cmd],{cwd:process.cwd(),timeout:15000,maxBuffer:1024*1024},(e,out,err)=>{
+      cp.exec(map[cmd],{cwd:process.cwd(),timeout:120000,maxBuffer:1024*1024},(e,out,err)=>{
         resolve({ok:!e,cmd,code:e&&e.code?e.code:0,stdout:String(out||"").slice(-20000),stderr:String(err||"").slice(-4000)});
       });
     });
@@ -26460,7 +26528,7 @@ async function run(cmd){
   const out=document.getElementById('out');
   out.textContent="RUN "+cmd+" ...";
   try{
-    const r=await fetch('/api/terminal/run',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({cmd})});
+    const r=await TRILLIONX_fetchTimeoutClean('/api/terminal/run',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({cmd})});
     const j=await r.json();
     out.textContent="CMD: "+j.cmd+"\\nOK: "+j.ok+"\\nCODE: "+j.code+"\\n\\n--- STDOUT ---\\n"+(j.stdout||"")+"\\n\\n--- STDERR ---\\n"+(j.stderr||j.error||"");
   }catch(e){out.textContent="ERR "+e.message}
