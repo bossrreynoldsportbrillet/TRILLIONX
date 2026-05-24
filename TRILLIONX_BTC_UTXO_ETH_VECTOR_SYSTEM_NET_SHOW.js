@@ -229,6 +229,28 @@ async function networkAuto(){
  };
 }
 
+
+function trillionxIdentity(cpu, network){
+ return {
+  available: true,
+  identity: "TRILLIONX",
+  role: "SOFTWARE_ORCHESTRATOR_RUNTIME",
+  host_cpu_detected: cpu.model,
+  host_cpu_ghz: cpu.speed_ghz,
+  host_platform: cpu.platform,
+  host_arch: cpu.arch,
+  runtime_layer: "Node.js app.js / workers / benchmark / network probes",
+  support_layer: "GitHub Codespaces host",
+  distinction: "HOST_CPU_REAL != TRILLIONX_SOFTWARE_RUNTIME",
+  truth: "TRILLIONX is measured as software/runtime/orchestrator; CPU line is the physical Codespaces support CPU.",
+  availability_signal: {
+   ports_open: network.ports_open || [],
+   port_3000_open: (network.ports_open || []).includes(3000),
+   health_probe_count: (network.http_health || []).length
+  }
+ };
+}
+
 function supportAuto(){
  const cmds=["node","npm","python3","gcc","g++","clang","make","cmake","git","curl","wget","ss","nmap","openssl","lscpu","free","df"];
  const tools={};
@@ -256,6 +278,15 @@ function supportAuto(){
  kv("Python",support.python3||"UNAVAILABLE");
  kv("SIMD",JSON.stringify(cpu.simd));
  kv("Ports ouverts avant",network_before.ports_open.join(", ")||"aucun");
+
+ title("TRILLIONX IDENTITY LAYER");
+ const trxid_before = trillionxIdentity(cpu, network_before);
+ kv("TRILLIONX", trxid_before.available ? "AVAILABLE" : "UNAVAILABLE");
+ kv("TRILLIONX role", trxid_before.role);
+ kv("Support physique", trxid_before.host_cpu_detected);
+ kv("Support GHz", trxid_before.host_cpu_ghz, "GHz");
+ kv("Distinction", trxid_before.distinction);
+ kv("Runtime", trxid_before.runtime_layer);
 
  title("BTC / UTXO LOCAL WORKLOAD");
  const btc=btcUtxoBench();
@@ -321,6 +352,7 @@ function supportAuto(){
   target:"TRILLIONX_ONLY",
   host_role:"CODESPACES_SUPPORT_ONLY",
   parameters:{packets:PACKETS,window_ms:WINDOW_MS},
+  identity:trillionxIdentity(cpu, network_after),
   system:{cpu,memory_before:before,memory_after:after,support},
   network:{before:network_before,after:network_after},
   benches:{btc_utxo:btc,eth_like_blockchain:eth,crypto:cryptoRes,vector},
@@ -355,6 +387,8 @@ function supportAuto(){
  kv("RAM libre après",after.os_free_gb,"GB");
  kv("Health",report.summary.health);
  kv("Verdict",report.summary.verdict);
+ kv("TRILLIONX disponibilité",report.identity.available ? "AVAILABLE" : "UNAVAILABLE");
+ kv("TRILLIONX lecture",report.identity.distinction);
  kv("Report JSON",file);
  line();
 
