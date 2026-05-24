@@ -419,7 +419,42 @@ return `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" c
 <div class="card wide"><h3>CONTROL</h3><div class="mini">REAL ONLY — potentiel affiché 278% avec labels REAL / EMULATED / UNAVAILABLE. Pas de fausse télémétrie.</div><textarea id="msg" rows="3">TRILLIONS: audit the real orchestration capacity and bottlenecks.</textarea><button class="btn" onclick="askAI()">AI ANALYZE</button><button class="btn" onclick="cmd('pm2 ls')">PM2 LS</button><button class="btn" onclick="cmd('pm2 restart TRILLIONS')">PM2 RESTART</button><button class="btn" onclick="cmd('ss -tulpn')">PORTS</button><input id="shell" value="ps aux --sort=-%cpu | head -20"><button class="btn" onclick="cmd(document.getElementById('shell').value)">RUN SAFE SHELL</button></div>
 <div class="card wide" id="chatbox" style="display:none"><h3>SOVEREIGN AI CHAT</h3><div class="mini">Simple en surface, complexe derrière — REAL PROVIDER ONLY.</div><div id="chatlog" class="out" style="max-height:300px">AI CHAT READY</div><textarea id="chatmsg" rows="3">/status</textarea><button class="btn" onclick="sendChat()">SEND</button><button class="btn" onclick="load('/api/ai-chat/providers')">PROVIDERS</button><button class="btn" onclick="load('/api/ai-chat/trace')">TRACE</button></div><div class="card wide"><h3>ONDE DE SITUATION</h3><canvas id="wave" height="90" style="width:100%;border:1px solid #00ff6633;background:#000"></canvas></div><div class="card wide"><h3>OUTPUT</h3><pre id="out" class="out">READY</pre></div>
 </div>
-<script src="/socket.io/socket.io.js"></script><script>
+<script src="/socket.io/socket.io.js">
+/* TRILLIONX_TERMINAL_RENDER_FIX_SOURCE_V1 */
+function TRILLIONX_renderTerminalResult(j){
+  try{
+    if(typeof j === "string"){
+      try{ j = JSON.parse(j); }catch(e){ return j; }
+    }
+    const parts=[];
+    if(j && j.cmd) parts.push("CMD: "+j.cmd);
+    if(j && typeof j.ok !== "undefined") parts.push("OK: "+j.ok);
+    if(j && typeof j.code !== "undefined") parts.push("CODE: "+j.code);
+    if(j && j.stdout) parts.push("\n--- STDOUT ---\n"+j.stdout);
+    else if(j && j.out) parts.push("\n--- OUTPUT ---\n"+j.out);
+    else if(j && j.data) parts.push("\n--- DATA ---\n"+(typeof j.data==="string"?j.data:JSON.stringify(j.data,null,2)));
+    if(j && j.stderr) parts.push("\n--- STDERR ---\n"+j.stderr);
+    if(j && j.err) parts.push("\n--- ERR ---\n"+j.err);
+    if(j && j.error) parts.push("\n--- ERROR ---\n"+j.error);
+    if(parts.length) return parts.join("\n");
+    return JSON.stringify(j,null,2);
+  }catch(e){
+    return "RENDER_ERROR: "+e.message+"\n"+String(j);
+  }
+}
+
+
+/* TRILLIONX_TERMINAL_RENDER_FIX_SOURCE_V1_AUTO_BIND */
+(function(){
+  const oldFetch = window.fetch;
+  window.fetch = async function(url,opt){
+    const r = await oldFetch.apply(this, arguments);
+    return r;
+  };
+  window.TRILLIONX_renderTerminalResult = TRILLIONX_renderTerminalResult;
+})();
+
+</script><script>
 const out=document.getElementById('out');
 async function load(u){out.textContent='LOADING '+u;try{let r=await fetch(u).catch(e=>({text:async()=>String(e)}));out.textContent=JSON.stringify(await r.text(),null,2)}catch(e){out.textContent='ERROR '+e.message}}
 async function askAI(){load('/api/ai?m='+encodeURIComponent(document.getElementById('msg').value))}
