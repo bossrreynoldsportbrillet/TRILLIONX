@@ -592,6 +592,81 @@ async function TRILLIONX_fetchTimeoutClean(url,opt,timeoutMs){
   }finally{ clearTimeout(tm); }
 }
 
+
+/* TRILLIONX_UI_SOURCE_OUTPUT_RENDERER_V2 */
+function TX_parseDeep(v){
+  for(let i=0;i<8;i++){
+    if(typeof v==="string"){
+      let t=v.trim();
+      if((t.startsWith('"')&&t.endsWith('"'))||(t.startsWith("{")&&t.endsWith("}"))||(t.startsWith("[")&&t.endsWith("]"))){
+        try{v=JSON.parse(t);continue}catch(e){}
+      }
+    }
+    break;
+  }
+  return v;
+}
+function TX_linesFromObject(o,depth){
+  o=TX_parseDeep(o);
+  if(depth>4) return [String(o)];
+  if(typeof o==="string") return o.split("\n");
+  if(o===null||typeof o!=="object") return [String(o)];
+  let L=[];
+  const title=o.type||o.engine||o.name||o.module||o.status||o.verdict;
+  if(title) L.push("=== "+String(title).toUpperCase()+" ===");
+  const keys=["time","started_at","ended_at","duration_ms","timeout_ms","ok","http_ok","http_status","status","verdict","score","activation_percent","port","role","message","source","rule"];
+  for(const k of keys){ if(o[k]!==undefined && typeof o[k]!=="object") L.push(k+" : "+o[k]); }
+  if(o.iss_position&&typeof o.iss_position==="object"){
+    L.push("");
+    L.push("--- ISS POSITION ---");
+    if(o.iss_position.latitude!==undefined) L.push("latitude  : "+o.iss_position.latitude);
+    if(o.iss_position.longitude!==undefined) L.push("longitude : "+o.iss_position.longitude);
+    if(o.iss_position.timestamp!==undefined) L.push("timestamp : "+o.iss_position.timestamp);
+  }
+  if(o.catalog&&typeof o.catalog==="object"){
+    L.push("");
+    L.push("--- CATALOG ---");
+    L=L.concat(TX_linesFromObject(o.catalog,depth+1));
+  }
+  if(o.terminal){ L.push(""); L.push("--- TERMINAL ---"); L=L.concat(TX_linesFromObject(o.terminal,depth+1)); }
+  if(o.stdout){ L.push(""); L.push("--- STDOUT ---"); L=L.concat(String(o.stdout).split("\n")); }
+  if(o.out){ L.push(""); L.push("--- OUTPUT ---"); L=L.concat(TX_linesFromObject(o.out,depth+1)); }
+  if(o.data){ L.push(""); L.push("--- DATA ---"); L=L.concat(TX_linesFromObject(o.data,depth+1)); }
+  if(o.summary){ L.push(""); L.push("--- SUMMARY ---"); L=L.concat(TX_linesFromObject(o.summary,depth+1)); }
+  if(o.health){ L.push(""); L.push("--- HEALTH ---"); L=L.concat(TX_linesFromObject(o.health,depth+1)); }
+  if(o.apis&&Array.isArray(o.apis)){
+    L.push("");
+    L.push("--- APIS ---");
+    for(const a of o.apis) L.push(String(a));
+  }
+  if(o.tools&&typeof o.tools==="object"){
+    L.push("");
+    L.push("--- TOOLS ---");
+    for(const [k,v] of Object.entries(o.tools)) L.push(k+" : "+(typeof v==="object"?JSON.stringify(v):v));
+  }
+  if(o.stderr){ L.push(""); L.push("--- STDERR ---"); L=L.concat(String(o.stderr).split("\n")); }
+  if(o.err){ L.push(""); L.push("--- ERR ---"); L=L.concat(String(o.err).split("\n")); }
+  if(o.error){ L.push(""); L.push("--- ERROR ---"); L.push(String(o.error)); }
+  if(L.length<2) L.push(JSON.stringify(o,null,2));
+  return L;
+}
+function TX_renderOutput(v){
+  try{return TX_linesFromObject(v,0).join("\n").replace(/\\n/g,"\n").replace(/\\"/g,'"');}
+  catch(e){return "UI_RENDER_ERROR: "+e.message+"\n"+String(v);}
+}
+function TX_outputEl(){
+  return document.querySelector("#output,#out,#terminalOut,#terminal-output,#result,#results,.output,.terminal-output,pre");
+}
+function TX_setOutput(v){
+  const el=TX_outputEl();
+  const txt=TX_renderOutput(v);
+  if(el){
+    if("value" in el) el.value=txt;
+    else el.textContent=txt;
+  }
+  return txt;
+}
+
 </script><script>
 const out=document.getElementById('out');
 async function load(u){out.textContent='LOADING '+u;try{let r=await fetch(u).catch(e=>({text:async()=>String(e)}));out.textContent=JSON.stringify(await r.text(),null,2)}catch(e){out.textContent='ERROR '+e.message}}
@@ -2406,7 +2481,7 @@ async function refresh(){
     live.textContent='LIVE '+new Date().toLocaleTimeString();
   }catch(e){live.textContent='OFFLINE';}
 }
-async function load(u){out.textContent='LOADING '+u;try{const r=await fetch(u,{cache:'no-store'}).catch(e=>({text:async()=>String(e)}));out.textContent=JSON.stringify(await r.text(),null,2)}catch(e){out.textContent='ERROR '+e.message}}
+async function load(u){out.textContent='LOADING '+u;try{const r=await fetch(u,{cache:'no-store'}).catch(e=>({text:async()=>String(e)}));out.textContent = TX_renderOutput(await r.text(),null,2)}catch(e){out.textContent='ERROR '+e.message}}
 setInterval(refresh,2500); refresh();
 const socket=io(); socket.on('connect',()=>live.textContent='SOCKET LIVE'); socket.on('disconnect',()=>live.textContent='SOCKET OFF');
 function draw(){const c=wave,ctx=c.getContext('2d'),w=c.width=c.clientWidth,h=c.height=110,t=Date.now()/300;ctx.clearRect(0,0,w,h);ctx.beginPath();for(let x=0;x<w;x++){const amp=10+last.chaos/3;const y=h/2+Math.sin(x/28+t)*amp+Math.sin(x/9+t*1.6)*(last.cpu/12);x?ctx.lineTo(x,y):ctx.moveTo(x,y)}ctx.strokeStyle='#00ffaa';ctx.lineWidth=2;ctx.stroke();requestAnimationFrame(draw)}draw();
@@ -20075,7 +20150,7 @@ async function hcosSaturation(){let s=typeof system==='function'?await system():
 async function hcosRun(q={}){let t=hcosNs();const [hw,lat,sat]=await Promise.all([hcosHardware(),hcosLatency(Math.min(+q.samples||3000,20000)),hcosSaturation()]);let massive=hcosMassive(q.totalMB,q.chunkMB),vector=hcosVector(q.bits,q.rounds),compress=hcosCompress(Math.min(+q.totalMB||128,512));return{time:new Date().toISOString(),os:HCOS,hardware:hw,saturation:sat,latency_event_loop:lat,capsules:{massive,vector,compress},total_time:hcosUnits(hcosNs()-t),comfort:{operator:'routes readable, units visible, host status explicit',machine:'chunk limits, pressure detection, no unavailable capability claimed'}}}
 app.get('/api/host-coprocessor-os/status',async(req,res)=>res.json({time:new Date().toISOString(),os:HCOS,hardware:await hcosHardware(),saturation:await hcosSaturation()}));
 app.get('/api/host-coprocessor-os/bench',async(req,res)=>{try{res.json(await hcosRun(req.query||{}))}catch(e){res.status(500).json({ok:false,error:e.message,os:HCOS})}});
-app.get('/coprocessor-os',(req,res)=>res.type('html').send(`<!doctype html><meta charset="utf-8"><title>TRILLIONS Host Coprocessor OS</title><style>body{background:#05070b;color:#dff;font-family:Arial;margin:22px}button{padding:12px 16px;margin:6px;background:#092;color:#dff;border:1px solid #0ff;border-radius:10px}pre{white-space:pre-wrap;background:#071018;border:1px solid #134;padding:14px;border-radius:12px}.ok{color:#6f6}</style><h1>TRILLIONS HOST COPROCESSOR OS</h1><p>REAL ONLY OR UNAVAILABLE - ns / µs / massive data / host saturation comfort</p><button onclick="run('/api/host-coprocessor-os/status')">STATUS</button><button onclick="run('/api/host-coprocessor-os/bench?totalMB=256&chunkMB=8&bits=96000&rounds=4096&samples=3000')">BENCH STANDARD</button><button onclick="run('/api/host-coprocessor-os/bench?totalMB=512&chunkMB=8&bits=96000&rounds=8192&samples=5000')">BENCH LOURD</button><pre id=o>ready</pre><script>async function run(u){o.textContent='running...';let r=await fetch(u).catch(e=>({text:async()=>String(e)}));o.textContent=JSON.stringify(await r.text(),null,2)}</script>`));
+app.get('/coprocessor-os',(req,res)=>res.type('html').send(`<!doctype html><meta charset="utf-8"><title>TRILLIONS Host Coprocessor OS</title><style>body{background:#05070b;color:#dff;font-family:Arial;margin:22px}button{padding:12px 16px;margin:6px;background:#092;color:#dff;border:1px solid #0ff;border-radius:10px}pre{white-space:pre-wrap;background:#071018;border:1px solid #134;padding:14px;border-radius:12px}.ok{color:#6f6}</style><h1>TRILLIONS HOST COPROCESSOR OS</h1><p>REAL ONLY OR UNAVAILABLE - ns / µs / massive data / host saturation comfort</p><button onclick="run('/api/host-coprocessor-os/status')">STATUS</button><button onclick="run('/api/host-coprocessor-os/bench?totalMB=256&chunkMB=8&bits=96000&rounds=4096&samples=3000')">BENCH STANDARD</button><button onclick="run('/api/host-coprocessor-os/bench?totalMB=512&chunkMB=8&bits=96000&rounds=8192&samples=5000')">BENCH LOURD</button><pre id=o>ready</pre><script>async function run(u){o.textContent='running...';let r=await fetch(u).catch(e=>({text:async()=>String(e)}));o.textContent = TX_renderOutput(await r.text(),null,2)}</script>`));
 
 
 /* ============================================================
