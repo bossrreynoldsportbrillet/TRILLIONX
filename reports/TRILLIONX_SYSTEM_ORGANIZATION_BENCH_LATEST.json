@@ -1,0 +1,173 @@
+{
+  "engine": "TRILLIONX_SYSTEM_ORGANIZATION_BENCH",
+  "time": "2026-05-24T22:43:24.313Z",
+  "host": {
+    "cpu": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
+    "logical_cpu": 2,
+    "ghz": 3.455,
+    "ram_total_gb": 7.757,
+    "ram_free_gb": 0.912,
+    "load": [
+      13.06,
+      7.09,
+      4.43
+    ],
+    "node": "v22.22.2",
+    "platform": "linux"
+  },
+  "disk": {
+    "used_pct": 43,
+    "free_pct": 57,
+    "mount": "/workspaces"
+  },
+  "dirs": {
+    "scripts": {
+      "exists": true,
+      "files": 55,
+      "size": "288K"
+    },
+    "benchmarks": {
+      "exists": true,
+      "files": 2,
+      "size": "24K"
+    },
+    "reports": {
+      "exists": true,
+      "files": 20,
+      "size": "96K"
+    },
+    "history": {
+      "exists": true,
+      "files": 24,
+      "size": "8.5M"
+    },
+    "logs": {
+      "exists": true,
+      "files": 161,
+      "size": "5.2M"
+    },
+    "runtime_state": {
+      "exists": true,
+      "files": 35,
+      "size": "12M"
+    },
+    "async_queue": {
+      "exists": true,
+      "files": 0,
+      "size": "4.0K"
+    },
+    "async_jobs": {
+      "exists": true,
+      "files": 0,
+      "size": "4.0K"
+    },
+    "async_results": {
+      "exists": true,
+      "files": 27,
+      "size": "112K"
+    },
+    "async_registry": {
+      "exists": true,
+      "files": 2,
+      "size": "12K"
+    },
+    "async_derivatives": {
+      "exists": true,
+      "files": 13,
+      "size": "76K"
+    },
+    "micro_sync": {
+      "exists": true,
+      "files": 2,
+      "size": "12K"
+    },
+    "controllers": {
+      "exists": true,
+      "files": 3,
+      "size": "16K"
+    },
+    "backend": {
+      "exists": true,
+      "files": 4,
+      "size": "28K"
+    },
+    "firmware": {
+      "exists": true,
+      "files": 1,
+      "size": "404K"
+    }
+  },
+  "scripts": {
+    "required": 8,
+    "present": 8,
+    "executable": 8,
+    "missing": [],
+    "health": "OK"
+  },
+  "async": {
+    "queue": 0,
+    "running": 0,
+    "stale_running": 0,
+    "stale": [],
+    "results": 27,
+    "derivatives": 13,
+    "registries": 2,
+    "registry_json_ok": 2,
+    "health": "OK"
+  },
+  "sync": {
+    "available": 2,
+    "files": [
+      "reports/TRILLIONX_PARALLEL_MICRO_SYNC_LATEST.json",
+      "reports/TRILLIONX_REMOTE_HOST_MICRO_SYNC_LATEST.json"
+    ],
+    "latest_seq": 4420,
+    "latest_latency_ms": 24.261,
+    "latest_open_ports": [],
+    "health": "OK"
+  },
+  "reports": {
+    "json_reports": 17,
+    "json_ok": 17,
+    "json_bad": 0,
+    "jsonl_history_files": 24,
+    "jsonl_lines": 39788,
+    "health": "OK"
+  },
+  "runtime": {
+    "port3000_open": true,
+    "ports_text": "LISTEN 0      511                *:3000             *:*    users:((\"node\",pid=312431,fd=21))",
+    "node_process_lines": 29,
+    "health": "APP3000_OPEN"
+  },
+  "git": {
+    "branch": "main",
+    "changed": "59",
+    "last_commit": "0f67335 Add TRILLIONX global async drain v2",
+    "diff_stat": ".trillionx_aliases                                 |     7 +\n .../TRILLIONX_GLOBAL_ASYNC_REGISTRY_V2.json        |     4 +-\n ...ILLIONX_virtual_threadripper_20260524_072919.js | 25938 ------------------\n ...ILLIONX_virtual_threadripper_20260524_073013.js | 26090 ------------------\n ...ILLIONX_virtual_threadripper_20260524_073108.js | 26242 ------------------\n .../app.before_compact_output_20260524_114806.js   | 26119 ------------------\n ...pp.before_dedup_threadripper_20260524_074142.js | 26522 -------------------\n backups/app.before_output_lite_20260524_115426.js  | 26197 ------------------\n ...ore_virtual_threadripper_fix_20260524_073958.js | 26394 ------------------\n data/TRILLIONX_RUNTIME_GUARD_LATEST.json           |    18 +-\n .../TRILLIONX_ASYNC_GLOBAL_DRAIN_V2_HISTORY.jsonl  |     5 +\n .../TRILLIONX_ASYNC_GLOBAL_DRAIN_V2_LATEST.json    |   121 +-\n 12 files changed, 94 insertions(+), 183563 deletions(-)",
+    "health": "MANY_LOCAL_CHANGES"
+  },
+  "summary": {
+    "score": 17755,
+    "health": {
+      "disk": "OK",
+      "async": "OK",
+      "sync": "OK",
+      "reports": "OK",
+      "scripts": "OK",
+      "runtime": "APP3000_OPEN",
+      "git": "MANY_LOCAL_CHANGES"
+    },
+    "verdict": "TRILLIONX_SYSTEM_ORGANIZATION_BENCH_COMPLETE",
+    "runtime_ms": 2766.054
+  },
+  "truth_policy": {
+    "real_only": true,
+    "organization_bench_not_compute_power": true,
+    "no_destructive_actions": true,
+    "no_appjs_touch": true,
+    "no_data_touch": true,
+    "no_raid60_touch": true
+  },
+  "seal": "f70d6a43467a2838e63cfa00203117199c97ad5f9a281d3ce02221267994ab2f"
+}
