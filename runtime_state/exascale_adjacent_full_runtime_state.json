@@ -1,0 +1,159 @@
+{
+  "engine": "TRILLIONX_EXASCALE_ADJACENT_FULL_RUNTIME",
+  "created": "2026-05-24T15:43:29.936Z",
+  "target": "TRILLIONX",
+  "host_role": "CODESPACES_SUPPORT_ONLY",
+  "workers_requested": 2,
+  "workers_ready": 2,
+  "worker_wasm_modes": {
+    "JS_FALLBACK_WAT2WASM_NOT_AVAILABLE": 2
+  },
+  "jobs_seen": 14,
+  "jobs_done": 14,
+  "jobs_failed": 0,
+  "total_useful_ops": 3747701,
+  "total_bytes": 2021376,
+  "lat_us": [
+    15322,
+    17325,
+    3587,
+    4047,
+    1750,
+    7615,
+    1736,
+    1558,
+    3410,
+    1440,
+    4741,
+    2778,
+    2248,
+    1686
+  ],
+  "final_digest": "4900d2d10147ad81154bc8a3",
+  "running": false,
+  "last_tick": {
+    "ts": "2026-05-24T15:43:33.905Z",
+    "uptime_s": 3.969,
+    "workers_ready": 2,
+    "queue": 0,
+    "busy": 0,
+    "jobs_seen": 14,
+    "jobs_done": 14,
+    "jobs_failed": 0,
+    "useful_ops_s": 944243.134,
+    "mb_s": 0.486,
+    "p50_us": 3410,
+    "p95_us": 17325,
+    "p99_us": 17325,
+    "wasm_modes": {
+      "JS_FALLBACK_WAT2WASM_NOT_AVAILABLE": 2
+    },
+    "final_digest": "4900d2d10147ad81154bc8a3",
+    "context": {
+      "mesh_nodes": 20,
+      "vr_mirrors": 0,
+      "cache_mb": 0,
+      "raid_files": 353,
+      "joker": "HYPERBOLIC_CONTROL_EXCELLENT",
+      "network_health": 0
+    },
+    "memory": {
+      "rss_mb": 100.063,
+      "heap_mb": 7.187,
+      "external_mb": 2.028,
+      "arraybuf_mb": 0.018,
+      "free_gb": 0.926,
+      "total_gb": 7.757,
+      "load1": 0.97
+    },
+    "health": 100,
+    "verdict": "EXASCALE_ADJACENT_FULL_RUNTIME_ACTIVE"
+  },
+  "history": [
+    {
+      "ts": "2026-05-24T15:43:30.045Z",
+      "uptime_s": 0.109,
+      "workers_ready": 2,
+      "queue": 12,
+      "busy": 2,
+      "jobs_seen": 14,
+      "jobs_done": 0,
+      "jobs_failed": 0,
+      "useful_ops_s": 0,
+      "mb_s": 0,
+      "p50_us": null,
+      "p95_us": null,
+      "p99_us": null,
+      "wasm_modes": {
+        "JS_FALLBACK_WAT2WASM_NOT_AVAILABLE": 2
+      },
+      "final_digest": "TRILLIONX_START",
+      "context": {
+        "mesh_nodes": 20,
+        "vr_mirrors": 0,
+        "cache_mb": 0,
+        "raid_files": 353,
+        "joker": "HYPERBOLIC_CONTROL_EXCELLENT",
+        "network_health": 0
+      },
+      "memory": {
+        "rss_mb": 84.926,
+        "heap_mb": 6.126,
+        "external_mb": 1.998,
+        "arraybuf_mb": 0.018,
+        "free_gb": 0.94,
+        "total_gb": 7.757,
+        "load1": 1.06
+      },
+      "health": 100,
+      "verdict": "EXASCALE_ADJACENT_FULL_RUNTIME_ACTIVE"
+    },
+    {
+      "ts": "2026-05-24T15:43:33.905Z",
+      "uptime_s": 3.969,
+      "workers_ready": 2,
+      "queue": 0,
+      "busy": 0,
+      "jobs_seen": 14,
+      "jobs_done": 14,
+      "jobs_failed": 0,
+      "useful_ops_s": 944243.134,
+      "mb_s": 0.486,
+      "p50_us": 3410,
+      "p95_us": 17325,
+      "p99_us": 17325,
+      "wasm_modes": {
+        "JS_FALLBACK_WAT2WASM_NOT_AVAILABLE": 2
+      },
+      "final_digest": "4900d2d10147ad81154bc8a3",
+      "context": {
+        "mesh_nodes": 20,
+        "vr_mirrors": 0,
+        "cache_mb": 0,
+        "raid_files": 353,
+        "joker": "HYPERBOLIC_CONTROL_EXCELLENT",
+        "network_health": 0
+      },
+      "memory": {
+        "rss_mb": 100.063,
+        "heap_mb": 7.187,
+        "external_mb": 2.028,
+        "arraybuf_mb": 0.018,
+        "free_gb": 0.926,
+        "total_gb": 7.757,
+        "load1": 0.97
+      },
+      "health": 100,
+      "verdict": "EXASCALE_ADJACENT_FULL_RUNTIME_ACTIVE"
+    }
+  ],
+  "truth_policy": {
+    "real_only": true,
+    "no_fake_exascale": true,
+    "exascale_adjacent": true,
+    "worker_threads_distributed": true,
+    "wasm_real_if_available": true,
+    "dependent_pipeline_runtime": true,
+    "not_only_benchmark": true
+  }
+}
