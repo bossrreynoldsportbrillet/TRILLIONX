@@ -12,3 +12,13 @@ runtime_state/*LATEST.json
 runtime_state/local_snapshots/
 logs/
 *.log
+
+# TRILLIONX anti disk saturation
+logs/
+runtime_state/local_snapshots/
+backups/app.before*.js
+*.log
+*.tmp
+*.cache
+history/*.gz
+node_modules/.cache/
