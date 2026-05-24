@@ -6,21 +6,21 @@
     "no_fake_metrics": true
   },
   "pressure": {
-    "level": "OK",
-    "load_per_cpu": 0.435,
+    "level": "CRITICAL",
+    "load_per_cpu": 2.985,
     "mem_ratio": 0.011,
     "snapshot": {
-      "time": "2026-05-24T21:00:31.182Z",
+      "time": "2026-05-24T21:10:33.824Z",
       "cpu": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
       "logical_cpu": 2,
-      "ghz": 3.487,
+      "ghz": 3.485,
       "load": [
-        0.87,
-        0.94,
-        1.1
+        5.97,
+        3.23,
+        2.13
       ],
       "ram_total_gb": 7.757,
-      "ram_free_gb": 2.423,
+      "ram_free_gb": 1.44,
       "rss_mb": 43.875,
       "heap_mb": 4.239,
       "max_workers": 2,
@@ -28,5 +28,5 @@
       "memory_limit_mb": 4096
     }
   },
-  "seal": "c6bdf2e6367b50a45a39aa99fb14dbbb6a663df9e9008cbe8ac31fcc52ecd156"
+  "seal": "ecd2e9dc204ae2f8cca96b8f193a267e2115140eb20e228138dd18e675993573"
 }

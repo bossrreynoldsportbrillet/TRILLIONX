@@ -1,41 +1,41 @@
 {
   "engine": "TRILLIONX_REMOTE_HOST_MICRO_SYNC",
-  "seq": 5736,
-  "ts": "2026-05-24T22:54:26.485Z",
-  "prev": "8c0ab6a2e93ed592e3bb92781a19910d84f83f25c1807cc61bf1e4f7443955a3",
+  "seq": 7359,
+  "ts": "2026-05-24T23:08:04.038Z",
+  "prev": "ce68b0a26232f8bdd3e7038d25d79ebea437a2e3cc89e65205d9e594276c33ce",
   "cpu": {
     "model": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
     "logical": 2,
-    "ghz": 3.432,
-    "load1": 6.24,
+    "ghz": 3.391,
+    "load1": 5.86,
     "load_pct": 100
   },
   "memory": {
-    "rss_mb": 28.961,
-    "heap_mb": 7.447,
-    "free_gb": 2.187,
+    "rss_mb": 26.863,
+    "heap_mb": 7.48,
+    "free_gb": 0.942,
     "total_gb": 7.757
   },
   "disk": {
-    "used_pct": 43,
-    "free_pct": 57,
+    "used_pct": 44,
+    "free_pct": 56,
     "mount": "/workspaces"
   },
   "ports": [
     {
       "port": 3000,
-      "ms": 0.268,
+      "ms": 0.257,
       "open": true
     },
     {
       "port": 3997,
-      "ms": 0.163,
+      "ms": 0.176,
       "open": false,
       "error": "ECONNREFUSED"
     },
     {
       "port": 9229,
-      "ms": 0.091,
+      "ms": 0.102,
       "open": false,
       "error": "ECONNREFUSED"
     }
@@ -44,9 +44,9 @@
     "ok": true,
     "status": 200,
     "bytes": 7654,
-    "ms": 2.518
+    "ms": 2.528
   },
-  "latency_ms": 12.25,
+  "latency_ms": 10.337,
   "policy": "ASYNC_MICRO_PACKET_SAFE",
-  "seal": "d204e94b1a9ceb75200de0bcc10d111f1d9ac29d9f618454304a6a52459f14b3"
+  "seal": "470a9b7a2941a8f20a51043d3cfbed57565d7d755824e537ac9d36d650f3cd53"
 }

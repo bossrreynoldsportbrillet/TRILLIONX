@@ -1,43 +1,43 @@
 {
   "engine": "TRILLIONX_PARALLEL_MICRO_PACKET_SYNC_PRIORITY",
-  "seq": 37904,
-  "ts": "2026-05-24T22:54:26.521Z",
-  "prev": "1b50e3e4f3a4967e00ba403428f49087de7dff6b9cf582e375a3c08de4476602",
+  "seq": 50951,
+  "ts": "2026-05-24T23:08:04.327Z",
+  "prev": "4edd4a53235c3658349da1a2bd9583a423838bd0506a3f5365ad44965da8d807",
   "workers": 4,
   "interval_ms": 250,
-  "uptime_s": 2375.747,
+  "uptime_s": 3193.553,
   "cpu": {
     "model": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
     "logical": 2,
-    "ghz": 3.456,
-    "load1": 6.24,
+    "ghz": 3.436,
+    "load1": 5.86,
     "load_pct": 100
   },
   "memory": {
-    "rss_mb": 84.172,
-    "heap_mb": 7.782,
-    "free_gb": 2.187,
+    "rss_mb": 82.398,
+    "heap_mb": 8.414,
+    "free_gb": 0.944,
     "total_gb": 7.757
   },
   "disk": {
-    "used_pct": 43,
-    "free_pct": 57,
+    "used_pct": 44,
+    "free_pct": 56,
     "mount": "/workspaces"
   },
   "packets": [
     {
       "worker": 0,
-      "seq": 9475,
-      "ts": "2026-05-24T22:54:26.516Z",
+      "seq": 12736,
+      "ts": "2026-05-24T23:08:04.193Z",
       "ports": [
         {
           "port": 3000,
-          "ms": 0.223,
+          "ms": 0.243,
           "open": true
         },
         {
           "port": 20001,
-          "ms": 0.155,
+          "ms": 0.172,
           "open": false,
           "error": "ECONNREFUSED"
         }
@@ -46,76 +46,76 @@
         "ok": true,
         "status": 200,
         "bytes": 7654,
-        "ms": 4.24
+        "ms": 2.545
       },
-      "latency_ms": 4.709,
-      "seal": "4bc30436950cccdbe79b23cad6b3ba63d24e9f54fdeb6b72404a75eada1b6294"
+      "latency_ms": 3.084,
+      "seal": "3b2db3ce5be93348aa7ab31e2401b70d29bf2c793a156b4001c56751aedd60e0"
     },
     {
       "worker": 1,
-      "seq": 9476,
-      "ts": "2026-05-24T22:54:26.375Z",
+      "seq": 12738,
+      "ts": "2026-05-24T23:08:04.303Z",
       "ports": [
         {
           "port": 3997,
-          "ms": 0.27,
+          "ms": 0.504,
           "open": false,
           "error": "ECONNREFUSED"
         },
         {
           "port": 20002,
-          "ms": 0.092,
+          "ms": 0.091,
           "open": false,
           "error": "ECONNREFUSED"
         }
       ],
       "app3000": null,
-      "latency_ms": 0.4,
-      "seal": "9453c47e5e95d4fe71f2ebce4aa2a9daad33ee8181ca5f9ebc3825545b8829be"
+      "latency_ms": 0.633,
+      "seal": "7bbb0d5a625783a747817ff03f0ca2cfddbe3f5c3ce4f08fd967074947903c77"
     },
     {
       "worker": 2,
-      "seq": 9476,
-      "ts": "2026-05-24T22:54:26.497Z",
+      "seq": 12738,
+      "ts": "2026-05-24T23:08:04.327Z",
       "ports": [
         {
           "port": 9229,
-          "ms": 0.263,
+          "ms": 0.314,
           "open": false,
           "error": "ECONNREFUSED"
         },
         {
           "port": 20003,
-          "ms": 0.079,
+          "ms": 0.108,
           "open": false,
           "error": "ECONNREFUSED"
         }
       ],
       "app3000": null,
-      "latency_ms": 0.371,
-      "seal": "582dbaeccfecc30f77236ade0bc37bff94d11f95d8a0d625149d47aa1d082645"
+      "latency_ms": 0.457,
+      "seal": "087891f63c5e49aad67900a46c236eecf4c672581f3d624eaeb29608b74f2494"
     },
     {
       "worker": 3,
-      "seq": 9477,
-      "ts": "2026-05-24T22:54:26.382Z",
+      "seq": 12739,
+      "ts": "2026-05-24T23:08:04.170Z",
       "ports": [
         {
           "port": 20000,
-          "ms": 0.263,
+          "ms": 0.285,
           "open": false,
           "error": "ECONNREFUSED"
         }
       ],
       "app3000": null,
-      "latency_ms": 0.287,
-      "seal": "c0cc326d744e74f78dd9b182d2598ecd106b1d57f86bc556a736586f92774ca6"
+      "latency_ms": 0.314,
+      "seal": "6b8a9855b8efbaab1c0de74263dce1baf4119133896c8f83c2659920ffcc91eb"
     }
   ],
   "policy": "PARALLEL_ASYNC_MICRO_PACKET_PRIORITY_SAFE",
   "open_ports": [
     3000
   ],
-  "latency_avg_ms": 1.442,
-  "seal": "c78b1736176e0d7cbfcbefdf8d3366dc650142070d2ca99c04794b1afadbf0c9"
+  "latency_avg_ms": 1.122,
+  "seal": "7bce0133efa27ece6604f98182a51ea7eb9941d5d2ed978e50c2f5f82da339e4"
 }

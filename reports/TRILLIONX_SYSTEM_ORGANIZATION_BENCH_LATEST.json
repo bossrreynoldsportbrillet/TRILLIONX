@@ -1,23 +1,23 @@
 {
   "engine": "TRILLIONX_SYSTEM_ORGANIZATION_BENCH",
-  "time": "2026-05-24T22:43:24.313Z",
+  "time": "2026-05-24T22:59:58.418Z",
   "host": {
     "cpu": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
     "logical_cpu": 2,
-    "ghz": 3.455,
+    "ghz": 3.412,
     "ram_total_gb": 7.757,
-    "ram_free_gb": 0.912,
+    "ram_free_gb": 1.886,
     "load": [
-      13.06,
-      7.09,
-      4.43
+      5.93,
+      5.13,
+      4.79
     ],
     "node": "v22.22.2",
     "platform": "linux"
   },
   "disk": {
-    "used_pct": 43,
-    "free_pct": 57,
+    "used_pct": 44,
+    "free_pct": 56,
     "mount": "/workspaces"
   },
   "dirs": {
@@ -33,18 +33,18 @@
     },
     "reports": {
       "exists": true,
-      "files": 20,
-      "size": "96K"
+      "files": 25,
+      "size": "124K"
     },
     "history": {
       "exists": true,
-      "files": 24,
-      "size": "8.5M"
+      "files": 25,
+      "size": "13M"
     },
     "logs": {
       "exists": true,
       "files": 161,
-      "size": "5.2M"
+      "size": "8.4M"
     },
     "runtime_state": {
       "exists": true,
@@ -121,34 +121,34 @@
       "reports/TRILLIONX_PARALLEL_MICRO_SYNC_LATEST.json",
       "reports/TRILLIONX_REMOTE_HOST_MICRO_SYNC_LATEST.json"
     ],
-    "latest_seq": 4420,
-    "latest_latency_ms": 24.261,
+    "latest_seq": 6399,
+    "latest_latency_ms": 25.181,
     "latest_open_ports": [],
     "health": "OK"
   },
   "reports": {
-    "json_reports": 17,
-    "json_ok": 17,
+    "json_reports": 18,
+    "json_ok": 18,
     "json_bad": 0,
-    "jsonl_history_files": 24,
-    "jsonl_lines": 39788,
+    "jsonl_history_files": 25,
+    "jsonl_lines": 57627,
     "health": "OK"
   },
   "runtime": {
     "port3000_open": true,
     "ports_text": "LISTEN 0      511                *:3000             *:*    users:((\"node\",pid=312431,fd=21))",
-    "node_process_lines": 29,
+    "node_process_lines": 17,
     "health": "APP3000_OPEN"
   },
   "git": {
     "branch": "main",
-    "changed": "59",
-    "last_commit": "0f67335 Add TRILLIONX global async drain v2",
-    "diff_stat": ".trillionx_aliases                                 |     7 +\n .../TRILLIONX_GLOBAL_ASYNC_REGISTRY_V2.json        |     4 +-\n ...ILLIONX_virtual_threadripper_20260524_072919.js | 25938 ------------------\n ...ILLIONX_virtual_threadripper_20260524_073013.js | 26090 ------------------\n ...ILLIONX_virtual_threadripper_20260524_073108.js | 26242 ------------------\n .../app.before_compact_output_20260524_114806.js   | 26119 ------------------\n ...pp.before_dedup_threadripper_20260524_074142.js | 26522 -------------------\n backups/app.before_output_lite_20260524_115426.js  | 26197 ------------------\n ...ore_virtual_threadripper_fix_20260524_073958.js | 26394 ------------------\n data/TRILLIONX_RUNTIME_GUARD_LATEST.json           |    18 +-\n .../TRILLIONX_ASYNC_GLOBAL_DRAIN_V2_HISTORY.jsonl  |     5 +\n .../TRILLIONX_ASYNC_GLOBAL_DRAIN_V2_LATEST.json    |   121 +-\n 12 files changed, 94 insertions(+), 183563 deletions(-)",
+    "changed": "24",
+    "last_commit": "a30eac0 Ignore TRILLIONX volatile runtime PID files",
+    "diff_stat": ".trillionx_aliases                                 |     7 +\n ...ILLIONX_virtual_threadripper_20260524_072919.js | 25938 ------------------\n ...ILLIONX_virtual_threadripper_20260524_073013.js | 26090 ------------------\n ...ILLIONX_virtual_threadripper_20260524_073108.js | 26242 ------------------\n .../app.before_compact_output_20260524_114806.js   | 26119 ------------------\n ...pp.before_dedup_threadripper_20260524_074142.js | 26522 -------------------\n backups/app.before_output_lite_20260524_115426.js  | 26197 ------------------\n ...ore_virtual_threadripper_fix_20260524_073958.js | 26394 ------------------\n data/TRILLIONX_RUNTIME_GUARD_LATEST.json           |    18 +-\n .../TRILLIONX_PARALLEL_MICRO_SYNC_HISTORY.jsonl    |  5312 ++++\n .../TRILLIONX_REMOTE_HOST_MICRO_SYNC_HISTORY.jsonl |   664 +\n ...ILLIONX_SYSTEM_ORGANIZATION_BENCH_HISTORY.jsonl |     3 +\n ...RILLIONX_ASYNC_DRAIN_REGISTRY_CODEC_LATEST.json |     6 +-\n .../TRILLIONX_ASYNC_GLOBAL_DRAIN_V2_LATEST.json    |     4 +-\n reports/TRILLIONX_PARALLEL_MICRO_SYNC_LATEST.json  |    74 +-\n .../TRILLIONX_REMOTE_HOST_MICRO_SYNC_LATEST.json   |    32 +-\n ...TRILLIONX_SYSTEM_ORGANIZATION_BENCH_LATEST.json |    52 +-\n 17 files changed, 6079 insertions(+), 183595 deletions(-)",
     "health": "MANY_LOCAL_CHANGES"
   },
   "summary": {
-    "score": 17755,
+    "score": 19805,
     "health": {
       "disk": "OK",
       "async": "OK",
@@ -159,7 +159,7 @@
       "git": "MANY_LOCAL_CHANGES"
     },
     "verdict": "TRILLIONX_SYSTEM_ORGANIZATION_BENCH_COMPLETE",
-    "runtime_ms": 2766.054
+    "runtime_ms": 650.784
   },
   "truth_policy": {
     "real_only": true,
@@ -169,5 +169,5 @@
     "no_data_touch": true,
     "no_raid60_touch": true
   },
-  "seal": "f70d6a43467a2838e63cfa00203117199c97ad5f9a281d3ce02221267994ab2f"
+  "seal": "dc6e72abe3c15f25f87f9b9a3f076d8a3242a6071fbed9b8c2fab2a651053a1e"
 }

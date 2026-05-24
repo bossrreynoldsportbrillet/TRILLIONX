@@ -31,3 +31,8 @@ npm-debug.log*
 runtime_state/*PID
 runtime_state/*_PID
 runtime_state/*.running
+# TRILLIONX local/runtime generated files
+.trillionx_terminal_fast.env
+.vscode/settings.before_*.json
+async_results/
+micro_sync/
