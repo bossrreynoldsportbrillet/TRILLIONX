@@ -26088,3 +26088,155 @@ app.get("/api/trillionx/support-base", (req, res) => {
 });
 
 console.log("[TRILLIONX] virtual Threadripper 9000VW profile active");
+
+/* ============================================================
+   TRILLIONX VIRTUALIZED THREADRIPPER 9000VW PROFILE
+   Additive honest profile layer.
+   It profiles TRILLIONX as a virtual target runtime while benchmarks
+   continue to report the real detected host.
+============================================================ */
+
+const TRILLIONX_VIRTUAL_THREADRIPPER_9000VW_PROFILE = {
+  name: "TRILLIONX_VIRTUAL_THREADRIPPER_9000VW_PROFILE",
+  version: "V1_ACTIVE_PROFILE",
+  current_runtime: "VIRTUALIZED_DUAL_THREADRIPPER_9000VW_3NM_266MB_3D_VCACHE_ECC_OR_TRILLIONX_OR_CODESPACES",
+  target_runtime: "REAL_DUAL_THREADRIPPER_WORKSTATION",
+  migration_mode: "DEVIRTUALIZE_DEVELOPMENT",
+  real_confirmation_required: true,
+  cpu_profile: {
+    label: "DUAL_THREADRIPPER_9000VW",
+    sockets: 2,
+    process_nm: 3,
+    cache_mb: 266,
+    cache_type: "3D_VCACHE",
+    ecc: true,
+    status: "VIRTUAL_TARGET_PROFILE"
+  },
+  trillions_profile: {
+    project: "TRILLIONX",
+    role: "PROCESSOR_COPROCESSOR_MIRROR_ORCHESTRATION_LAYER",
+    mirror_processor: true,
+    worker_runtime: "NODEJS_WORKER_POOL_IF_AVAILABLE",
+    support_runtime: "CODESPACES_OR_LOCAL_OR_REAL_WORKSTATION"
+  },
+  truth_policy: {
+    no_fake_cpu: true,
+    no_fake_gpu: true,
+    no_fake_ram: true,
+    no_fake_cache: true,
+    benchmarks_use_real_host_only: true,
+    target_profile_is_not_physical_claim: true,
+    physical_confirmation_requires_real_sensors: true
+  },
+  confirmation_sources: [
+    "os.cpus()",
+    "systeminformation.cpu()",
+    "systeminformation.mem()",
+    "systeminformation.graphics()",
+    "lscpu",
+    "/proc/cpuinfo",
+    "nvidia-smi",
+    "CUDA_if_available",
+    "TRILLIONX_benchmark_truth",
+    "TRILLIONS_FIRE_EXTREME_SUPPORT_BENCH"
+  ]
+};
+
+function trillionxVirtualThreadripperDetection(){
+  const cpus = os.cpus() || [];
+  const cpu0 = cpus[0] || {};
+  const isCodespaces = String(process.env.CODESPACES || "").toLowerCase() === "true" || !!process.env.CODESPACE_NAME;
+  const isContainer = fs.existsSync("/.dockerenv");
+
+  let cpuinfo = "";
+  try { cpuinfo = fs.readFileSync("/proc/cpuinfo", "utf8"); } catch(e) {}
+
+  const flagsLine = (cpuinfo.match(/^flags\s*: (.*)$/m) || [])[1] || "";
+  const flags = flagsLine.split(/\s+/).filter(Boolean);
+  const has = f => flags.includes(f);
+
+  return {
+    time: new Date().toISOString(),
+    profile: TRILLIONX_VIRTUAL_THREADRIPPER_9000VW_PROFILE,
+    profile_status: "ACTIVE",
+    real_host_detected: {
+      cpu_model: cpu0.model || "UNKNOWN",
+      logical_cpus: cpus.length,
+      reported_speed_mhz: cpu0.speed || null,
+      ram_gb: +(os.totalmem() / 1073741824).toFixed(2),
+      platform: process.platform,
+      arch: process.arch,
+      node: process.version,
+      codespaces: isCodespaces,
+      container: isContainer
+    },
+    simd_support_detected: {
+      sse: has("sse"),
+      sse2: has("sse2"),
+      sse4_1: has("sse4_1"),
+      sse4_2: has("sse4_2"),
+      avx: has("avx"),
+      avx2: has("avx2"),
+      avx512f: has("avx512f"),
+      fma: has("fma"),
+      aes: has("aes"),
+      sha_ni: has("sha_ni")
+    },
+    compute_reading: {
+      virtual_profile: "DUAL_THREADRIPPER_9000VW_3NM_266MB_3D_VCACHE_ECC",
+      real_compute_base: "CPU_NODEJS_REAL_HOST",
+      real_host: isCodespaces ? "CODESPACES_VIRTUALIZED_HOST" : isContainer ? "CONTAINERIZED_HOST" : "LOCAL_HOST",
+      devirtualized: false,
+      reason: "Physical Threadripper confirmation requires execution on real matching workstation sensors."
+    },
+    verdict: {
+      profile_active: true,
+      target_profile: "ACTIVE",
+      physical_confirmation: "REQUIRED_ON_REAL_MACHINE",
+      benchmark_rule: "REAL_HOST_ONLY",
+      honest_status: "VIRTUALIZED_PROFILE_ACTIVE_NOT_PHYSICAL_CPU_CLAIM"
+    }
+  };
+}
+
+app.get("/api/trillionx/virtual-threadripper", (req, res) => {
+  res.json(trillionxVirtualThreadripperDetection());
+});
+
+app.get("/api/trillionx/virtual-threadripper/profile", (req, res) => {
+  res.json(TRILLIONX_VIRTUAL_THREADRIPPER_9000VW_PROFILE);
+});
+
+app.get("/api/trillionx/virtual-threadripper/verdict", (req, res) => {
+  const d = trillionxVirtualThreadripperDetection();
+  res.json({
+    time: d.time,
+    profile_status: d.profile_status,
+    current_runtime: d.profile.current_runtime,
+    target_runtime: d.profile.target_runtime,
+    virtual_profile: d.compute_reading.virtual_profile,
+    real_compute_base: d.compute_reading.real_compute_base,
+    real_host: d.compute_reading.real_host,
+    devirtualized: d.compute_reading.devirtualized,
+    verdict: d.verdict
+  });
+});
+
+app.get("/api/trillionx/support-base", (req, res) => {
+  const d = trillionxVirtualThreadripperDetection();
+  res.json({
+    time: d.time,
+    support_base: {
+      runtime: d.compute_reading.real_host,
+      compute: d.compute_reading.real_compute_base,
+      cpu_model: d.real_host_detected.cpu_model,
+      logical_cpus: d.real_host_detected.logical_cpus,
+      ram_gb: d.real_host_detected.ram_gb,
+      simd: d.simd_support_detected
+    },
+    target_profile: d.compute_reading.virtual_profile,
+    doctrine: "DETECT_REAL_SUPPORT_FIRST_THEN_APPLY_TRILLIONX_PROFILE"
+  });
+});
+
+console.log("[TRILLIONX] virtual Threadripper 9000VW profile active");
