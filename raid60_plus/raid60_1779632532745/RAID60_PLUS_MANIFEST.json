@@ -1,6 +1,6 @@
 {
   "engine": "TRILLIONX_RAID60_PLUS_LOGICAL_STORAGE",
-  "ts": "2026-05-24T14:37:53.684Z",
+  "ts": "2026-05-24T14:22:12.773Z",
   "mode": "RAID60_PLUS_LOGICAL",
   "truth_policy": {
     "real_only": true,
@@ -98,200 +98,137 @@
       "sha256": "b1f453461a22643f6f58d9e1f7ec70819f644ddc61747a3f071e0190216452f9"
     },
     {
-      "rel": "data/trillionx_20_node_vr_mesh_1779632547024.json",
+      "rel": "data/trillionx_20_node_vr_mesh_latest.json",
       "stripe": 0,
       "mirrors": 2,
-      "size": 74101,
-      "sha256": "75773f50196e08aed21cf18d3db88fd8170f3097c4c2095467b9d42c02d9fe49"
+      "size": 74123,
+      "sha256": "2d0bcc515f8cb299037dc210d16861ff091b8cfa1ba4bf98dd5928b9e41e6d75"
     },
     {
-      "rel": "data/trillionx_auto_detect_required_latest.json",
+      "rel": "data/trillionx_codex_codecs_network_satellite_1779625199281.json",
       "stripe": 0,
       "mirrors": 2,
-      "size": 1336,
-      "sha256": "cf105e520583475ddc71c5225d7696af738f5f671c16a1c86560f81b031796c9"
+      "size": 12661,
+      "sha256": "25539957d6d37beb9da22d9fc56dec33c2daa9886e75904116113952b47944bc"
     },
     {
-      "rel": "data/trillionx_compute_speed_latest.json",
+      "rel": "data/trillionx_firmware_stage0_latest.json",
       "stripe": 0,
       "mirrors": 2,
-      "size": 3157,
-      "sha256": "34a0a0c846ae3bbdc5c87f28f955d3bc56a687bd7fd3f84f05b4b05105e01f80"
+      "size": 385118,
+      "sha256": "55626e5b48835d76b0b21ac68b12d20b51f4ae415b249f9897bfe516a190a2ff"
     },
     {
-      "rel": "data/trillionx_gpu_backend_router_latest.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779626903325.json",
       "stripe": 0,
       "mirrors": 2,
-      "size": 946,
-      "sha256": "54f3214cb3922c5e9058395d7f4b967244275b48ef1400b497aa3a3753643a17"
+      "size": 2976,
+      "sha256": "e66f3c0419ec5fba7d48ca228c480506bb164170810a104d48ab373467454ffe"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779628052001.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779628965999.json",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "da2253f2eb1f6ee87871e9cbb297586412148ab1f2830497c7e55be1050c84f9"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631807309.json",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "4474338c06a914f3d6af22a15dbbb7c3669ed6ef55c7bac6b0478fffca1a82e0"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631859453.json",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "041b399b74b3830355bd5ce9dcef13c05b224d0a53be55ee69a4e5533e5a0169"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631911265.json",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "231701498648b9db1bc28aca7d84dbb38ed07d9e57d271c96e584d82190fe002"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631948698.json",
       "stripe": 0,
       "mirrors": 2,
       "size": 2975,
-      "sha256": "62ef0e701a7279d80ea1690dca3987503ea8f0d5908b03eaee13bbd3188b69a9"
+      "sha256": "90bfc361fedb2dad294d8d2373a2224196a2f3e93cacfb89c3ab0a7de526da36"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631787235.json",
-      "stripe": 0,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "4065e501af54c88fb56a0ea8f683011810e3dd705d2cd0d9eb8b700ad69b73c2"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631824713.json",
-      "stripe": 0,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "c756b7d2401c939df4788039d5c841c5ee92bdf29cc9f1e7edda8a7123900a3b"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631876711.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632001819.json",
       "stripe": 0,
       "mirrors": 2,
       "size": 2975,
-      "sha256": "78c79d0cb81e2af779d037494a4eb0ea5712ab2fcaa6a0ecbcecfbdbda6ac37a"
+      "sha256": "e59f8e85285b71a7c0b3d6005f5564a4534e11d3f96310cfaf325c70a6140c58"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631928548.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632054711.json",
       "stripe": 0,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "30fb68424457a046190399dc1bc6c82ce3ff3c84e1b55eb554ff8e48fba922e3"
+      "sha256": "b4658bd10b7bfedbdabe9e49e28b858f0284c4c365032499608276718ce5b4f3"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631966034.json",
-      "stripe": 0,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "09873a7ad43555dd6ce0b0dc567c592afd6c2554a97ec932dcf92576b732fae1"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632019478.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632090217.json",
       "stripe": 0,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "b252f76668f3a22e0e4cdb395e0e77a1d4ff033538780f9426211944024bc21f"
+      "sha256": "38c855d6a4c3e2c46c6780605c036a2ff675eeb7dc282666b00c0dad06fe3e39"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632070472.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632142288.json",
       "stripe": 0,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "400f55480b675711d3c11d33c0c02726e2d699ec4f067ed6a2313572f5c05ddb"
+      "sha256": "e112188136c7f064cc3122586b6f894a49ad65eb3b3cbd791ee844a10355d2d6"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632107688.json",
-      "stripe": 0,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "9280996b99611b688f64bc36ebb417f47d7670d9ce51941169479b4100c10f6f"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632159570.json",
-      "stripe": 0,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "eb02f4dabb16fb315782434dcf39005e2276574d8414a1b937cee116cf81d7f7"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632211401.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632194080.json",
       "stripe": 0,
       "mirrors": 2,
       "size": 2974,
-      "sha256": "69086733cf76c60179e176d30349387de93683906bb104dbe4dc9ed367fc0d34"
+      "sha256": "a877d0a3e46d1aebda293cee901c1a00469a93ae8741352523589267b3cbf236"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632263207.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632245932.json",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "a1c3bf2957844ca2ba1dbdebd458ffc95cebcaae5885f5ed65027423e03416ea"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632297742.json",
+      "stripe": 0,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "009eb4d568e476fa3d73e92e92c7e6d8fb1630da19a47fd96f4fadae4fbece89"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632349575.json",
       "stripe": 0,
       "mirrors": 2,
       "size": 2975,
-      "sha256": "71b222c78e8b568973f257711ee1f02233a75d01cee6807a823b4d50dee51c3c"
+      "sha256": "d119c2f704ed0b03adadf7006e8374b4ebeeb5b9fcb141e41976a199de839e18"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632315055.json",
+      "rel": "data/trillionx_native_simd_dependency_registry_latest.json",
       "stripe": 0,
       "mirrors": 2,
-      "size": 2976,
-      "sha256": "968537db29a46a2d9cdd6eb2574214c54d1fbdffb7d8eaf1c380f59ea23ba3c4"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632367089.json",
-      "stripe": 0,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "2da75151809a61ff12113a63de682ff40b89a18a3949ec8998ea39af311836c7"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632833515.json",
-      "stripe": 0,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "26c3993b88666c159af152e6e8b586b451b93244b717c3147135ce4f289aefac"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632898024.json",
-      "stripe": 0,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "8fe9e541a2122514b7e292cf8edfc09bd93b82cb3d8e009be6a02da9e7c3a32a"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632994855.json",
-      "stripe": 0,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "83094df300160ba03bfc277d8827afb00da022a0b50c20a66df21762cea5d073"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633091790.json",
-      "stripe": 0,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "788995add53357bfdb28fb2c733665fd34180d62d2d32729f660491309cc5e63"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633188533.json",
-      "stripe": 0,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "cc8110ac06a54ef13ac9b2a7b2ffea9dc6006d9934697dfbeec17f5c042e3cd6"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633286175.json",
-      "stripe": 0,
-      "mirrors": 2,
-      "size": 2974,
-      "sha256": "47b554a1f4de2b1b9ddd26292accdef5947449220b68bb9d7f723564afa116d4"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633383103.json",
-      "stripe": 0,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "1094a828509f4ccdacb05ec2749f4b4c48be6e56c38c282ceab971b4b05bfd70"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_latest.json",
-      "stripe": 0,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "1376e8cec30a2f0a4930d06384c1ddebb8d22893e809c5d0779f7638545e8611"
-    },
-    {
-      "rel": "data/trillionx_network_codex_connections_all_1779633275537.json",
-      "stripe": 0,
-      "mirrors": 2,
-      "size": 168621,
-      "sha256": "db915cb63cf0ae192ec43ff88b79b1e57a7546e65cb51f7d1c45cbdc08a3bd0f"
+      "size": 1871,
+      "sha256": "72d6ccfce6286982206a8cd6064bec4738f98c30e730e00c238a29cd87ce9ad3"
     },
     {
       "rel": "data/trillionx_network_connections_total_latest.json",
       "stripe": 0,
       "mirrors": 2,
-      "size": 161236,
-      "sha256": "c687e9431eb108daf15f7979230589b77d51d112c249d1bd6c54e591c7dd4301"
+      "size": 172821,
+      "sha256": "ca823016f68c6d27abc4418c368ae640b4c6e537227316d76f0a3dd28e3e9bfd"
     },
     {
       "rel": "data/trillionx_network_microsecond_latency_1779631589344.json",
@@ -368,70 +305,70 @@
       "stripe": 0,
       "mirrors": 2,
       "size": 7,
-      "sha256": "34ea82e8beaacd4adcf1c32145426410020836ced0e11826f72757cffbac03c3"
+      "sha256": "f8ed15ccb7a84b17978f8c3148dd468d02478aca55f7e6730223e97cdc3a0278"
     },
     {
       "rel": "mesh_nodes/vr_node_10.pid",
       "stripe": 0,
       "mirrors": 2,
       "size": 7,
-      "sha256": "e681605daf37fed50db0ba82a9e86da4b81e8bb58c35818fb99011e11effecbc"
+      "sha256": "6d1ad2c1a0f81cc9af7521f21cda9d38dfa9c4d9304b41eb732dc308c4e8fe27"
     },
     {
       "rel": "mesh_nodes/vr_node_12.pid",
       "stripe": 0,
       "mirrors": 2,
       "size": 7,
-      "sha256": "7286396d9b8eedb31364802c5369fb21f42125e339da5e67340017d43ca6b839"
+      "sha256": "1282b2d01932f7dabbac5e1b16b4f33e3b3cb76907d5c7a7a520f435b5f57b36"
     },
     {
       "rel": "mesh_nodes/vr_node_14.pid",
       "stripe": 0,
       "mirrors": 2,
       "size": 7,
-      "sha256": "510a9e218db4a7943e8972283b3989fc2d874744c6de5463c32db9140b169c33"
+      "sha256": "cfd4bb0ace7177a6808ac0775f7e7520511679e470c179a541572ee1fcb07e12"
     },
     {
       "rel": "mesh_nodes/vr_node_16.pid",
       "stripe": 0,
       "mirrors": 2,
       "size": 7,
-      "sha256": "7db02a3c8885073b944d56384e1743441463719ae85c732ad43fab1a300ac558"
+      "sha256": "4b002efd585ee681629bd5d3cb78212a079f6a3dfb8275d19b868506810d7980"
     },
     {
       "rel": "mesh_nodes/vr_node_18.pid",
       "stripe": 0,
       "mirrors": 2,
       "size": 7,
-      "sha256": "775d7a219e9a1c2ccbc97cbe19a9fd8db9fd89a0136fb0175517caf8cb2dcc14"
+      "sha256": "6c085d4d62bf4531072e7eb4b797adf5fbf31a4ef47aca6bf3b317bcf61a0b79"
     },
     {
       "rel": "mesh_nodes/vr_node_2.pid",
       "stripe": 0,
       "mirrors": 2,
       "size": 7,
-      "sha256": "894589e665243cbb7692d5922853f2f42b81e694141b263e71f5719808c38a62"
+      "sha256": "563217844f9474741261bd60f3cbea4b659a17e7a6a80479e99560133a9938da"
     },
     {
       "rel": "mesh_nodes/vr_node_4.pid",
       "stripe": 0,
       "mirrors": 2,
       "size": 7,
-      "sha256": "21ff8e56fdc7af62f39748432e8c3a07ac1241da8459a36d65b337e28b121cc7"
+      "sha256": "380ad40ecac3d193781da01cebc91bbf460ba0e6f32b8c310577b27d37ef88d6"
     },
     {
       "rel": "mesh_nodes/vr_node_6.pid",
       "stripe": 0,
       "mirrors": 2,
       "size": 7,
-      "sha256": "5db84906346cc846f2c88aff7d60e36cfe464908e8c6bff0c652b93d0d9ca0e9"
+      "sha256": "1b671370668c60f2588fedd99c0a008b532aecfba7ba4d39d617ac8b62463fe9"
     },
     {
       "rel": "mesh_nodes/vr_node_8.pid",
       "stripe": 0,
       "mirrors": 2,
       "size": 7,
-      "sha256": "dbeda98e4e019449c75224e406e94329896ad348f52007f794b6aabd56f5fc87"
+      "sha256": "254d7c2ba109a263a6ad67fdcb1bb29064cec7cab16eff007719826d69d9422f"
     },
     {
       "rel": "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/app.js",
@@ -511,193 +448,130 @@
       "sha256": "b1f453461a22643f6f58d9e1f7ec70819f644ddc61747a3f071e0190216452f9"
     },
     {
-      "rel": "data/trillionx_20_node_vr_mesh_1779632695446.json",
+      "rel": "data/trillionx_activation_registry_latest.json",
       "stripe": 1,
       "mirrors": 2,
-      "size": 74198,
-      "sha256": "a3afd86c0b9e51996587be83eece65880cd3d7c72aefa18c159a94c4a370dc3b"
+      "size": 13443,
+      "sha256": "37378cf6cafb8ffe96d56875a230e72cb950f602b9580986e6f624d44351cb42"
     },
     {
-      "rel": "data/trillionx_backend_capability_registry_latest.json",
+      "rel": "data/trillionx_codex_codecs_network_satellite_1779629068235.json",
       "stripe": 1,
       "mirrors": 2,
-      "size": 1639,
-      "sha256": "afd7d4dfd6c453fc14ff5b920d0331c99db6cb3a6c6c4e60ff8e436fd0521b37"
+      "size": 14969,
+      "sha256": "3039b5a726d51ca2ea96eee5ec1b89f8f71b3c1317d99048d369f02a09a6e713"
     },
     {
-      "rel": "data/trillionx_crypto_zetta_packet_latest.json",
+      "rel": "data/trillionx_full_threadripper_profile_latest.json",
       "stripe": 1,
       "mirrors": 2,
-      "size": 29525,
-      "sha256": "1886db5d558e8bb8b32f6bbeeba150d0ed1c0ec420c47fa921fd0fdef075a53b"
+      "size": 8288,
+      "sha256": "011ee2022efde48596bbba4fea1eb101d4abcc772956386b2b830b0c9967b037"
     },
     {
-      "rel": "data/trillionx_gpu_vr_backend_probe_latest.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2182,
-      "sha256": "09c5300105dee9b4a35f79dca28206ec9a1aaffeba6bccd8cee75582fd36ec85"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779628452975.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779627540808.json",
       "stripe": 1,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "3bf01fa58dae0e9df131202f2f22681dc40b4737e38ccadc2075deb9e6f0fa1d"
+      "sha256": "1c4342e6be0b84bb317f8f8f2ac1dcc56dbb5e1636376f5eb080c1ffe0664221"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631789555.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631787222.json",
       "stripe": 1,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "2a61f81740e5ae94b1d72c1c9b86074e0e3ca3453b02afb5def18a5be9d1f984"
+      "sha256": "781c5634f815b022f7a2bfaab26c23379fcd58998d0108e2f423474b8ece8833"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631842177.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "8d10c2f24cf9bf69670a8d88107fbcccd188f8e64914b24b21949374f8832d64"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631893945.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "e8aee8657683cd5098bd66e877d4758b164b95b2e44267b4e4c5f99022254aa3"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631946376.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "0b35869f9b705a694eb80218e664e39968dbaa57cab61ac5783250036bab5583"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631983448.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "b5674863836fbf14315af892d3903ca3a3eb9af4fc1c9e91b94378b95a8ef225"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632036743.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "bea86e582ab9fa2aff1a707a1c178347e9102069b8eb7ac095e4d86ec719067b"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632072782.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "c9f4f4a8ff8e1586f4c2bc0b87952baa4eef85586895524255b20e93c4d5a549"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632124990.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "7e062c29437ca17571fbbec35d467cfca081ec41d5edfa367bf17a40c5ff982b"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632176814.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "b6a28a7940e20e6780117ebec4dcc9941e65533809e58411713091b918b1ee63"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632228676.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "9d926fb6bb9d5a73ab948438fd1aafea223c8fb420b91505e29ed102c0f3d6ec"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632280453.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "5e89ac69ffc3bb260efff4388341e791de4c5b1d30adccb461e051e361ca62a4"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632332306.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "9dab42bc247c9e4f0153b2358d24468a75cdf2d823820753a764b4f389f89db9"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632658343.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "2977fe6b8957213a0e5b07ca62b32127f2d826bf089ea44c3023d6be5df981c7"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632833532.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2974,
-      "sha256": "449150890fe76a0c95d035378a66b6e69d3df527999050e9cf4f1da9786a40cc"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632930266.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "729be6120976adc18c0b6bc6c553b799a2d6e7e970dffc680e45e60bc0e0883f"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633027216.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "f2be0f088b160ab9aea77dfc4e148770e97dc4705e46c63da16b5200aa285b1a"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633124021.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "a6a7dbb59548d86e5bd30d25cc230ad3cee45309024a2c95dfcc4b33432ac808"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633220770.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "b479d3a22774d972ef3b28f93927cb55b37e845abbfa0812bf4fd03aa6d8cce4"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633286185.json",
-      "stripe": 1,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "1dc6bcfbc4ec6c9562561c13dbefb524cae4937da1fa99993fbca856fff60096"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633383114.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631824683.json",
       "stripe": 1,
       "mirrors": 2,
       "size": 2973,
-      "sha256": "68e59e44251c7680a5bacf7a9fb96bfe1ac33a38c6c0aa0b04aa5b7e1d73a712"
+      "sha256": "8eee3033671e51c833ee207a87fa4bad541aeb5b276807de58638eeb9ad0238d"
     },
     {
-      "rel": "data/trillionx_ladder_saturation_latest.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631876699.json",
       "stripe": 1,
       "mirrors": 2,
-      "size": 23843,
-      "sha256": "ed0f0bc8b9c572028f98d09d3ec969d2874c336394f97a0da0db1de1e825aee4"
+      "size": 2976,
+      "sha256": "ffa91efb63859179401ce51f4f4071c748831f2638547872787dd03d961ee16d"
     },
     {
-      "rel": "data/trillionx_network_codex_connections_all_latest.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631928537.json",
       "stripe": 1,
       "mirrors": 2,
-      "size": 168621,
-      "sha256": "db915cb63cf0ae192ec43ff88b79b1e57a7546e65cb51f7d1c45cbdc08a3bd0f"
+      "size": 2973,
+      "sha256": "bda95cd665750dd5775ebae77f28fb5ac8e6dcc8c44a9ab4293d69d68a661153"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631966010.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "68513dfde65a268d479e64191b30de6b6eb9ec5aebd52c77ae620029c7c2895b"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632019466.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "8a75dcf8a1ce35ad05257fb23a47c75876c89a7bb6e107d188e308171eabee04"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632070460.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "b5d59b384e6eb0e995bc86c1035c2c9bdebd74920cf6c349cff146ddeeb029f9"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632107676.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 2975,
+      "sha256": "491829540a2ccd1b9d999a584746393bd54357baf91f328488d5f3c6a89ee157"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632159558.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "63186d323756f6ade27890e7a8d225e483f7578f0dd02722c42fb44b8dacd735"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632211374.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "4b40df544630e5d8481c4aff4a25fb06be405f9cd715907a0b461b28d697746b"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632263192.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 2975,
+      "sha256": "8f2854e2de316f7cedb0b797dd088b38a3d91da594245e0c66904253a48f3786"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632315043.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 2975,
+      "sha256": "91c94de8ff686c0f87fd60af69582f5c5c96eccbb0ae643497791996a6960b9c"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632367066.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "1a7a9a8389880f5cbb9579862017357adbae5a72ee828316478411f14afc7dd7"
+    },
+    {
+      "rel": "data/trillionx_network_codex_connections_all_1779626904491.json",
+      "stripe": 1,
+      "mirrors": 2,
+      "size": 167217,
+      "sha256": "a919023395b36228404ddb6ff1433264732310e09cda8fb7c5a7f65f589f6339"
     },
     {
       "rel": "data/trillionx_network_full_auto_bench_1779627134301.json",
@@ -725,7 +599,7 @@
       "stripe": 1,
       "mirrors": 2,
       "size": 1951,
-      "sha256": "3c6b3b1a19e91c16a5a377670a387879e4c24ce1211d0f07f7a5be617da51c10"
+      "sha256": "47cac96768f5d57124596ce8841d26f35c998082728856df68bbb0c548634342"
     },
     {
       "rel": "data/trillionx_turbo_amplifier_x1200_1779628896879.json",
@@ -752,8 +626,8 @@
       "rel": "firmware/TRILLIONX_FIRMWARE_STAGE0.json",
       "stripe": 1,
       "mirrors": 2,
-      "size": 406154,
-      "sha256": "ea1ae098e426228b1db451dc01fb8164944b499b46a20173f9583e9d024dc2df"
+      "size": 385118,
+      "sha256": "55626e5b48835d76b0b21ac68b12d20b51f4ae415b249f9897bfe516a190a2ff"
     },
     {
       "rel": "mesh_nodes/node_2.pid",
@@ -781,70 +655,70 @@
       "stripe": 1,
       "mirrors": 2,
       "size": 186,
-      "sha256": "ab50c51280974c6bf90e62afadbec4ba44e5baf4c5d983b1810e42ed118b926b"
+      "sha256": "46718ac71b38fc775a23cf039482ca259a4977e29ca30db53645a047cd62ade2"
     },
     {
       "rel": "mesh_nodes/vr_node_11.json",
       "stripe": 1,
       "mirrors": 2,
       "size": 187,
-      "sha256": "dc804f3ffa281aa1af5932673d3188c36d5644fec664109bae06964dd895a717"
+      "sha256": "c799e078b635c0e1ec1a34d45983f7be8365e0df2806a322c09db856d520e879"
     },
     {
       "rel": "mesh_nodes/vr_node_13.json",
       "stripe": 1,
       "mirrors": 2,
       "size": 187,
-      "sha256": "2ad175fab9bd713fe24c1c11ac9a61fbe4ab79f6a26a4ac87f4ad2b2b00b9b26"
+      "sha256": "7eb7ff0cff3676fb961289597ca8d57de2935fca3517f135410cc3a7bfbb0564"
     },
     {
       "rel": "mesh_nodes/vr_node_15.json",
       "stripe": 1,
       "mirrors": 2,
       "size": 187,
-      "sha256": "d5e8ef80feaed41adef2510ee490b81edf641909260d3ae337cc0efd6f4d23d9"
+      "sha256": "63203f2b22844d1447dc1fc316162893340379fa28dc7592b063f819fe831441"
     },
     {
       "rel": "mesh_nodes/vr_node_17.json",
       "stripe": 1,
       "mirrors": 2,
       "size": 187,
-      "sha256": "931c22c9916aa2311123233c6580c06ba43c9a19b664ac7a61abf68cdde0e603"
+      "sha256": "6952c2a6107faf4f619accd23a33ca22afca8cd1c05a86f9870c1a8d57e7d6c0"
     },
     {
       "rel": "mesh_nodes/vr_node_19.json",
       "stripe": 1,
       "mirrors": 2,
       "size": 187,
-      "sha256": "b9e7986d912b85ab1b454b823fc95eb0af64c4ec0fa48e5cbfefce2dbcfc3f18"
+      "sha256": "8670713d1bd23c53577722baf5ce77753f3f74df65c769a5b6f4d86c4e57a0a1"
     },
     {
       "rel": "mesh_nodes/vr_node_3.json",
       "stripe": 1,
       "mirrors": 2,
       "size": 186,
-      "sha256": "aa1c0a0b8391515771e6710af5cc53d35a098f30d10694ac50e60c0cf9b1c09c"
+      "sha256": "70884c3867d117d9c4481f1c445206099189673fda4c5ef625fe1549da223e49"
     },
     {
       "rel": "mesh_nodes/vr_node_5.json",
       "stripe": 1,
       "mirrors": 2,
       "size": 186,
-      "sha256": "3795206415a3ec16a60b44609fbb36d22b9a77b2e2eb94d3dd3dc6f67ea8e012"
+      "sha256": "3680eee350ad95aa605e41c393ee47dfc483f382036bac43f1e3dcc5e392a660"
     },
     {
       "rel": "mesh_nodes/vr_node_7.json",
       "stripe": 1,
       "mirrors": 2,
       "size": 186,
-      "sha256": "17410a269812025801ad10f4a41c73622cbe20220c8f2ab2c5617eb11bb74210"
+      "sha256": "81109d881be03f13c18f8b7e6015ec89f2313452659b2baa7ccf0141949f06c2"
     },
     {
       "rel": "mesh_nodes/vr_node_9.json",
       "stripe": 1,
       "mirrors": 2,
       "size": 186,
-      "sha256": "c2807a038fe584cc8f5a3ef7ee6ce52083df546a037402397de107fbc0ca3bb2"
+      "sha256": "10b18e17f32bb1ee5caadf95f3e26fc2b789c75ef836314bdbbf7f00564b5280"
     },
     {
       "rel": "TRILLIONS-HYBRID-EVO-FUSED-RUNTIME/package.json",
@@ -899,8 +773,8 @@
       "rel": "TRILLIONX_SHARED_VR_CACHE_BUS.js",
       "stripe": 2,
       "mirrors": 2,
-      "size": 6707,
-      "sha256": "963106c439078cae69c81321c8e50c00f9408ea42f1e1f2ab8b47fe72f1f16af"
+      "size": 6705,
+      "sha256": "c6f6d374465748ac471d8507f31564a4248a10aad185474742944801e19e5731"
     },
     {
       "rel": "TRILLIONX_VR_MIRROR_BENCH.js",
@@ -924,193 +798,130 @@
       "sha256": "f4f78e0347f1d0b716233f273e042b58df4857a108cc7a2009f4061993c6d502"
     },
     {
-      "rel": "data/trillionx_20_node_vr_mesh_1779632833077.json",
+      "rel": "data/trillionx_ai_world_health_latest.json",
       "stripe": 2,
       "mirrors": 2,
-      "size": 74211,
-      "sha256": "66a15813936d66ee38fbfd8f62298bbbdc2fcd7b359c238d6068aa7ba7fa16cf"
+      "size": 11765,
+      "sha256": "415226ad0ae66108f1d14bbccaede36f4bb4a4c80ee34e17ab3b6ec8e32b322e"
     },
     {
-      "rel": "data/trillionx_backend_exposure_latest.json",
+      "rel": "data/trillionx_codex_codecs_network_satellite_latest.json",
       "stripe": 2,
       "mirrors": 2,
-      "size": 831,
-      "sha256": "c4702ba7c3cfa21779d09482d3a256c4044c1a566854e0ebe5de462317a0fda1"
+      "size": 14969,
+      "sha256": "3039b5a726d51ca2ea96eee5ec1b89f8f71b3c1317d99048d369f02a09a6e713"
     },
     {
-      "rel": "data/trillionx_daemon_safe_status_latest.json",
+      "rel": "data/trillionx_gpu_backend_router_latest.json",
       "stripe": 2,
       "mirrors": 2,
-      "size": 367,
-      "sha256": "013173c3da39c0bf7b3041227b77cedaf02c8f6a1776f34d7f615d271ff25834"
+      "size": 946,
+      "sha256": "54f3214cb3922c5e9058395d7f4b967244275b48ef1400b497aa3a3753643a17"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779626847929.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779628052001.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 2975,
+      "sha256": "62ef0e701a7279d80ea1690dca3987503ea8f0d5908b03eaee13bbd3188b69a9"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631787235.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "4065e501af54c88fb56a0ea8f683011810e3dd705d2cd0d9eb8b700ad69b73c2"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631824713.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "c756b7d2401c939df4788039d5c841c5ee92bdf29cc9f1e7edda8a7123900a3b"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631876711.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 2975,
+      "sha256": "78c79d0cb81e2af779d037494a4eb0ea5712ab2fcaa6a0ecbcecfbdbda6ac37a"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631928548.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "30fb68424457a046190399dc1bc6c82ce3ff3c84e1b55eb554ff8e48fba922e3"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631966034.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 2975,
+      "sha256": "09873a7ad43555dd6ce0b0dc567c592afd6c2554a97ec932dcf92576b732fae1"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632019478.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "b252f76668f3a22e0e4cdb395e0e77a1d4ff033538780f9426211944024bc21f"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632070472.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "400f55480b675711d3c11d33c0c02726e2d699ec4f067ed6a2313572f5c05ddb"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632107688.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "9280996b99611b688f64bc36ebb417f47d7670d9ce51941169479b4100c10f6f"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632159570.json",
+      "stripe": 2,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "eb02f4dabb16fb315782434dcf39005e2276574d8414a1b937cee116cf81d7f7"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632211401.json",
       "stripe": 2,
       "mirrors": 2,
       "size": 2974,
-      "sha256": "95f8dfc3a624b99f24e64badc78d1b9726797ca153b02a577cf424980936d202"
+      "sha256": "69086733cf76c60179e176d30349387de93683906bb104dbe4dc9ed367fc0d34"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779628497641.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632263207.json",
       "stripe": 2,
       "mirrors": 2,
       "size": 2975,
-      "sha256": "fb57bb616fb516f1fa41e59286bb8c9dd03d7a000689955edec1f2f0bd1faf96"
+      "sha256": "71b222c78e8b568973f257711ee1f02233a75d01cee6807a823b4d50dee51c3c"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631789567.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632315055.json",
       "stripe": 2,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "fe0d005d49114e1a7e33eb8b82f1358c4a48c1603bfb40be9d35082f6a1105be"
+      "sha256": "968537db29a46a2d9cdd6eb2574214c54d1fbdffb7d8eaf1c380f59ea23ba3c4"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631842189.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2973,
-      "sha256": "5cea97b53befb939d700be2128262af1815c09ecd6a0195702840e77fbdbfa3f"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631893957.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2973,
-      "sha256": "d19778516ce0bbec1e169c061dc53f7b8dae543436e3fe3960c2970192a6e88e"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631946388.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "11d169e77dfa7ef566df3e843ef207cd85698a5c73d6b68a28dc131a2e45c5c3"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631983473.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632367089.json",
       "stripe": 2,
       "mirrors": 2,
       "size": 2975,
-      "sha256": "887c785d44bb023c2f59b19f079d536b7d9b42c570c78eb0330fc9040052a8a0"
+      "sha256": "2da75151809a61ff12113a63de682ff40b89a18a3949ec8998ea39af311836c7"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632036758.json",
+      "rel": "data/trillionx_network_codex_connections_all_1779628454178.json",
       "stripe": 2,
       "mirrors": 2,
-      "size": 2976,
-      "sha256": "cb48df5dbdbb40803f59479912e6c2f3ff1b4d5fde0920902d61a4325f82853f"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632072795.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "72fbb608bacfea6933f4507e2c0892b635574c1f99ca2c23930dd92acaf3608a"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632125002.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "7464365c0b8128d3ffa9cb966ee8f7e66212377b84926235252f821a8277d4fe"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632176826.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "0eaa69ea44d0c55e8fe7750fdd3a8677062ae3f3c12aa549a4facc4b461379d6"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632228687.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2974,
-      "sha256": "c2a972869adc63f5e4599cff1cdf4f258a72f307e55c7b652b0485bb91ae52c9"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632280465.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "59e8068bfc21f4d354ad924c3089767ddf24becae9e42b54139ba0a77e55e753"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632332318.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "1ba2de653b259bac1c3376781cae462897722b978e920b5c2aec01fc43507ac7"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632695810.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2973,
-      "sha256": "9a4011ed870b3d75c5fde8b4b5b7f0d3dce2608bce24573b7c8cb641c6d56ec6"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632838868.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "40cb497f7d7a93b79543f10d7091b509a5ce3ec2708a329f06c374b14a22b738"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632930277.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "4f3c46e70f152858b4d80602a3d9e849c3ca002652b90b9bf2da119fb22bc938"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633027236.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "b06a55a919d31e09234e42b69ea1cbfce1d6dc99606339f3f8ec37eabf33e612"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633124031.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "dbcdb84eb761cd16e537e28532001f167281ab578ed760a7f850d6cc942f9219"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633220780.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "bd45a4641a12edce294a00bd050a2c3cf44926949103221ec39bae8a082fd73d"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633318420.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "b007a154e6837901f0c139ed7a4a4e4b94bb7c4220effab10173a1ed7e5c1cd7"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633415691.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "6ac3f7d0e03030131bf1d3129443e4a9e4be551e56a8fa7015b2d5607f2d3406"
-    },
-    {
-      "rel": "data/trillionx_native_simd_avx_latest.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 1661,
-      "sha256": "5113a7f8cfa3f6540c60861094d1a4420ee91d1c718d680244e7daa69de84e4c"
-    },
-    {
-      "rel": "data/trillionx_network_connections_total_1779625379085.json",
-      "stripe": 2,
-      "mirrors": 2,
-      "size": 153930,
-      "sha256": "9d8c734346d98343e6e12b28a8f5232afe12b7e11bc6013f1f0604def56652c3"
+      "size": 167646,
+      "sha256": "6099f913292cd1d3db11fd45221f649dcfef6a2a795b0921aad842e9c9fd1de9"
     },
     {
       "rel": "data/trillionx_network_full_auto_bench_latest.json",
@@ -1152,7 +963,7 @@
       "stripe": 2,
       "mirrors": 2,
       "size": 4295,
-      "sha256": "2b5069af25ca246e35c34d9c21abcb3e8a83da8c286b9acb60aed45076ea0b88"
+      "sha256": "81d83f0f9a44b0d7821669777fc9a37129410c20b74e0a65663d017b97eae4c1"
     },
     {
       "rel": "data/trillionx_world_network_autodetect_1779630494723.json",
@@ -1337,193 +1148,130 @@
       "sha256": "de4363ef83a625ffb836816d998e03f0b0793cf637ff7364e1d1cb9709d7e59f"
     },
     {
-      "rel": "data/trillionx_20_node_vr_mesh_latest.json",
+      "rel": "data/trillionx_auto_detect_required_latest.json",
       "stripe": 3,
       "mirrors": 2,
-      "size": 74211,
-      "sha256": "66a15813936d66ee38fbfd8f62298bbbdc2fcd7b359c238d6068aa7ba7fa16cf"
+      "size": 1336,
+      "sha256": "cf105e520583475ddc71c5225d7696af738f5f671c16a1c86560f81b031796c9"
     },
     {
-      "rel": "data/trillionx_codex_codecs_network_satellite_1779625199281.json",
+      "rel": "data/trillionx_compute_speed_latest.json",
       "stripe": 3,
       "mirrors": 2,
-      "size": 12661,
-      "sha256": "25539957d6d37beb9da22d9fc56dec33c2daa9886e75904116113952b47944bc"
+      "size": 3157,
+      "sha256": "34a0a0c846ae3bbdc5c87f28f955d3bc56a687bd7fd3f84f05b4b05105e01f80"
     },
     {
-      "rel": "data/trillionx_fire_packet_extreme_latest.json",
+      "rel": "data/trillionx_gpu_vr_backend_probe_latest.json",
       "stripe": 3,
       "mirrors": 2,
-      "size": 5640,
-      "sha256": "dddcffde9ba061ec1b53a6e6135f83b164f27396441b818e8082a202d8740b94"
+      "size": 2182,
+      "sha256": "09c5300105dee9b4a35f79dca28206ec9a1aaffeba6bccd8cee75582fd36ec85"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779626850563.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779628452975.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "3bf01fa58dae0e9df131202f2f22681dc40b4737e38ccadc2075deb9e6f0fa1d"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631789555.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "2a61f81740e5ae94b1d72c1c9b86074e0e3ca3453b02afb5def18a5be9d1f984"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631842177.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "8d10c2f24cf9bf69670a8d88107fbcccd188f8e64914b24b21949374f8832d64"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631893945.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "e8aee8657683cd5098bd66e877d4758b164b95b2e44267b4e4c5f99022254aa3"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631946376.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "0b35869f9b705a694eb80218e664e39968dbaa57cab61ac5783250036bab5583"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631983448.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "b5674863836fbf14315af892d3903ca3a3eb9af4fc1c9e91b94378b95a8ef225"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632036743.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "bea86e582ab9fa2aff1a707a1c178347e9102069b8eb7ac095e4d86ec719067b"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632072782.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "c9f4f4a8ff8e1586f4c2bc0b87952baa4eef85586895524255b20e93c4d5a549"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632124990.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "7e062c29437ca17571fbbec35d467cfca081ec41d5edfa367bf17a40c5ff982b"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632176814.json",
       "stripe": 3,
       "mirrors": 2,
       "size": 2975,
-      "sha256": "293d98f24e117bdf8a7b5b32e742cb3623159bd843b588c3ab8d1d6bb892c53b"
+      "sha256": "b6a28a7940e20e6780117ebec4dcc9941e65533809e58411713091b918b1ee63"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779628500062.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632228676.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "9d926fb6bb9d5a73ab948438fd1aafea223c8fb420b91505e29ed102c0f3d6ec"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632280453.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "5e89ac69ffc3bb260efff4388341e791de4c5b1d30adccb461e051e361ca62a4"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632332306.json",
+      "stripe": 3,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "9dab42bc247c9e4f0153b2358d24468a75cdf2d823820753a764b4f389f89db9"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_latest.json",
       "stripe": 3,
       "mirrors": 2,
       "size": 2975,
-      "sha256": "6357cc29169d4220019da7cb76c1124239e8bfd0f798b7ea64fe1a0cacfbd909"
+      "sha256": "2da75151809a61ff12113a63de682ff40b89a18a3949ec8998ea39af311836c7"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631807297.json",
+      "rel": "data/trillionx_network_codex_connections_all_latest.json",
       "stripe": 3,
       "mirrors": 2,
-      "size": 2976,
-      "sha256": "21d6b8803d4814ce73f28ae2338d254afddd396556f71a17620198f1b83a4082"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631859441.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "d62485c6714e0149428f296a7268271547285661dd6b29973009f92c542afec2"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631911246.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "e67c3b842c525c69b83cfc80c34782f380e21023ef228c2cdaddd606ef37a415"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631948684.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "747402459ed078644666d12b7066c2819e3d38036ff82c6e79cff80ea6ace43c"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632001723.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "8eafaeef7d7f5b26f1dc98cd84c6b8f302317ba1282eaa1a5b4c90f16264160d"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632054659.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "4636b94fc59d296ed2e884ca99f8ce629e613a238b2aeb2395cf9839074d2994"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632090178.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "91ebb49d4d0d44b0d9e02c59756d101af8b1148a758b8ec74c2971ba64618d36"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632142272.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "d2138f195d9e2704c589765f8e72eceb271020aa5760ef326040fe9298651c95"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632194069.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "e6e09c8bf1946ec5ef43d3cfdfc6e0cf5ef97bee423819ca9c6491e603652995"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632245920.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "54fadebde7efcf9560dd28e19b671303c4ed4f747988a52d3eecce3963dec2c0"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632297724.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "276b196226060b115b091c90a02cc14a82a4511450ff6b293040d88bb70e3729"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632349563.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "b0956087761df5cdb95f678a18dae62d1de83ab0e538671713a6a51139f724dd"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632695821.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "802d205bc03e49b589f2c0e4e41017659288c2bdeea52a47c57de564ce6c934e"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632865774.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2974,
-      "sha256": "be55499c6349d5edea5c2c0d50baa8b173a634cf4f057d587cc51a37328dcbf9"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632962605.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2973,
-      "sha256": "4ce7d12600f25cd58f117b2f88c32f3831c2136bbbca5bc374e537f20b5ef8f2"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633059516.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "16b6f5d2dd9245a50bc4004ec99dc4da9336015455b3be2ec58aca43b9fa196d"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633156263.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "090609d15c949ebbc83da09f5f0f04b47d387e90937eae97e45f22b089015d1c"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633253589.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "6b274664efd172ef765106a02dd2c95f85a887e5f49f2dba2ba57c9e176f931b"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633318430.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "cacd796b9f8319ac7de7e6fc6d5334643c1231493b71f7858bbe253f145cc6b2"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633415713.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 2973,
-      "sha256": "eec000b0f6b3e48cccd43506708226b490ca16767ce7861c0bb701442f94d7d2"
-    },
-    {
-      "rel": "data/trillionx_native_simd_dependency_registry_latest.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 1871,
-      "sha256": "72d6ccfce6286982206a8cd6064bec4738f98c30e730e00c238a29cd87ce9ad3"
-    },
-    {
-      "rel": "data/trillionx_network_connections_total_1779628967223.json",
-      "stripe": 3,
-      "mirrors": 2,
-      "size": 172821,
-      "sha256": "ca823016f68c6d27abc4418c368ae640b4c6e537227316d76f0a3dd28e3e9bfd"
+      "size": 167646,
+      "sha256": "6099f913292cd1d3db11fd45221f649dcfef6a2a795b0921aad842e9c9fd1de9"
     },
     {
       "rel": "data/trillionx_network_microsecond_latency_1779628236090.json",
@@ -1607,70 +1355,70 @@
       "stripe": 3,
       "mirrors": 2,
       "size": 7,
-      "sha256": "78fd8f6b7db8b16a5debc69b126741fb4159a823452d8a0b8104e613da4d0d88"
+      "sha256": "9470ef3cfe0d3e8aca196d05d094e68c7c9553b2f72870bc0eb1596767c55ebf"
     },
     {
       "rel": "mesh_nodes/vr_node_11.pid",
       "stripe": 3,
       "mirrors": 2,
       "size": 7,
-      "sha256": "2c9564c0694dc859360efcd80966858af83dd253f1bb3e036d080c0533769957"
+      "sha256": "87cad5ee0db7edfc340bee2f3c697cf8610cb44ac85bc2803a44cb9b31cd14f0"
     },
     {
       "rel": "mesh_nodes/vr_node_13.pid",
       "stripe": 3,
       "mirrors": 2,
       "size": 7,
-      "sha256": "163502474448ed590f56124d86b8c4c8336cc4e7375ad9f0683e36d164fd204d"
+      "sha256": "37e75ed8ec07d4202e02b0f9fbd1167dedba21eb1c59ef6d814656a4a71027bd"
     },
     {
       "rel": "mesh_nodes/vr_node_15.pid",
       "stripe": 3,
       "mirrors": 2,
       "size": 7,
-      "sha256": "83bd68a9fc4cba673b8560edee12b382a590b11cac7977479fffb0e8857e8467"
+      "sha256": "53d43854da20304d9d1f3b0ec5bd4697f9d8fb97ab710abdd7d0add17f295c91"
     },
     {
       "rel": "mesh_nodes/vr_node_17.pid",
       "stripe": 3,
       "mirrors": 2,
       "size": 7,
-      "sha256": "ff4e576db23f6daf7b894adabe0bc4d703c659562e7ae8023777eb702e75de18"
+      "sha256": "0b99e9a9759d15ca441c79f220899bbc4cb3fd7e6907abec4ed164f5ddc19ac1"
     },
     {
       "rel": "mesh_nodes/vr_node_19.pid",
       "stripe": 3,
       "mirrors": 2,
       "size": 7,
-      "sha256": "10085c07389c75cbdc22c98c5394237756801e4db67be70782568839b1bcf508"
+      "sha256": "b3f51789a7ca7d6c5c6e6564a0547aa08b1e749165cdd9526c77d3e96b28c517"
     },
     {
       "rel": "mesh_nodes/vr_node_3.pid",
       "stripe": 3,
       "mirrors": 2,
       "size": 7,
-      "sha256": "5c608ba02c23323ef8cbb83589fcc0be669fc6c77a305eeda187eb68419d06e1"
+      "sha256": "a3b5b382c373cf131f87a8f9e9efacd72b5a3282c99abca39233953c2301b5e8"
     },
     {
       "rel": "mesh_nodes/vr_node_5.pid",
       "stripe": 3,
       "mirrors": 2,
       "size": 7,
-      "sha256": "ee1282d26e91bf7a5b39a839f1a5f73ff1b75dcc438055f16327959c51554fc1"
+      "sha256": "970894cc54df735d1ec1e830ede35ba101b301d1629d8777e93bdaae8fbbbe81"
     },
     {
       "rel": "mesh_nodes/vr_node_7.pid",
       "stripe": 3,
       "mirrors": 2,
       "size": 7,
-      "sha256": "49649b2e425637db612f20f1f923cada8a80c8245a20e156f1d9eb1514293828"
+      "sha256": "e567dfe93a66bfcf9ab3923fd9fffaf1674db3f7477bc4df63f25f7fad2295c6"
     },
     {
       "rel": "mesh_nodes/vr_node_9.pid",
       "stripe": 3,
       "mirrors": 2,
       "size": 7,
-      "sha256": "d2da5ba2706b8a2b373cae0b10c24f46ab4a37469c87b8fcafceee10e3ce7f54"
+      "sha256": "cbbd0c68bf6ab4525527d38b734197dcd5e0253fc7667e41c424ec415b450010"
     },
     {
       "rel": "TRILLIONX_10_NODE_MESH_START.sh",
@@ -1732,8 +1480,8 @@
       "rel": "TRILLIONX_WORLD_NETWORK_AUTODETECT_BENCH.js",
       "stripe": 4,
       "mirrors": 2,
-      "size": 9919,
-      "sha256": "f0d4b924722e76df7521f7b8d1745416a18497f368f1e1bd29f1f0d2adeca6ed"
+      "size": 1970,
+      "sha256": "36bce2463fdf35d86a31bb60e78a1d6ea8331921145c99a97ec5f08546f7c8f9"
     },
     {
       "rel": "data/trillions_fire_extreme_support_latest.json",
@@ -1750,193 +1498,130 @@
       "sha256": "1b29e9644e87ccd4c5d879dc9684bffc92f89cb8fcbcfad91244941240901963"
     },
     {
-      "rel": "data/trillionx_activation_registry_latest.json",
+      "rel": "data/trillionx_backend_capability_registry_latest.json",
       "stripe": 4,
       "mirrors": 2,
-      "size": 13443,
-      "sha256": "37378cf6cafb8ffe96d56875a230e72cb950f602b9580986e6f624d44351cb42"
+      "size": 1639,
+      "sha256": "afd7d4dfd6c453fc14ff5b920d0331c99db6cb3a6c6c4e60ff8e436fd0521b37"
     },
     {
-      "rel": "data/trillionx_codex_codecs_network_satellite_1779629068235.json",
+      "rel": "data/trillionx_crypto_zetta_packet_latest.json",
       "stripe": 4,
       "mirrors": 2,
-      "size": 14969,
-      "sha256": "3039b5a726d51ca2ea96eee5ec1b89f8f71b3c1317d99048d369f02a09a6e713"
+      "size": 29525,
+      "sha256": "1886db5d558e8bb8b32f6bbeeba150d0ed1c0ec420c47fa921fd0fdef075a53b"
     },
     {
-      "rel": "data/trillionx_firmware_stage0_latest.json",
-      "stripe": 4,
-      "mirrors": 2,
-      "size": 406154,
-      "sha256": "ea1ae098e426228b1db451dc01fb8164944b499b46a20173f9583e9d024dc2df"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779626903325.json",
-      "stripe": 4,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "e66f3c0419ec5fba7d48ca228c480506bb164170810a104d48ab373467454ffe"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779628965999.json",
-      "stripe": 4,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "da2253f2eb1f6ee87871e9cbb297586412148ab1f2830497c7e55be1050c84f9"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631807309.json",
-      "stripe": 4,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "4474338c06a914f3d6af22a15dbbb7c3669ed6ef55c7bac6b0478fffca1a82e0"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631859453.json",
-      "stripe": 4,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "041b399b74b3830355bd5ce9dcef13c05b224d0a53be55ee69a4e5533e5a0169"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631911265.json",
-      "stripe": 4,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "231701498648b9db1bc28aca7d84dbb38ed07d9e57d271c96e584d82190fe002"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631948698.json",
-      "stripe": 4,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "90bfc361fedb2dad294d8d2373a2224196a2f3e93cacfb89c3ab0a7de526da36"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632001819.json",
-      "stripe": 4,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "e59f8e85285b71a7c0b3d6005f5564a4534e11d3f96310cfaf325c70a6140c58"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632054711.json",
-      "stripe": 4,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "b4658bd10b7bfedbdabe9e49e28b858f0284c4c365032499608276718ce5b4f3"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632090217.json",
-      "stripe": 4,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "38c855d6a4c3e2c46c6780605c036a2ff675eeb7dc282666b00c0dad06fe3e39"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632142288.json",
-      "stripe": 4,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "e112188136c7f064cc3122586b6f894a49ad65eb3b3cbd791ee844a10355d2d6"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632194080.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779626847929.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 2974,
-      "sha256": "a877d0a3e46d1aebda293cee901c1a00469a93ae8741352523589267b3cbf236"
+      "sha256": "95f8dfc3a624b99f24e64badc78d1b9726797ca153b02a577cf424980936d202"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632245932.json",
-      "stripe": 4,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "a1c3bf2957844ca2ba1dbdebd458ffc95cebcaae5885f5ed65027423e03416ea"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632297742.json",
-      "stripe": 4,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "009eb4d568e476fa3d73e92e92c7e6d8fb1630da19a47fd96f4fadae4fbece89"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632349575.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779628497641.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 2975,
-      "sha256": "d119c2f704ed0b03adadf7006e8374b4ebeeb5b9fcb141e41976a199de839e18"
+      "sha256": "fb57bb616fb516f1fa41e59286bb8c9dd03d7a000689955edec1f2f0bd1faf96"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632701452.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631789567.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "db3044f462e5518c7bf733221518a5504522ef281806cfdc8bf22edab0ee1019"
+      "sha256": "fe0d005d49114e1a7e33eb8b82f1358c4a48c1603bfb40be9d35082f6a1105be"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632865784.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631842189.json",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 2973,
+      "sha256": "5cea97b53befb939d700be2128262af1815c09ecd6a0195702840e77fbdbfa3f"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631893957.json",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 2973,
+      "sha256": "d19778516ce0bbec1e169c061dc53f7b8dae543436e3fe3960c2970192a6e88e"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631946388.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "3fcc20218e8a5330cc37b61455832f4339764759ff52bbe5c6d86b93da1354ae"
+      "sha256": "11d169e77dfa7ef566df3e843ef207cd85698a5c73d6b68a28dc131a2e45c5c3"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632962615.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631983473.json",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 2975,
+      "sha256": "887c785d44bb023c2f59b19f079d536b7d9b42c570c78eb0330fc9040052a8a0"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632036758.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "809a1eaed00fa056c14a45be3216260fb11eb353dcce1ad8c2f4a62322f2e30b"
+      "sha256": "cb48df5dbdbb40803f59479912e6c2f3ff1b4d5fde0920902d61a4325f82853f"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633059526.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632072795.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "84a19e634cad21cba85c23e045ac4763cffc6cfa55a0448ae1eb06729b3cfffe"
+      "sha256": "72fbb608bacfea6933f4507e2c0892b635574c1f99ca2c23930dd92acaf3608a"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633156273.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632125002.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "73eb19c986572ccb0bf159340cf0a52f87a77fdb272ebed7df741f80243c1e12"
+      "sha256": "7464365c0b8128d3ffa9cb966ee8f7e66212377b84926235252f821a8277d4fe"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633253620.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632176826.json",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 2975,
+      "sha256": "0eaa69ea44d0c55e8fe7750fdd3a8677062ae3f3c12aa549a4facc4b461379d6"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632228687.json",
+      "stripe": 4,
+      "mirrors": 2,
+      "size": 2974,
+      "sha256": "c2a972869adc63f5e4599cff1cdf4f258a72f307e55c7b652b0485bb91ae52c9"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632280465.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "ec003796954ddacd29e7b6f1ab6a211ac8b0813fd67a06b36a6362ad67275e93"
+      "sha256": "59e8068bfc21f4d354ad924c3089767ddf24becae9e42b54139ba0a77e55e753"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633350773.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632332318.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "00527a3de11a51a1c775503127fbbae89e9c882a971bd50a600b3c782510a3ab"
+      "sha256": "1ba2de653b259bac1c3376781cae462897722b978e920b5c2aec01fc43507ac7"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633448133.json",
+      "rel": "data/trillionx_ladder_saturation_latest.json",
       "stripe": 4,
       "mirrors": 2,
-      "size": 2976,
-      "sha256": "40d5254d4ff706d6763f3eb384e462f7f0ce0ede0dfbae042fe255da9022d811"
+      "size": 23843,
+      "sha256": "ed0f0bc8b9c572028f98d09d3ec969d2874c336394f97a0da0db1de1e825aee4"
     },
     {
-      "rel": "data/trillionx_network_codex_connections_all_1779626904491.json",
+      "rel": "data/trillionx_network_connections_total_1779625379085.json",
       "stripe": 4,
       "mirrors": 2,
-      "size": 167217,
-      "sha256": "a919023395b36228404ddb6ff1433264732310e09cda8fb7c5a7f65f589f6339"
-    },
-    {
-      "rel": "data/trillionx_network_connections_total_1779632687717.json",
-      "stripe": 4,
-      "mirrors": 2,
-      "size": 163511,
-      "sha256": "4d95ae0a4387314976e306008b4dfe989eea33ed1a64588f422c9f94600e19cf"
+      "size": 153930,
+      "sha256": "9d8c734346d98343e6e12b28a8f5232afe12b7e11bc6013f1f0604def56652c3"
     },
     {
       "rel": "data/trillionx_network_microsecond_latency_1779628326448.json",
@@ -2013,70 +1698,70 @@
       "stripe": 4,
       "mirrors": 2,
       "size": 186,
-      "sha256": "6c8f3eb03627ffc62f7a0041b66f561088b4e081868df72651c9de2c7e5af3c2"
+      "sha256": "1c16cda4e06a1495daa2f1416a8b2622d86e21e2a8aab451031ae2a70d078411"
     },
     {
       "rel": "mesh_nodes/vr_node_10.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 187,
-      "sha256": "97ff5ce25f18ca6d5672aefd4301366664bfceebf20f98834ec29032771c789c"
+      "sha256": "097b5286ed93dfad5fd7ceb8a7c16b7f92c15994c516a92098b74d7c52bbdf0f"
     },
     {
       "rel": "mesh_nodes/vr_node_12.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 187,
-      "sha256": "7d5483e245ba7470ec1c39711ed1d27b06c71efecdd552146a4410f7454e49e8"
+      "sha256": "803cb7bfd6f72a771b31c2b8bc6f99d46d17272a293eddc8a5196b5918e03c03"
     },
     {
       "rel": "mesh_nodes/vr_node_14.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 187,
-      "sha256": "7340fc4a9789ab3a7797b63fafc9cc469cb5928aafd20d9501496a28361fac3f"
+      "sha256": "8cb6c9b29599b8417af04b31e84a4d9828e751fba7b73f1a0c6256803e0003ce"
     },
     {
       "rel": "mesh_nodes/vr_node_16.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 187,
-      "sha256": "c2151e94d015b94dcb639d11701870c1630c5f6d194eb5a2235ca16ac53193fa"
+      "sha256": "054a47e625271250e54f5ca08814facf5187b06fcbdc500f330a149a605d81ee"
     },
     {
       "rel": "mesh_nodes/vr_node_18.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 187,
-      "sha256": "72f32b02c25bb56d8227215c6f5f28a5a61dc9ffeaee527f607055faf9410599"
+      "sha256": "123dace259608697b146dee28c15e2ed604aee9940e6db9912c3dd34c0e79528"
     },
     {
       "rel": "mesh_nodes/vr_node_2.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 186,
-      "sha256": "8fbfe354d56f3f4d2a8e06b517f55cbd760c08270cd24897aa4dfbc68ab398a3"
+      "sha256": "5b2c1719908b3acd6cba584396096ba51f2652c12420c7c0cb1fea54c1522171"
     },
     {
       "rel": "mesh_nodes/vr_node_4.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 186,
-      "sha256": "0c274d0ef3453bfbe1e7f70e47a843f92d91eee97c8b8ac664434826278c7c86"
+      "sha256": "78a15b0ca105a27d63c7641ddec127824d71cd164c5d045b7082bff8fb519843"
     },
     {
       "rel": "mesh_nodes/vr_node_6.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 186,
-      "sha256": "066465b6f147d4ee135ac3084b07811a96cdd2a9dba5331fa7912ce32212c9bd"
+      "sha256": "efdbf7a8908d01cbe156594047d463a1a40f9bbed0eaa3cb632a0fe175561106"
     },
     {
       "rel": "mesh_nodes/vr_node_8.json",
       "stripe": 4,
       "mirrors": 2,
       "size": 186,
-      "sha256": "c940f287716eea9e88b5111d7e0fd56da30915b956c7a7690cd31700dabecb6e"
+      "sha256": "8ffe9406477b99697a7feda30b408c7e8026070f446ec01541cc6f7e5c2578a1"
     },
     {
       "rel": "package.json",
@@ -2163,193 +1848,130 @@
       "sha256": "2d0bcc515f8cb299037dc210d16861ff091b8cfa1ba4bf98dd5928b9e41e6d75"
     },
     {
-      "rel": "data/trillionx_ai_world_health_latest.json",
+      "rel": "data/trillionx_backend_exposure_latest.json",
       "stripe": 5,
       "mirrors": 2,
-      "size": 11765,
-      "sha256": "415226ad0ae66108f1d14bbccaede36f4bb4a4c80ee34e17ab3b6ec8e32b322e"
+      "size": 831,
+      "sha256": "c4702ba7c3cfa21779d09482d3a256c4044c1a566854e0ebe5de462317a0fda1"
     },
     {
-      "rel": "data/trillionx_codex_codecs_network_satellite_latest.json",
+      "rel": "data/trillionx_fire_packet_extreme_latest.json",
       "stripe": 5,
       "mirrors": 2,
-      "size": 14969,
-      "sha256": "3039b5a726d51ca2ea96eee5ec1b89f8f71b3c1317d99048d369f02a09a6e713"
+      "size": 5640,
+      "sha256": "dddcffde9ba061ec1b53a6e6135f83b164f27396441b818e8082a202d8740b94"
     },
     {
-      "rel": "data/trillionx_full_threadripper_profile_latest.json",
-      "stripe": 5,
-      "mirrors": 2,
-      "size": 8288,
-      "sha256": "011ee2022efde48596bbba4fea1eb101d4abcc772956386b2b830b0c9967b037"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779627540808.json",
-      "stripe": 5,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "1c4342e6be0b84bb317f8f8f2ac1dcc56dbb5e1636376f5eb080c1ffe0664221"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631787222.json",
-      "stripe": 5,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "781c5634f815b022f7a2bfaab26c23379fcd58998d0108e2f423474b8ece8833"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631824683.json",
-      "stripe": 5,
-      "mirrors": 2,
-      "size": 2973,
-      "sha256": "8eee3033671e51c833ee207a87fa4bad541aeb5b276807de58638eeb9ad0238d"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631876699.json",
-      "stripe": 5,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "ffa91efb63859179401ce51f4f4071c748831f2638547872787dd03d961ee16d"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631928537.json",
-      "stripe": 5,
-      "mirrors": 2,
-      "size": 2973,
-      "sha256": "bda95cd665750dd5775ebae77f28fb5ac8e6dcc8c44a9ab4293d69d68a661153"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631966010.json",
-      "stripe": 5,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "68513dfde65a268d479e64191b30de6b6eb9ec5aebd52c77ae620029c7c2895b"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632019466.json",
-      "stripe": 5,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "8a75dcf8a1ce35ad05257fb23a47c75876c89a7bb6e107d188e308171eabee04"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632070460.json",
-      "stripe": 5,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "b5d59b384e6eb0e995bc86c1035c2c9bdebd74920cf6c349cff146ddeeb029f9"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632107676.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779626850563.json",
       "stripe": 5,
       "mirrors": 2,
       "size": 2975,
-      "sha256": "491829540a2ccd1b9d999a584746393bd54357baf91f328488d5f3c6a89ee157"
+      "sha256": "293d98f24e117bdf8a7b5b32e742cb3623159bd843b588c3ab8d1d6bb892c53b"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632159558.json",
-      "stripe": 5,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "63186d323756f6ade27890e7a8d225e483f7578f0dd02722c42fb44b8dacd735"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632211374.json",
-      "stripe": 5,
-      "mirrors": 2,
-      "size": 2976,
-      "sha256": "4b40df544630e5d8481c4aff4a25fb06be405f9cd715907a0b461b28d697746b"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632263192.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779628500062.json",
       "stripe": 5,
       "mirrors": 2,
       "size": 2975,
-      "sha256": "8f2854e2de316f7cedb0b797dd088b38a3d91da594245e0c66904253a48f3786"
+      "sha256": "6357cc29169d4220019da7cb76c1124239e8bfd0f798b7ea64fe1a0cacfbd909"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632315043.json",
-      "stripe": 5,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "91c94de8ff686c0f87fd60af69582f5c5c96eccbb0ae643497791996a6960b9c"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632367066.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631807297.json",
       "stripe": 5,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "1a7a9a8389880f5cbb9579862017357adbae5a72ee828316478411f14afc7dd7"
+      "sha256": "21d6b8803d4814ce73f28ae2338d254afddd396556f71a17620198f1b83a4082"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632795885.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631859441.json",
       "stripe": 5,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "2fbe2bc00da4703d4a773507d6cd4fe7c17d7de2a799946d4e610c570cb023d3"
+      "sha256": "d62485c6714e0149428f296a7268271547285661dd6b29973009f92c542afec2"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632898014.json",
-      "stripe": 5,
-      "mirrors": 2,
-      "size": 2974,
-      "sha256": "0b63ec8fc174f8e52f8557454a4dae08d5e4df954a3367ae1bbf48fd0d4182ba"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632994845.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631911246.json",
       "stripe": 5,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "35e64b3bf30abc8b466105c1cfd467b1e019a148b64c79d407ad815a005d1b1f"
+      "sha256": "e67c3b842c525c69b83cfc80c34782f380e21023ef228c2cdaddd606ef37a415"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633091780.json",
-      "stripe": 5,
-      "mirrors": 2,
-      "size": 2975,
-      "sha256": "ade0bd33bd5c73653de42b5d3e98ef49d0bc607690c611cb0b8e989d9db6f476"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633188523.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779631948684.json",
       "stripe": 5,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "87925962e2bb0bc965cb0bef7b529bd79046522be6b1dd1880cbd5a07cf781b1"
+      "sha256": "747402459ed078644666d12b7066c2819e3d38036ff82c6e79cff80ea6ace43c"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633274237.json",
-      "stripe": 5,
-      "mirrors": 2,
-      "size": 2974,
-      "sha256": "5aa91266613300879bcd1a7ae07b7ef2123c9282a3587f81b4f2117382cb01d7"
-    },
-    {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633350788.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632001723.json",
       "stripe": 5,
       "mirrors": 2,
       "size": 2976,
-      "sha256": "fddee4bdd70819c5fad27aaf01f6ae3d278991ca9b48565aa9c55ca2da193f3e"
+      "sha256": "8eafaeef7d7f5b26f1dc98cd84c6b8f302317ba1282eaa1a5b4c90f16264160d"
     },
     {
-      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779633448144.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632054659.json",
       "stripe": 5,
       "mirrors": 2,
-      "size": 2975,
-      "sha256": "1376e8cec30a2f0a4930d06384c1ddebb8d22893e809c5d0779f7638545e8611"
+      "size": 2976,
+      "sha256": "4636b94fc59d296ed2e884ca99f8ce629e613a238b2aeb2395cf9839074d2994"
     },
     {
-      "rel": "data/trillionx_network_codex_connections_all_1779628454178.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632090178.json",
       "stripe": 5,
       "mirrors": 2,
-      "size": 167646,
-      "sha256": "6099f913292cd1d3db11fd45221f649dcfef6a2a795b0921aad842e9c9fd1de9"
+      "size": 2976,
+      "sha256": "91ebb49d4d0d44b0d9e02c59756d101af8b1148a758b8ec74c2971ba64618d36"
     },
     {
-      "rel": "data/trillionx_network_connections_total_1779632825351.json",
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632142272.json",
       "stripe": 5,
       "mirrors": 2,
-      "size": 161236,
-      "sha256": "c687e9431eb108daf15f7979230589b77d51d112c249d1bd6c54e591c7dd4301"
+      "size": 2976,
+      "sha256": "d2138f195d9e2704c589765f8e72eceb271020aa5760ef326040fe9298651c95"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632194069.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "e6e09c8bf1946ec5ef43d3cfdfc6e0cf5ef97bee423819ca9c6491e603652995"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632245920.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "54fadebde7efcf9560dd28e19b671303c4ed4f747988a52d3eecce3963dec2c0"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632297724.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "276b196226060b115b091c90a02cc14a82a4511450ff6b293040d88bb70e3729"
+    },
+    {
+      "rel": "data/trillionx_hyperbolic_microcontroller_joker_1779632349563.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 2976,
+      "sha256": "b0956087761df5cdb95f678a18dae62d1de83ab0e538671713a6a51139f724dd"
+    },
+    {
+      "rel": "data/trillionx_native_simd_avx_latest.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 1661,
+      "sha256": "5113a7f8cfa3f6540c60861094d1a4420ee91d1c718d680244e7daa69de84e4c"
+    },
+    {
+      "rel": "data/trillionx_network_connections_total_1779628967223.json",
+      "stripe": 5,
+      "mirrors": 2,
+      "size": 172821,
+      "sha256": "ca823016f68c6d27abc4418c368ae640b4c6e537227316d76f0a3dd28e3e9bfd"
     },
     {
       "rel": "data/trillionx_network_microsecond_latency_1779631006694.json",
@@ -2493,11 +2115,11 @@
     }
   ],
   "summary": {
-    "protected_files": 353,
-    "total_payload_bytes": 11264183,
-    "logical_copies": 706,
+    "protected_files": 299,
+    "total_payload_bytes": 10368596,
+    "logical_copies": 598,
     "stripes": 6,
     "parity_blocks": 12,
-    "session": "raid60_1779633473672"
+    "session": "raid60_1779632532745"
   }
 }
