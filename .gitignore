@@ -6,3 +6,9 @@ data/*.jsonl
 data/*.sqlite
 .DS_Store
 _backup_before_trillions/
+
+# TRILLIONX runtime volatile state
+runtime_state/*LATEST.json
+runtime_state/local_snapshots/
+logs/
+*.log
