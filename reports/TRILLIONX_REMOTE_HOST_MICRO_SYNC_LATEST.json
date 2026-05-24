@@ -1,19 +1,19 @@
 {
   "engine": "TRILLIONX_REMOTE_HOST_MICRO_SYNC",
-  "seq": 7359,
-  "ts": "2026-05-24T23:08:04.038Z",
-  "prev": "ce68b0a26232f8bdd3e7038d25d79ebea437a2e3cc89e65205d9e594276c33ce",
+  "seq": 8406,
+  "ts": "2026-05-24T23:16:48.355Z",
+  "prev": "2243c1beefcf1125a2d9887c9f7a63d9accb2cdd664df0f5af044a308b8bfea5",
   "cpu": {
     "model": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
     "logical": 2,
-    "ghz": 3.391,
-    "load1": 5.86,
+    "ghz": 3.466,
+    "load1": 2.22,
     "load_pct": 100
   },
   "memory": {
-    "rss_mb": 26.863,
-    "heap_mb": 7.48,
-    "free_gb": 0.942,
+    "rss_mb": 26.406,
+    "heap_mb": 8.253,
+    "free_gb": 1.08,
     "total_gb": 7.757
   },
   "disk": {
@@ -24,18 +24,18 @@
   "ports": [
     {
       "port": 3000,
-      "ms": 0.257,
+      "ms": 0.232,
       "open": true
     },
     {
       "port": 3997,
-      "ms": 0.176,
+      "ms": 0.166,
       "open": false,
       "error": "ECONNREFUSED"
     },
     {
       "port": 9229,
-      "ms": 0.102,
+      "ms": 0.132,
       "open": false,
       "error": "ECONNREFUSED"
     }
@@ -44,9 +44,9 @@
     "ok": true,
     "status": 200,
     "bytes": 7654,
-    "ms": 2.528
+    "ms": 1.368
   },
-  "latency_ms": 10.337,
+  "latency_ms": 10.862,
   "policy": "ASYNC_MICRO_PACKET_SAFE",
-  "seal": "470a9b7a2941a8f20a51043d3cfbed57565d7d755824e537ac9d36d650f3cd53"
+  "seal": "934cbfd13c7585ef7e25444066fd42a526c421b31631e3767b52d64924c3f0ca"
 }

@@ -1,16 +1,16 @@
 {
   "engine": "TRILLIONX_SYSTEM_ORGANIZATION_BENCH",
-  "time": "2026-05-24T22:59:58.418Z",
+  "time": "2026-05-24T23:08:08.962Z",
   "host": {
     "cpu": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
     "logical_cpu": 2,
-    "ghz": 3.412,
+    "ghz": 3.492,
     "ram_total_gb": 7.757,
-    "ram_free_gb": 1.886,
+    "ram_free_gb": 0.997,
     "load": [
-      5.93,
-      5.13,
-      4.79
+      5.87,
+      5.35,
+      4.86
     ],
     "node": "v22.22.2",
     "platform": "linux"
@@ -33,18 +33,18 @@
     },
     "reports": {
       "exists": true,
-      "files": 25,
-      "size": "124K"
+      "files": 26,
+      "size": "128K"
     },
     "history": {
       "exists": true,
       "files": 25,
-      "size": "13M"
+      "size": "15M"
     },
     "logs": {
       "exists": true,
       "files": 161,
-      "size": "8.4M"
+      "size": "10M"
     },
     "runtime_state": {
       "exists": true,
@@ -121,8 +121,8 @@
       "reports/TRILLIONX_PARALLEL_MICRO_SYNC_LATEST.json",
       "reports/TRILLIONX_REMOTE_HOST_MICRO_SYNC_LATEST.json"
     ],
-    "latest_seq": 6399,
-    "latest_latency_ms": 25.181,
+    "latest_seq": 7369,
+    "latest_latency_ms": 10.794,
     "latest_open_ports": [],
     "health": "OK"
   },
@@ -131,24 +131,24 @@
     "json_ok": 18,
     "json_bad": 0,
     "jsonl_history_files": 25,
-    "jsonl_lines": 57627,
+    "jsonl_lines": 66428,
     "health": "OK"
   },
   "runtime": {
     "port3000_open": true,
     "ports_text": "LISTEN 0      511                *:3000             *:*    users:((\"node\",pid=312431,fd=21))",
-    "node_process_lines": 17,
+    "node_process_lines": 24,
     "health": "APP3000_OPEN"
   },
   "git": {
     "branch": "main",
-    "changed": "24",
-    "last_commit": "a30eac0 Ignore TRILLIONX volatile runtime PID files",
-    "diff_stat": ".trillionx_aliases                                 |     7 +\n ...ILLIONX_virtual_threadripper_20260524_072919.js | 25938 ------------------\n ...ILLIONX_virtual_threadripper_20260524_073013.js | 26090 ------------------\n ...ILLIONX_virtual_threadripper_20260524_073108.js | 26242 ------------------\n .../app.before_compact_output_20260524_114806.js   | 26119 ------------------\n ...pp.before_dedup_threadripper_20260524_074142.js | 26522 -------------------\n backups/app.before_output_lite_20260524_115426.js  | 26197 ------------------\n ...ore_virtual_threadripper_fix_20260524_073958.js | 26394 ------------------\n data/TRILLIONX_RUNTIME_GUARD_LATEST.json           |    18 +-\n .../TRILLIONX_PARALLEL_MICRO_SYNC_HISTORY.jsonl    |  5312 ++++\n .../TRILLIONX_REMOTE_HOST_MICRO_SYNC_HISTORY.jsonl |   664 +\n ...ILLIONX_SYSTEM_ORGANIZATION_BENCH_HISTORY.jsonl |     3 +\n ...RILLIONX_ASYNC_DRAIN_REGISTRY_CODEC_LATEST.json |     6 +-\n .../TRILLIONX_ASYNC_GLOBAL_DRAIN_V2_LATEST.json    |     4 +-\n reports/TRILLIONX_PARALLEL_MICRO_SYNC_LATEST.json  |    74 +-\n .../TRILLIONX_REMOTE_HOST_MICRO_SYNC_LATEST.json   |    32 +-\n ...TRILLIONX_SYSTEM_ORGANIZATION_BENCH_LATEST.json |    52 +-\n 17 files changed, 6079 insertions(+), 183595 deletions(-)",
-    "health": "MANY_LOCAL_CHANGES"
+    "changed": "6",
+    "last_commit": "33236a0 Seal TRILLIONX clean runtime organization state",
+    "diff_stat": ".../TRILLIONX_PARALLEL_MICRO_SYNC_HISTORY.jsonl    | 108 +++++++++++++++++++++\n .../TRILLIONX_REMOTE_HOST_MICRO_SYNC_HISTORY.jsonl |  12 +++\n ...RILLIONX_ASYNC_DRAIN_REGISTRY_CODEC_LATEST.json |   6 +-\n .../TRILLIONX_ASYNC_GLOBAL_DRAIN_V2_LATEST.json    |   4 +-\n reports/TRILLIONX_PARALLEL_MICRO_SYNC_LATEST.json  |  70 ++++++-------\n .../TRILLIONX_REMOTE_HOST_MICRO_SYNC_LATEST.json   |  28 +++---\n 6 files changed, 174 insertions(+), 54 deletions(-)",
+    "health": "OK"
   },
   "summary": {
-    "score": 19805,
+    "score": 18805,
     "health": {
       "disk": "OK",
       "async": "OK",
@@ -156,10 +156,10 @@
       "reports": "OK",
       "scripts": "OK",
       "runtime": "APP3000_OPEN",
-      "git": "MANY_LOCAL_CHANGES"
+      "git": "OK"
     },
     "verdict": "TRILLIONX_SYSTEM_ORGANIZATION_BENCH_COMPLETE",
-    "runtime_ms": 650.784
+    "runtime_ms": 1192.427
   },
   "truth_policy": {
     "real_only": true,
@@ -169,5 +169,5 @@
     "no_data_touch": true,
     "no_raid60_touch": true
   },
-  "seal": "dc6e72abe3c15f25f87f9b9a3f076d8a3242a6071fbed9b8c2fab2a651053a1e"
+  "seal": "f9890f17ad4cf891624ee0ce4b1555264d51b838fddbf7e2b807aaec3033959a"
 }

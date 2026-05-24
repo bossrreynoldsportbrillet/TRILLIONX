@@ -1,22 +1,22 @@
 {
   "engine": "TRILLIONX_PARALLEL_MICRO_PACKET_SYNC_PRIORITY",
-  "seq": 50951,
-  "ts": "2026-05-24T23:08:04.327Z",
-  "prev": "4edd4a53235c3658349da1a2bd9583a423838bd0506a3f5365ad44965da8d807",
+  "seq": 59320,
+  "ts": "2026-05-24T23:16:48.673Z",
+  "prev": "696b308b96718d8b62eecafaeda7b957fa82c25de16b56037b79b4d6c12ec77c",
   "workers": 4,
   "interval_ms": 250,
-  "uptime_s": 3193.553,
+  "uptime_s": 3717.899,
   "cpu": {
     "model": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
     "logical": 2,
-    "ghz": 3.436,
-    "load1": 5.86,
+    "ghz": 3.45,
+    "load1": 2.22,
     "load_pct": 100
   },
   "memory": {
-    "rss_mb": 82.398,
-    "heap_mb": 8.414,
-    "free_gb": 0.944,
+    "rss_mb": 81.754,
+    "heap_mb": 10.022,
+    "free_gb": 1.076,
     "total_gb": 7.757
   },
   "disk": {
@@ -27,17 +27,17 @@
   "packets": [
     {
       "worker": 0,
-      "seq": 12736,
-      "ts": "2026-05-24T23:08:04.193Z",
+      "seq": 14829,
+      "ts": "2026-05-24T23:16:48.672Z",
       "ports": [
         {
           "port": 3000,
-          "ms": 0.243,
+          "ms": 0.229,
           "open": true
         },
         {
           "port": 20001,
-          "ms": 0.172,
+          "ms": 0.173,
           "open": false,
           "error": "ECONNREFUSED"
         }
@@ -46,76 +46,76 @@
         "ok": true,
         "status": 200,
         "bytes": 7654,
-        "ms": 2.545
+        "ms": 0.807
       },
-      "latency_ms": 3.084,
-      "seal": "3b2db3ce5be93348aa7ab31e2401b70d29bf2c793a156b4001c56751aedd60e0"
+      "latency_ms": 1.303,
+      "seal": "9c2a5fc643430a0da2e717a08688f314ce754aa4be4b163913d17790a56a3329"
     },
     {
       "worker": 1,
-      "seq": 12738,
-      "ts": "2026-05-24T23:08:04.303Z",
+      "seq": 14830,
+      "ts": "2026-05-24T23:16:48.573Z",
       "ports": [
         {
           "port": 3997,
-          "ms": 0.504,
+          "ms": 0.266,
           "open": false,
           "error": "ECONNREFUSED"
         },
         {
           "port": 20002,
-          "ms": 0.091,
+          "ms": 0.08,
           "open": false,
           "error": "ECONNREFUSED"
         }
       ],
       "app3000": null,
-      "latency_ms": 0.633,
-      "seal": "7bbb0d5a625783a747817ff03f0ca2cfddbe3f5c3ce4f08fd967074947903c77"
+      "latency_ms": 0.38,
+      "seal": "ab83529d78e1a916a89ddeaf7bf03095d43af253546827d4a4c528151b22561a"
     },
     {
       "worker": 2,
-      "seq": 12738,
-      "ts": "2026-05-24T23:08:04.327Z",
+      "seq": 14830,
+      "ts": "2026-05-24T23:16:48.516Z",
       "ports": [
         {
           "port": 9229,
-          "ms": 0.314,
+          "ms": 0.293,
           "open": false,
           "error": "ECONNREFUSED"
         },
         {
           "port": 20003,
-          "ms": 0.108,
+          "ms": 0.084,
           "open": false,
           "error": "ECONNREFUSED"
         }
       ],
       "app3000": null,
-      "latency_ms": 0.457,
-      "seal": "087891f63c5e49aad67900a46c236eecf4c672581f3d624eaeb29608b74f2494"
+      "latency_ms": 0.413,
+      "seal": "8abcc02565bf17788f16d38af990d545a2eecd1417c5d1fe23364ca40960cb5b"
     },
     {
       "worker": 3,
-      "seq": 12739,
-      "ts": "2026-05-24T23:08:04.170Z",
+      "seq": 14831,
+      "ts": "2026-05-24T23:16:48.473Z",
       "ports": [
         {
           "port": 20000,
-          "ms": 0.285,
+          "ms": 0.284,
           "open": false,
           "error": "ECONNREFUSED"
         }
       ],
       "app3000": null,
-      "latency_ms": 0.314,
-      "seal": "6b8a9855b8efbaab1c0de74263dce1baf4119133896c8f83c2659920ffcc91eb"
+      "latency_ms": 0.316,
+      "seal": "70ad84e30b111309d01fee7168e0fc01d39075d87bb5fe385d9609ff93a581a4"
     }
   ],
   "policy": "PARALLEL_ASYNC_MICRO_PACKET_PRIORITY_SAFE",
   "open_ports": [
     3000
   ],
-  "latency_avg_ms": 1.122,
-  "seal": "7bce0133efa27ece6604f98182a51ea7eb9941d5d2ed978e50c2f5f82da339e4"
+  "latency_avg_ms": 0.603,
+  "seal": "d325486f29e5094df017c0d4e922409b30dbdae0426c9c70755c9ef7c9d4122a"
 }
