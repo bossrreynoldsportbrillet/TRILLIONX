@@ -670,15 +670,32 @@ function TX_setOutput(v){
 
 /* TRILLIONX_UI_LOAD_RENDERER_V1 */
 function TX_LOAD_PARSE(v){
-  for(let i=0;i<8;i++){
-    if(typeof v==="string"){
-      let t=v.trim();
+  for(let i=0;i<12;i++){
+    if(typeof v!=="string") break;
+    let t=v.trim();
+
+    // Cas affiché: "{\"key\":\"value\"}" ou {\"key\":\"value\"}
+    if(t.includes('\"')){
       try{
-        if((t.startsWith("{")&&t.endsWith("}"))||(t.startsWith("[")&&t.endsWith("]"))||(t.startsWith('"')&&t.endsWith('"'))){
-          v=JSON.parse(t); continue;
-        }
-      }catch(e){}
+        let u=t;
+        if(!(u.startsWith('"') && u.endsWith('"'))) u='"'+u.replace(/"/g,'\"')+'"';
+        v=JSON.parse(u);
+        continue;
+      }catch(e){
+        try{
+          v=t.replace(/\"/g,'"').replace(/\\n/g,"
+").replace(/\n/g,"
+");
+          continue;
+        }catch(e2){}
+      }
     }
+
+    // JSON normal ou JSON-string
+    if((t.startsWith("{")&&t.endsWith("}"))||(t.startsWith("[")&&t.endsWith("]"))||(t.startsWith('"')&&t.endsWith('"'))){
+      try{ v=JSON.parse(t); continue; }catch(e){}
+    }
+
     break;
   }
   return v;
