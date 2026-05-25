@@ -667,6 +667,69 @@ function TX_setOutput(v){
   return txt;
 }
 
+
+/* TRILLIONX_UI_LOAD_RENDERER_V1 */
+function TX_LOAD_PARSE(v){
+  for(let i=0;i<8;i++){
+    if(typeof v==="string"){
+      let t=v.trim();
+      try{
+        if((t.startsWith("{")&&t.endsWith("}"))||(t.startsWith("[")&&t.endsWith("]"))||(t.startsWith('"')&&t.endsWith('"'))){
+          v=JSON.parse(t); continue;
+        }
+      }catch(e){}
+    }
+    break;
+  }
+  return v;
+}
+function TX_LOAD_RENDER(v){
+  try{
+    v=TX_LOAD_PARSE(v);
+    if(typeof v==="string") return v.replace(/\\n/g,"\n").replace(/\\"/g,'"');
+    if(!v) return "";
+    const L=[];
+    const title=v.engine||v.type||v.name||v.module||v.verdict||v.status;
+    if(title) L.push("=== "+String(title).toUpperCase()+" ===");
+    for(const k of ["time","ok","status","verdict","message","source","rule","mode","role","port","score","activation_percent","duration_ms","timeout_ms","http_status"]){
+      if(v[k]!==undefined && typeof v[k]!=="object") L.push(k+" : "+v[k]);
+    }
+    if(v.iss_position){
+      L.push("\n--- ISS POSITION ---");
+      L.push("latitude  : "+v.iss_position.latitude);
+      L.push("longitude : "+v.iss_position.longitude);
+      if(v.iss_position.timestamp!==undefined) L.push("timestamp : "+v.iss_position.timestamp);
+    }
+    if(v.apis && Array.isArray(v.apis)){
+      L.push("\n--- APIS ---");
+      v.apis.forEach(x=>L.push(String(x)));
+    }
+    if(v.stdout) L.push("\n--- STDOUT ---\n"+String(v.stdout));
+    if(v.out) L.push("\n--- OUTPUT ---\n"+TX_LOAD_RENDER(v.out));
+    if(v.terminal) L.push("\n--- TERMINAL ---\n"+TX_LOAD_RENDER(v.terminal));
+    if(v.data) L.push("\n--- DATA ---\n"+TX_LOAD_RENDER(v.data));
+    if(v.catalog) L.push("\n--- CATALOG ---\n"+TX_LOAD_RENDER(v.catalog));
+    if(v.summary) L.push("\n--- SUMMARY ---\n"+JSON.stringify(v.summary,null,2));
+    if(v.health) L.push("\n--- HEALTH ---\n"+JSON.stringify(v.health,null,2));
+    if(v.stderr) L.push("\n--- STDERR ---\n"+String(v.stderr));
+    if(v.err) L.push("\n--- ERR ---\n"+String(v.err));
+    if(v.error) L.push("\n--- ERROR ---\n"+String(v.error));
+    return L.length ? L.join("\n") : JSON.stringify(v,null,2);
+  }catch(e){return "LOAD_RENDER_ERROR: "+e.message+"\n"+String(v);}
+}
+function TX_LOAD_OUTPUT(){
+  return document.querySelector("#output,#out,#result,#results,#terminalOut,.output,.terminal-output,pre");
+}
+function TX_LOAD_SET(v){
+  const el=TX_LOAD_OUTPUT();
+  const txt=TX_LOAD_RENDER(v);
+  if(el){
+    if("value" in el) el.value=txt;
+    else el.textContent=txt;
+  }
+  return txt;
+}
+
 </script><script>
 const out=document.getElementById('out');
 async function load(u){out.textContent='LOADING '+u;try{let r=await fetch(u).catch(e=>({text:async()=>String(e)}));out.textContent=JSON.stringify(await r.text(),null,2)}catch(e){out.textContent='ERROR '+e.message}}
@@ -26608,6 +26671,29 @@ async function run(cmd){
     out.textContent="CMD: "+j.cmd+"\\nOK: "+j.ok+"\\nCODE: "+j.code+"\\n\\n--- STDOUT ---\\n"+(j.stdout||"")+"\\n\\n--- STDERR ---\\n"+(j.stderr||j.error||"");
   }catch(e){out.textContent="ERR "+e.message}
 }
+
+/* TRILLIONX_UI_LOAD_OVERRIDE_V1 */
+async function load(url){
+  const el=TX_LOAD_OUTPUT();
+  if(el) el.textContent="LOADING "+url+" ...";
+  const ctrl=new AbortController();
+  const tm=setTimeout(()=>ctrl.abort(),15000);
+  try{
+    const r=await fetch(url,{signal:ctrl.signal});
+    const t=await r.text();
+    let v=TX_LOAD_PARSE(t);
+    if(typeof v==="object" && v){v.http_status=r.status;v.http_ok=r.ok;v.endpoint=url;}
+    TX_LOAD_SET(v);
+    return v;
+  }catch(e){
+    const v={ok:false,endpoint:url,error:e.name==="AbortError"?"TIMEOUT_15000MS":e.message};
+    TX_LOAD_SET(v);
+    return v;
+  }finally{
+    clearTimeout(tm);
+  }
+}
+
 </script></div></body></html>`;
 
   try{
